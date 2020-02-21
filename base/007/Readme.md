@@ -16,8 +16,13 @@ Escreva uma função gangorra que recebe quatro inteiros P_1, C_1, P_2 e C_2, qu
 
 Por exemplo,
 
-```
+```hs
 gangorra 30 100 60 50 == 0
 gangorra 40 40 38 60 == 1
 ```
+
+## Recursos 
+
+- [Main.hs](Main.hs)
+- [Testes](t.vpl)
 
