@@ -1,0 +1,24 @@
+Case = Test1
+input=2
+3
+output=5
+grade reduction = 100%
+
+Case = Test2
+input=4
+6
+output=10
+grade reduction = 100%
+
+Case = Test3
+input=7
+9
+output=16
+grade reduction = 100%
+
+
+Case = Test1
+input=-4
+-6
+output=-10
+grade reduction = 100%
