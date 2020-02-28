@@ -14,15 +14,8 @@
       "dir": ".indexer/links"
     },
     {
-      "action": "thumbs",
-      "width": 320,
-      "height": 180
-    },
-    {
-      "action": "view",
-      "file": "Readme.md",
-      "posts_per_row": 3,
-      "empty_fig": "config/empty.png"
+      "action": "index",
+      "file": "Readme.md"
     }
   ]
 }

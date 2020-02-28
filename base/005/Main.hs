@@ -1,6 +1,7 @@
-
+neglist xs = length $ filter (<0) xs
 
 main = do
-    inputdata <- getContents
-    print $ neglist $ map (read :: String->Int) (lines inputdata)
+    line <- getLine
+    print $ neglist [read x :: Int | x <- words line]
+
 

@@ -1,7 +1,6 @@
-
+final qtd = reverse . take qtd . reverse
 
 main = do
-    inputdata <- getContents
-    let entrada = lines inputdata
-    let n       = read( entrada !! 0 )
-    print $ final n $ map (read :: String->Int) (tail entrada)
+    qtd <- readLn :: IO Int
+    line <- getLine
+    print $ final qtd [read x :: Int | x <- words line]

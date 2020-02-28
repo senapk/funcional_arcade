@@ -1,12 +1,18 @@
+gangorra p1 c1 p2 c2 =  
+    if p1 * c1 == p2 * c2 then
+        0
+    else if p1 * c1 < p2 * c2 then
+        1
+    else
+        -1
 
+--opcao com guards
+--gangorra p1 c1 p2 c2
+--  | p1 * c1 == p2 * c2 = 0
+--  | p1 * c1 < p2 * c2  = 1
+--  | otherwise          = -1
 
 main = do
-    line1 <-  getLine
-    line2 <-  getLine
-    line3 <-  getLine
-    line4 <-  getLine
-    let p1 = (read :: String -> Int ) line1
-    let c1 = (read :: String -> Int ) line2
-    let p2 = (read :: String -> Int ) line3
-    let c2 = (read :: String -> Int ) line4
-    print $ gangorra p1 c1 p2 c2
+    line <- getLine
+    let list = [read x :: Int | x <- words line]
+    print $ gangorra (list !! 0) (list !! 1) (list !! 2) (list !! 3)

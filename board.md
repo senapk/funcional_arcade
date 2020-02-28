@@ -6,3 +6,4 @@
 [](base/005/Readme.md) : ## ©basic f. Contar negativos   : 
 [](base/006/Readme.md) : ## ©basic g. Pedaço do Rabo     : 
 [](base/007/Readme.md) : ## ©basic h. Gangorra mal feita : 
+[](base/008/Readme.md) : ## ©basic i. Sublista           : 

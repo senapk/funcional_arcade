@@ -1,4 +1,5 @@
+interior = drop 1 . reverse . drop 1. reverse 
 
 main = do
-    inputdata <- getContents
-    print $ interior $ map (read :: String->Int) (lines inputdata)
+    line <- getLine
+    print $ interior [read x :: Int | x <- words line]

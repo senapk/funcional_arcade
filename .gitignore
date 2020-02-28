@@ -1,6 +1,5 @@
-Makefile
-makefile
 .vscode
-new
-00xx/
-solver
+*.hi
+*.o
+*.out
+

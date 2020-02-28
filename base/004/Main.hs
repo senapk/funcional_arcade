@@ -1,6 +1,7 @@
+--somaImpares xs = sum [x | x <- xs, odd x]
+somaImpares xs = sum $ filter odd xs
+--somaImpares = sum . filter odd
 
-
--- This part handles the Input/Output and can be used as it is. Do not change or modify it.
 main = do
-    inputdata <- getContents
-    putStrLn $ show $ somaImpares $ map (read :: String -> Int) $ lines inputdata
+    line <- getLine
+    print $ somaImpares [read x :: Int | x <- words line]
