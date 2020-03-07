@@ -1,6 +1,6 @@
 ## ©basic i. Sublista
 
-Defina a função sublist que obtém uma sublista passando início e fim. Se no forem utilizados números negativos, interprete-os como sendo contado a partir do fim da lista. O índice final não entra na lista.
+Defina a função sublist que obtém uma sublista passando início, fim e a lista. Se forem utilizados números negativos, interprete-os como sendo contando a partir do fim da lista. O índice final não entra na lista.
 
 ## Main
 
