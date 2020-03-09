@@ -1,4 +1,4 @@
-## ©basic b. Miolo da lista
+## #basic L2 - Miolo da lista
 
 
 Defina a função interior tal que (interior xs) é uma lista obtida eliminando os extremos da lista xs. Por exemplo,

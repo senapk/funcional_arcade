@@ -1,4 +1,4 @@
-## ©basic g. Pedaço do Rabo
+## #basic L2 - Pedaço do Rabo
 
 Defina a função final tal que `final xs` é uma lista formada pelos n elementos finais de xs.
 

@@ -1,4 +1,4 @@
-## ©basic e. Some os ímpares
+## #basic L2 - Some os ímpares
 
 Defina uma função somaImpares tal que `somaImpares xs` devolve a soma dos elementos ímpares de uma lista.
 

@@ -1,4 +1,4 @@
-## ©basic f. Contar negativos
+## #basic L2 - Contar negativos
 
 Defina a função `neglist xs` que computa o número de elementos negativos em uma lista xs.
 

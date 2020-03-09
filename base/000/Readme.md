@@ -1,4 +1,4 @@
-## ©basic a. Soma 2
+## #basic L1 - Soma 2
 
 
 Escreva uma função soma que recebe dois parâmetros e devolve a soma dos dois parâmetros.

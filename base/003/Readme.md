@@ -1,4 +1,4 @@
-## ©basic d. Maior de 3
+## #basic L1 - Maior de 3
 
 
 Defina a função `max3` tal que (max3 x y z) é o máximo entre x, y e z. Por exemplo,
