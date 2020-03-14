@@ -1,4 +1,5 @@
-### `min2`
+
+## min2
 ```hs
 --IN : dois números, x e y
 --OUT: menor valor entre x e y
@@ -6,7 +7,7 @@ min2 3 4 == 3
 min2 4 1 == 4
 ```
 
-### `min3`
+## min3
 ```hs
 --IN : três números, x, y e z
 --OUT: menor valor entre x, y e z
@@ -16,7 +17,7 @@ min3 3 4 2 == 2
 min3 2 5 4 == 2
 ```
 
-### `fatorial`
+## `fatorial`
 ```hs
 --IN : Um natural n
 --OUT: O fatorial de n
@@ -25,7 +26,7 @@ fatorial 1 == 1
 fatorial 5 == 120
 ```
 
-### `fibonacci`
+## `fibonacci`
 ```hs
 -- IN : inteiro positivo n
 -- OUT: n-ésimo termo da sequência
@@ -38,7 +39,7 @@ fib 5 == 5
 fib 5 == 8
 ```
 
-### `elemento`
+## `elemento`
 ```hs
 --IN : lista xs e um natural n
 --OUT: n-ésimo termo de xs
@@ -48,7 +49,7 @@ elemento -1 [2,7,3,9] == 9
 elemento -1 [2,7,3,9] == 9
 ```
 
-### `pertence`
+## `pertence`
 ```hs
 --IN : lista u e valor x
 --OUT: verdadeiro se x ∈ u e falso do contrário
@@ -61,7 +62,7 @@ pertence 3 [3,7,4,2] == True
 pertence 7 [3,7,4,2] == True
 ```
 
-### `total`
+## `total`
 ```hs
 --IN : lista u
 --OUT: total de elementos de u.
@@ -72,7 +73,7 @@ total [2,3] == 2
 total [3,2,1] == 3
 ```
 
-### `maior`
+## `maior`
 ```hs
 --IN : lista u
 --OUT: o maior valor de u
@@ -85,19 +86,19 @@ maior [1,2,3,1,5] == 5
 
 ```
 
-### `frequencia`
+## `frequencia`
 ```hs
 --IN : lista u e valor x
 --OUT: o total de ocorrencias de x em u
-frequencia 1 [] ==> 0
-frequencia 4 [4] ==> 1
-frequencia 4 [5] ==> 1
-frequencia 4 [4,4] ==> 2
-frequencia 2 [4,4] ==> 0
-frequencia 5 [4,5,2,1,5,5,9] ==> 3
+frequencia 1 [] == 0
+frequencia 4 [4] == 1
+frequencia 4 [5] == 1
+frequencia 4 [4,4] == 2
+frequencia 2 [4,4] == 0
+frequencia 5 [4,5,2,1,5,5,9] == 3
 ```
 
-### `unico`
+## `unico`
 ```hs
 --IN : lista u e valor x
 --OUT: true se x ocorre exatamente uma vez em u e false do contrário
@@ -107,41 +108,41 @@ unico 2 [3,1] == False
 unico 2 [2] == True
 ```
 
-### `maioresQue`
+## `maioresQue`
 ```hs
 --IN : número x e uma lista u
 --OUT: sublista de u cujos números sejam maiores que x
 maioresQue 10 [4,6,30,3,15,3,10,7] == [30, 15]
 ```
 
-### `concat`
+## `concat`
 ```hs
 --IN : duas listas a e b
 --OUT: concatenação entre a e b
 concat [1,2] [3,4] == [1,2,3,4]
 ```
 
-### `calda`
+## `calda`
 ```hs
 --IN : uma lista u
 --OUT: calda de u
 calda [1,2,3,4] == [2,3,4]
 ```
 
-### `corpo`
+## `corpo`
 ```hs
 --IN : uma lista u
 --OUT: corpo de u
 corpo [1,2,3,4] == [1,2,3]
 ```
 
-### `unique`
+## `unique`
 ```hs
 --IN : Lista u com possíveis chaves repetidas
 --OUT: Lista com as chaves de u sem repetições
 ```
 
-### `menores`
+## `menores`
 ```hs
 --IN : natural n e lista u
 --OUT: lista com os n menores elementos de u na ordem que aparecem em u
@@ -151,7 +152,7 @@ menores 5 [6,1,2,3,4] == [6,1,2,3,4]
 menores 4 [3,1,2] == [3,1,2]
 ```
 
-### `alter`
+## `alter`
 
 ```hs
 --IN : inteiro n
