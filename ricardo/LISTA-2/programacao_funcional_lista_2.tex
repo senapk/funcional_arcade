@@ -1,0 +1,110 @@
+\documentclass[a4paper,10pt,twocolumn]{article}
+
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage{bookman}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{indentfirst}
+\usepackage{anysize}
+\usepackage{xcolor}
+
+\author{Universidade Federal do Ceará\\
+        Campus de Quixadá\\
+        Ciência da Computação\\
+        Programação Funcional\\
+        Prof.$^o$ Ricardo Reis}
+\title{Lista de Exercícios II}
+\date{\today}
+
+\marginsize{1cm}{1cm}{1cm}{1cm}
+
+\newcommand{\func}[3]{
+\boxed{\textbf{\texttt{#1}}} \\
+\textsc{Input:} #2 \\
+\textsc{Output:} #3
+}
+
+\newcommand{\funcx}[4]{
+\func{#1}{#2}{#3} \\
+\textsc{Ex(s)}: \\
+\texttt{#4}
+}
+
+\newcommand{\funcxx}[5]{
+\func{#1}{#2}{#3} \\
+\textsc{Prot}: \\
+\texttt{#4} \\
+\textsc{Ex(s)}: \\
+\texttt{#5}
+}
+
+\begin{document}
+
+\maketitle
+
+\noindent \textit{Utilizando Haskell, construir as funções seguintes.}
+
+\begin{enumerate}
+	\item \funcxx{paridade}
+	{Lista $u$ de valores booleanos}
+	{Se o total de \textit{True}s é ímpar então retorne \textit{True} e do contrário \textit{False}}
+	{paridade :: [Bool] -> Bool}
+	{paridade [True, True, False]  =>  False}
+	
+	\item \funcxx{rev}{Um inteiro positivo $x$}{Um inteiro positivo equivalente a $x$, mas com os dígitos na ordem inversa}{rev :: Int -> Int}{rev 3491  ==>  1943}
+	
+	\item \funcxx{delete'}
+	{Valor $x$ e lista $u$}
+	{Versão de $u$ com a primeira aparição de $x$ removida.}
+	{delete' :: (Eq a) => a -> [a] -> [a]}
+	{delete' 5 [1,5,6,9]  ==>  [1,6,9]}
+	
+	\item \funcxx{swap}
+	{Lista $u$ de tipo arbitrário e dois inteiros $p$ e $q$ que representam posições de elementos de $u$.}
+	{Versão de $u$ com os elementos das posições $p$ e $q$ trocados}
+	{swap :: [a] -> Int -> Int -> [a]}
+	{swap [5,6,7,8,9] 0 3  ==>  [8,6,7,5,9]}
+	
+	\item \funcxx{nextPerm}
+	{Lista $u$ de elementos ordenáveis.}
+	{Próxima permutação lexicográfica de $u$ ou lançar exceção se não for possível. A \textit{próxima permutação lexicográfica} de uma lista $u$ de elementos ordenáveis é obtida aplicando-se o seguinte algoritmo,
+    \begin{enumerate}
+    \item Obter o maior valor de índice $i$ de $u$ tal que $u[i]<u[i+1]$ (pode não existir! Neste caso deve-se disparar a exceção). 
+    \item Obter o maior índice $j$ de $u$, com $j>i$, tal que
+   $u[j]>u[i]$.
+    \item Trocar $u[i]$ com $u[j]$.
+    \item Reverter em $u$ a sub-lista que se estende da posição $i+1$ até o final da lista.
+    \end{enumerate}
+    \_
+    }
+	{nextPerm :: (Ord a) => [a] -> [a] }
+	{nextPerm [1,3,5,2]  ==>  [1, 5, 2, 3] } 
+	
+	\item \funcxx{allPerms}{Lista $u$ de chaves não repetidas}{Todas as permutações possíveis de $u$ em ordem lexicográfica}{allPerm ¨ [a] -> [[a]]}{allpEM [1,2,3]  ==>  [[1,2,3], [1,3,2], [2,1,3], [2,3,1], [3,1,2], [3,2,1]]}
+	\item \funcxx{buscabin}
+	{Lista $u$ de chaves ordenadas ascendentemente e valor $x$ de mesmo tipo base de $u$}
+	{Posição de $u$ onde se encontra $x$ ou -1 se $x \notin x$. A busca deve ser binária.}
+	{buscaBin :: [a] -> a -> Int}
+	{buscaBin [1,3,5,6,8] 5  ==>  2}
+	
+	\item\funcxx{factors}{Número $n$ inteiro positivo}{Lista de tuplas $(f, p)$ que representam os fatores primos de $n$ omde $f$ denota o fator propriamente dito e $p$ seu respectivo expoente. (Todo número $x$, tal que $x \in \mathbb{N}$, pode ser reescrito como o produto de potências de bases primas e expoentes naturais. Por exemplo, o número $3361743$ pode ser reescrito na forma,
+	\[3361743 = 3^{4} \cdot 7^{3} \cdot 11^{2}\]
+	Os números $3$, $7$ e $11$ são denominados fatores primos de $3361743$ e $4$, $3$ e $2$ seus respectivas expoentes.) }
+    {factors :: (Integral a) => a -> [(a,a)]}
+   	{ factors 3361743  =>  [(3,4),(7,3),(11,2)] } 
+   	
+   	\item \funcxx{listacc}{Lista $u$ de inteiros}
+   	{Versão $v$ acumulativa de $u$. Na versão acumulativa a $k$-ésima chave, $v_k$ é determinada somando-se as todas as chaves de $u$ até a posição $k$. Matematicamente,
+   	\[v_k = \sum\limits_{j=0}^{k}{u_k}\] }
+   	{listacc :: (Num a) => [a] -> [a]}
+   	{listacc [1,2,3,4]  ==>  [1,3,6,10]}
+   	
+   	\item \funcxx{maxsseq}{Lista $u$ de inteiros (podem ser positivos, negativos ou zero)}{Sublista de $u$ de elementos consecutivos cuja soma é máxima}{maxsseq (Ord a, Num a) => [a] ->[a]}
+   	{maxsseq [2,1,-4,9,7,-1,5]  ==>  [9,7,-1,5]}
+\end{enumerate}
+
+\end{document}

@@ -1,48 +1,20 @@
 ## #basic L1 - Soma 2
 
-
 Escreva uma função soma que recebe dois parâmetros e devolve a soma dos dois parâmetros.
 
-## Main
+```hs
+soma 2 6 == 8
+soma -4 6 == 2
+soma -1 -1 == -2
+```
 
+<!--MAIN_BEGIN-->
+### Main
 ```hs
 main = do
-    x <- readLn::IO Int
-    y <- readLn::IO Int
-    print $ soma x y
-```
-
-
-## IO
+    a <- readLn :: IO Int
+    b <- readLn :: IO Int
+    print $ soma a b
 
 ```
->>>>>>>>
-2
-6
-========
-8
-<<<<<<<<
-
->>>>>>>>
-4
-6
-========
-10
-<<<<<<<<
-
-
->>>>>>>>
-7
-9
-========
-16
-<<<<<<<<
-
-
->>>>>>>>
--4
--6
-========
--10
-<<<<<<<<
-```
+<!--MAIN_END-->

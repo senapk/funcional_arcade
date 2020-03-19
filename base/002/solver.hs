@@ -5,9 +5,4 @@ iguais x y z =
             then 0 
             else 2
 
-main = do
-    x <- readLn :: IO Int
-    y <- readLn :: IO Int
-    z <- readLn :: IO Int
-    print $ iguais x y z
 

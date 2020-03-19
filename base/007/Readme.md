@@ -4,8 +4,8 @@ Joãozinho acaba de mudar de escola e a primeira coisa que percebeu na nova esco
 
 Sem entender a situação, Joãozinho pediu ajuda a outro amigo de outra série, que explicou que o comprimento do lado interfere no equilíbrio da gangorra, pois a gangorra estará equilibrada quando
 
-```hs
-P_1 x C_1 == P_2 x C_2
+```
+P_1 x C_1 for igual a P_2 x C_2
 ```
 
 onde P_1 e P_2 são os pesos da criança no lado esquerdo e direito, respectivamente, e C_1 e C_2 são os comprimentos da gangorra do lado esquerdo e direito, respectivamente.
@@ -17,54 +17,24 @@ Por exemplo,
 ```hs
 gangorra 30 100 60 50 == 0
 gangorra 40 40 38 60 == 1
+gangorra 35 80 35 75 == -1
+gangorra 45 23 96 12 == 1
+gangorra 74 12 65 48 == 1
+gangorra 78 45 12 23 == -1
 ```
 
-## Main
 
+
+
+<!--MAIN_BEGIN-->
+### Main
 ```hs
 main = do
-    line <- getLine
-    let list = [read x :: Int | x <- words line]
-    print $ gangorra (list !! 0) (list !! 1) (list !! 2) (list !! 3)
+    a <- readLn :: IO Int
+    b <- readLn :: IO Int
+    c <- readLn :: IO Int
+    d <- readLn :: IO Int
+    print $ gangorra a b c d
+
 ```
-
-## IO
-```
->>>>>>>> 00
-30 100 60 50
-========
-0
-<<<<<<<<
-
->>>>>>>> 01
-40 40 38 60
-========
-1
-<<<<<<<<
-
-
->>>>>>>> 02
-35 80 35 75
-========
--1
-<<<<<<<<
-
->>>>>>>> 03
-45 23 96 12
-========
-1
-<<<<<<<<
-
->>>>>>>> 04
-74 12 65 48
-========
-1
-<<<<<<<<
-
->>>>>>>> 05
-78 45 12 23
-========
--1
-<<<<<<<<
-```
-
+<!--MAIN_END-->

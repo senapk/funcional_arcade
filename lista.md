@@ -112,14 +112,21 @@ unico 2 [2] == True
 ```hs
 --IN : Número x e uma lista u
 --OUT: Sublista de u cujos números sejam maiores que x
-maioresQue 10 [4,6,30,3,15,3,10,7] == [30, 15]
+--OBS: Faça usando filter e CList
+maioresQue 10 [] == []
+maioresQue 10 [11,9,12] == [11,12]
+maioresQue 10 [4,6,30,3,15,3,10,7] == [30,15]
 ```
 
 ## `concat`
 ```hs
 --IN : Duas listas a e b
 --OUT: Concatenação entre a e b
+concat [] [] == []
+concat [] [3,4] == [3,4]
+concat [1,2] [] == [1,2]
 concat [1,2] [3,4] == [1,2,3,4]
+concat [1,2,3] [3,4] == [1,2,3,3,4]
 ```
 
 ## `calda`

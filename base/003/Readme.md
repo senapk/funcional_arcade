@@ -9,59 +9,15 @@ max3 6 7 4 == 7
 max3 6 7 9 == 9
 ```
 
-## Main
+
+<!--MAIN_BEGIN-->
+### Main
 ```hs
 main = do
-    x <- readLn :: IO Int
-    y <- readLn :: IO Int
-    z <- readLn :: IO Int
-    print $ max3 x y z
+    a <- readLn :: IO Int
+    b <- readLn :: IO Int
+    c <- readLn :: IO Int
+    print $ max3 a b c
+
 ```
-
-
-## IO
-```
->>>>>>>> 00
-2
-2
-2
-========
-2
-<<<<<<<<
-
-
->>>>>>>> 01
-2
-2
-3
-========
-3
-<<<<<<<<
-
-
->>>>>>>> 02
-3
-2
-2
-========
-3
-<<<<<<<<
-
-
->>>>>>>> 03
-2
-5
-2
-========
-5
-<<<<<<<<
-
-
->>>>>>>> 04
-2
-5
-3
-========
-5
-<<<<<<<<
-```
+<!--MAIN_END-->
