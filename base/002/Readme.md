@@ -2,56 +2,23 @@
 
 Dado três valores a, b e c, escreva uma função iguais3 que retorne quantos dos três são iguais. A resposta pode ser 3 (todos iguais), 2 (dois iguais) ou 0 (todos diferentes)
 
-## Main
+```hs
+iguais 2 2 2 == 3
+iguais 2 2 3 == 2
+iguais 2 3 2 == 2
+iguais 2 1 1 == 2
+iguais 3 2 1 == 0
+```
 
+
+<!--MAIN_BEGIN-->
+### Main
 ```hs
 main = do
-    x <- readLn :: IO Int
-    y <- readLn :: IO Int
-    z <- readLn :: IO Int
-    print $ iguais3 x y z
-```
-
-## IO
+    a <- readLn :: IO Int
+    b <- readLn :: IO Int
+    c <- readLn :: IO Int
+    print $ iguais a b c
 
 ```
->>>>>>>> 00
-2
-2
-2
-========
-3
-<<<<<<<<
-
->>>>>>>> 01
-2
-2
-3
-========
-2
-<<<<<<<<
-
->>>>>>>> 02
-3
-2
-2
-========
-2
-<<<<<<<<
-
->>>>>>>> 03
-2
-5
-2
-========
-2
-<<<<<<<<
-
->>>>>>>> 04
-2
-5
-3
-========
-0
-<<<<<<<<
-```
+<!--MAIN_END-->
