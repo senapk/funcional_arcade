@@ -236,7 +236,7 @@ sequencia 4 4 == [4,5,6,8]
 
 ## 24. `inserir`
 ```hs
---IN : Número x e lista, u, de números ordenados ascendentemente
+--IN : Número x e lista u de números ordenados ascendentemente
 --OUT: Lista de números ordenados ascendentemente oriunda da inserção apropriada de x em u
 inserir 3 [2,7,12] == [2,3,7,12]
 inserir 1 [2,7,12] == [1,2,7,12]
@@ -247,7 +247,7 @@ inserir 15 [2,7,12] == [2,7,12,15]
 
 ## 25. `ordenada`
 ```hs
---IN : Lista de números, u
+--IN : Lista de números u
 --OUT: Verdadeiro se u é ordenada e falso do contrário
 ordenada [1,2,3,5] == True
 ordenada [1,0,2,5] == False
@@ -376,7 +376,7 @@ splitints [1,2,3,4,5,6,7] => ([1,3,5,7],[2,4,6])
 splitints [2,4,6,1,1,7] => ([1,1,7],[2,4,6])
 ```
 
-### 38. `quadperf`
+## 38. `quadperf`
 - IN : Número inteiro positivo, n
 - OUT: Verdadeiro se n for um quadrado perfeito e falso do contrário (Um *quadrado perfeito* é um número inteiro cuja raiz quadrada é também um número inteiro). Não utilizar operadores ou funções que retornem números reais.
 ```hs

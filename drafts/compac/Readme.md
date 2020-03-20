@@ -1,55 +1,19 @@
-## Compactador de vetores
+## 36. `compac`
+- IN : Lista de números u
+- OUT: Lista de listas. Cada lista-componente possui um ou dois elementos. Quando possui dois, representa uma sequência de chaves repetidas de u, sendo o primeiro valor a chave que se repete e o segundo o total de repetições. Quando possui um elemento contém uma chave de u que não se repete.
+```hs
+compac [] == []
+compac [1,1,1] == [[1,3]]
+compac [1,2,3] == [[1],[2],[3]]
+compac [2,2,2,3,4,4,2,9,5,2,4,5,5,5] == [[2,3],[3],[4,2],[2],[9],[5],[2],[4],[5,3]]
+```
 
-Dado um vetor, compacte os elementos consecutivos que se repetem numa lista de listas.
-
+<!--MAIN_BEGIN-->
+### Main
+```hs
+main = do
+    a <- readLn :: IO [Int]
+    print $ compac a
 
 ```
->>>>>>>>
-[]
-========
-[]
-<<<<<<<<
-
->>>>>>>>
-[1]
-========
-[[1]]
-<<<<<<<<
-
->>>>>>>> um duas vezes
-[1,1]
-========
-[[1,2]]
-<<<<<<<<
-
->>>>>>>>
-[1,1,1]
-========
-[[1,3]]
-<<<<<<<<
-
->>>>>>>>
-[1,1,1,5]
-========
-[[1,3],[5]]
-<<<<<<<<
-
->>>>>>>>
-[1,1,1,5,5]
-========
-[[1,3],[5,2]]
-<<<<<<<<
-
->>>>>>>>
-[1,1,1,5,5,0]
-========
-[[1,3],[5,2],[0]]
-<<<<<<<<
-
->>>>>>>>
-[1,1,1,5,5,0,5,5]
-========
-[[1,3],[5,2],[0],[5,2]]
-<<<<<<<<
-
-```
+<!--MAIN_END-->
