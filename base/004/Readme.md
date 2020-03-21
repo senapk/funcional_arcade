@@ -11,7 +11,7 @@ countNeg [1,-1] == 1
 countNeg [1,-3,-4,3,4,-5] == 3
 ```
 
-Dica: usa a função filter e length.
+Guia: usa a função filter e length.
 
 
 <!--MAIN_BEGIN-->

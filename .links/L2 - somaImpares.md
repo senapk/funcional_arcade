@@ -1,1 +1,1 @@
-[LINK](../base/somaImpares/Readme.md)
+[LINK](../base/007/Readme.md)

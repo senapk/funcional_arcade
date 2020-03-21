@@ -1,1 +1,1 @@
-[LINK](../base/interior/Readme.md)
+[LINK](../base/006/Readme.md)
