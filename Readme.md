@@ -3,15 +3,12 @@
 - [EMPTY](#empty)
 - [basic](#basic)
 - [filter](#filter)
-- [let](#let)
 - [lista](#lista)
-- [listas](#listas)
 - [rec](#rec)
 - [sel](#sel)
 
 ## EMPTY
 
-- [@019 10. `unico`](base/019/Readme.md#10-unico)
 - [@020 11. `maioresQue`](base/020/Readme.md#11-maioresque)
 - [@021 12. `concat`](base/021/Readme.md#12-concat)
 - [@022 13. `calda`](base/022/Readme.md#13-calda)
@@ -46,6 +43,7 @@
 
 ## basic
 
+- [@014 `elemento`](base/014/Readme.md#basic-rec-elemento)
 - [@002 L1 - iguais](base/002/Readme.md#basic-l1---iguais)
 - [@001 L1 - max3](base/001/Readme.md#basic-l1---max3)
 - [@000 L1 - soma2](base/000/Readme.md#basic-l1---soma2)
@@ -55,35 +53,30 @@
 - [@007 L2 - somaImpares](base/007/Readme.md#basic-l2---somaimpares)
 - [@008 L3 - gangorra](base/008/Readme.md#basic-l3---gangorra)
 - [@009 L4 - sublist](base/009/Readme.md#basic-l4---sublist)
-- [@012 03. fatorial](base/012/Readme.md#03-basic-fatorial)
+- [@012 fatorial](base/012/Readme.md#basic-fatorial)
 
 ## filter
 
-- [@015 06. `pertence`](base/015/Readme.md#06-lista-filter-rec-pertence)
-
-## let
-
-- [@014 05. `elemento`](base/014/Readme.md#05-let-rec-elemento)
+- [@015 pertence](base/015/Readme.md#lista-filter-rec-pertence)
 
 ## lista
 
-- [@015 06. `pertence`](base/015/Readme.md#06-lista-filter-rec-pertence)
-- [@016 07. `total`](base/016/Readme.md#07-lista-rec-total)
-
-## listas
-
-- [@018 09. frequencia](base/018/Readme.md#09-listas-frequencia)
+- [@015 pertence](base/015/Readme.md#lista-filter-rec-pertence)
+- [@016 total](base/016/Readme.md#lista-rec-total)
+- [@019 unico](base/019/Readme.md#lista-rec-unico)
+- [@018 frequencia](base/018/Readme.md#lista-frequencia)
 
 ## rec
 
+- [@014 `elemento`](base/014/Readme.md#basic-rec-elemento)
+- [@015 pertence](base/015/Readme.md#lista-filter-rec-pertence)
+- [@016 total](base/016/Readme.md#lista-rec-total)
+- [@019 unico](base/019/Readme.md#lista-rec-unico)
+- [@013 fibonacci](base/013/Readme.md#rec-fibonacci)
+- [@017 maior](base/017/Readme.md#rec-maior)
 - [@003 vetFib](base/003/Readme.md#rec-vetfib)
-- [@013 04. fibonacci](base/013/Readme.md#04-rec-fibonacci)
-- [@014 05. `elemento`](base/014/Readme.md#05-let-rec-elemento)
-- [@015 06. `pertence`](base/015/Readme.md#06-lista-filter-rec-pertence)
-- [@016 07. `total`](base/016/Readme.md#07-lista-rec-total)
-- [@017 08. maior](base/017/Readme.md#08-rec-maior)
 
 ## sel
 
-- [@010 01. min2](base/010/Readme.md#01-sel-min2)
-- [@011 02. `min3`](base/011/Readme.md#02-sel-min3)
+- [@010 min2](base/010/Readme.md#sel-min2)
+- [@011 min3](base/011/Readme.md#sel-min3)

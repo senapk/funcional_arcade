@@ -89,5 +89,12 @@
 <span id="cb1-5"><a href="#cb1-5"></a>merge [<span class="dv">7</span>,<span class="dv">7</span>,<span class="dv">9</span>] [<span class="dv">1</span>,<span class="dv">3</span>] <span class="op">==</span> [<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">7</span>,<span class="dv">7</span>,<span class="dv">9</span>]</span>
 <span id="cb1-6"><a href="#cb1-6"></a>merge [<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">5</span>] [<span class="dv">4</span>,<span class="dv">4</span>,<span class="dv">6</span>,<span class="dv">7</span>] <span class="op">==</span> [<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>,<span class="dv">7</span>]</span>
 <span id="cb1-7"><a href="#cb1-7"></a>merge [<span class="dv">4</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>,<span class="dv">7</span>] [<span class="dv">1</span>,<span class="dv">3</span>] <span class="op">==</span> [<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>,<span class="dv">7</span>]</span></code></pre></div>
+<!--MAIN_BEGIN-->
+<h3 id="main">Main</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode hs"><code class="sourceCode haskell"><span id="cb2-1"><a href="#cb2-1"></a>main <span class="ot">=</span> <span class="kw">do</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a>    a <span class="ot">&lt;- readLn ::</span> <span class="dt">IO</span> [<span class="dt">Int</span>]</span>
+<span id="cb2-3"><a href="#cb2-3"></a>    b <span class="ot">&lt;- readLn ::</span> <span class="dt">IO</span> [<span class="dt">Int</span>]</span>
+<span id="cb2-4"><a href="#cb2-4"></a>    <span class="fu">print</span> <span class="op">$</span> merge a b</span></code></pre></div>
+<!--MAIN_END-->
 </body>
 </html>

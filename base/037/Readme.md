@@ -7,3 +7,15 @@ rotEsq 1 "asdfg"  == "sdfga"
 rotEsq 3 "asdfg" == "fgasd"
 rotEsq 4 "asdfg" == "gasdf"
 ```
+
+
+<!--MAIN_BEGIN-->
+### Main
+```hs
+main = do
+    a <- readLn :: IO Int
+    b <- getLine
+    print $ rotEsq a b
+
+```
+<!--MAIN_END-->

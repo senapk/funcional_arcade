@@ -1,3 +1,4 @@
+[](base/014/Readme.md) : ## #basic #rec `elemento`
 [](base/002/Readme.md) : ## #basic L1 - iguais
 [](base/001/Readme.md) : ## #basic L1 - max3
 [](base/000/Readme.md) : ## #basic L1 - soma2
@@ -7,17 +8,16 @@
 [](base/007/Readme.md) : ## #basic L2 - somaImpares
 [](base/008/Readme.md) : ## #basic L3 - gangorra
 [](base/009/Readme.md) : ## #basic L4 - sublist
+[](base/012/Readme.md) : ## #basic fatorial
+[](base/015/Readme.md) : ## #lista #filter #rec pertence
+[](base/016/Readme.md) : ## #lista #rec total
+[](base/019/Readme.md) : ## #lista #rec unico
+[](base/018/Readme.md) : ## #lista frequencia
+[](base/013/Readme.md) : ## #rec fibonacci
+[](base/017/Readme.md) : ## #rec maior
 [](base/003/Readme.md) : ## #rec vetFib
-[](base/010/Readme.md) : ## 01. #sel min2
-[](base/011/Readme.md) : ## 02. #sel `min3`
-[](base/012/Readme.md) : ## 03. #basic fatorial
-[](base/013/Readme.md) : ## 04. #rec fibonacci
-[](base/014/Readme.md) : ## 05. #let #rec `elemento`
-[](base/015/Readme.md) : ## 06. #lista #filter #rec `pertence`
-[](base/016/Readme.md) : ## 07. #lista #rec `total`
-[](base/017/Readme.md) : ## 08. #rec maior
-[](base/018/Readme.md) : ## 09. #listas frequencia
-[](base/019/Readme.md) : ## 10. `unico`
+[](base/010/Readme.md) : ## #sel min2
+[](base/011/Readme.md) : ## #sel min3
 [](base/020/Readme.md) : ## 11. `maioresQue`
 [](base/021/Readme.md) : ## 12. `concat`
 [](base/022/Readme.md) : ## 13. `calda`
@@ -29,23 +29,23 @@
 [](base/028/Readme.md) : ## 19. `divide`
 [](base/029/Readme.md) : ## 20. `intercal`
 [](base/030/Readme.md) : ## 21. `uniao`
-[](base/031/Readme.md) : ## 22. `intersec` 
+[](base/031/Readme.md) : ## 22. `intersec`
 [](base/032/Readme.md) : ## 23. `sequencia`
 [](base/033/Readme.md) : ## 24. `inserir`
 [](base/034/Readme.md) : ## 25. `ordenada`
 [](base/035/Readme.md) : ## 26. `qsort`
 [](base/037/Readme.md) : ## 27. `rotEsq`
-[](base/038/Readme.md) : ## 28. `rotDir` 
-[](base/039/Readme.md) : ## 29. `upper` 
+[](base/038/Readme.md) : ## 28. `rotDir`
+[](base/039/Readme.md) : ## 29. `upper`
 [](base/040/Readme.md) : ## 30. `titulo`
 [](base/041/Readme.md) : ## 31. `selec`
-[](base/042/Readme.md) : ## 32. `isPalind` 
+[](base/042/Readme.md) : ## 32. `isPalind`
 [](base/043/Readme.md) : ## 33. `ehPrimo`
 [](base/044/Readme.md) : ## 34. `sdig`
 [](base/045/Readme.md) : ## 35. `bubble`
 [](base/046/Readme.md) : ## 36. `compac`
-[](base/047/Readme.md) : ## 37. `splitints` 
+[](base/047/Readme.md) : ## 37. `splitints`
 [](base/048/Readme.md) : ## 38. `quadperf`
 [](base/049/Readme.md) : ## 39. base
-[](base/050/Readme.md) : ## 40. partes 
+[](base/050/Readme.md) : ## 40. partes
 [](base/036/Readme.md) : ## `merge`

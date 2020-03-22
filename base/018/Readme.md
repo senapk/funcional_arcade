@@ -1,4 +1,4 @@
-## 09. #listas frequencia
+## #lista frequencia
 ```hs
 --IN : Lista u e valor x
 --OUT: O total de ocorrências de x em u

@@ -1,4 +1,4 @@
-## 07. #lista #rec `total`
+## #lista #rec total
 ```hs
 --IN : Lista u
 --OUT: Total de elementos de u.

@@ -1,4 +1,4 @@
-## 03. #basic fatorial
+## #basic fatorial
 ```hs
 --IN : Um natural n
 --OUT: O fatorial de n

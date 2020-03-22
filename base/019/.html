@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>@019 10. `unico`</title>
+  <title>@019 unico</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -81,12 +81,31 @@
 </head>
 <body>
 <h2 id="section"><span class="citation" data-cites="019">@019</span></h2>
-<h2 id="unico">10. <code>unico</code></h2>
+<h2 id="lista-rec-unico">#lista #rec unico</h2>
 <div class="sourceCode" id="cb1"><pre class="sourceCode hs"><code class="sourceCode haskell"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">--IN : Lista u e valor x</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="co">--OUT: True se x ocorre exatamente uma vez em u e false do contrário</span></span>
 <span id="cb1-3"><a href="#cb1-3"></a></span>
-<span id="cb1-4"><a href="#cb1-4"></a>unico <span class="dv">2</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">2</span>] <span class="op">==</span> <span class="dt">False</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a>unico <span class="dv">2</span> [<span class="dv">2</span>] <span class="op">==</span> <span class="dt">True</span></span>
 <span id="cb1-5"><a href="#cb1-5"></a>unico <span class="dv">2</span> [<span class="dv">3</span>,<span class="dv">1</span>] <span class="op">==</span> <span class="dt">False</span></span>
-<span id="cb1-6"><a href="#cb1-6"></a>unico <span class="dv">2</span> [<span class="dv">2</span>] <span class="op">==</span> <span class="dt">True</span></span></code></pre></div>
+<span id="cb1-6"><a href="#cb1-6"></a>unico <span class="dv">2</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">2</span>] <span class="op">==</span> <span class="dt">False</span></span></code></pre></div>
+<h2 id="guia">Guia</h2>
+<ul>
+<li>Faça utilizando filter
+<ul>
+<li>Você pode utilizar a função <code>length</code></li>
+<li>filtre quem for igual ao valor e veja se aparece uma só vez</li>
+</ul></li>
+<li>Faça utilizando recursão
+<ul>
+<li>se y for igual a head return True</li>
+</ul></li>
+</ul>
+<!--MAIN_BEGIN-->
+<h3 id="main">Main</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode hs"><code class="sourceCode haskell"><span id="cb2-1"><a href="#cb2-1"></a>main <span class="ot">=</span> <span class="kw">do</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a>    a <span class="ot">&lt;- readLn ::</span> <span class="dt">IO</span> <span class="dt">Int</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a>    b <span class="ot">&lt;- readLn ::</span> <span class="dt">IO</span> [<span class="dt">Int</span>]</span>
+<span id="cb2-4"><a href="#cb2-4"></a>    <span class="fu">print</span> <span class="op">$</span> unico a b</span></code></pre></div>
+<!--MAIN_END-->
 </body>
 </html>

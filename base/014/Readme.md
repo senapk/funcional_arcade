@@ -1,4 +1,4 @@
-## 05. #let #rec `elemento`
+## #basic #rec `elemento`
 ```hs
 --IN : Lista xs e um natural n
 --OUT: N-ésimo termo de xs, processe os números negativos para contar a partir do fim

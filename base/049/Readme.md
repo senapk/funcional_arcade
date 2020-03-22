@@ -5,3 +5,15 @@
 base 17 2 == "10001"
 base 26 16 == "1A"
 ```
+
+
+<!--MAIN_BEGIN-->
+### Main
+```hs
+main = do
+    a <- readLn :: IO Int
+    b <- readLn :: IO Int
+    print $ base a b
+
+```
+<!--MAIN_END-->

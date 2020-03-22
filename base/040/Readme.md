@@ -6,3 +6,16 @@
 --     caixa alta
 titulo "FuLaNo bElTrAnO silva" == "Fulano Beltrano Silva"
 ```
+
+
+<!--MAIN_BEGIN-->
+### Main
+```hs
+main = do
+    a <- getLine
+    b <- getLine
+    c <- getLine
+    print $ titulo a b c
+
+```
+<!--MAIN_END-->

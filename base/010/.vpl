@@ -12,3 +12,17 @@ output="1
 "
 
 
+case=
+input=2
+2
+output="2
+"
+
+
+case=
+input=4
+-1
+output="-1
+"
+
+

@@ -1,4 +1,4 @@
-## 10. #lista #rec unico
+## #lista #rec unico
 ```hs
 --IN : Lista u e valor x
 --OUT: True se x ocorre exatamente uma vez em u e false do contrário
@@ -25,3 +25,7 @@ main = do
 
 ```
 <!--MAIN_END-->
+
+
+
+

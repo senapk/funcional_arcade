@@ -1,4 +1,4 @@
-## 06. #lista #filter #rec `pertence`
+## #lista #filter #rec pertence
 ```hs
 --IN : Lista u e valor x
 --OUT: Verdadeiro se x ∈ u e falso do contrário

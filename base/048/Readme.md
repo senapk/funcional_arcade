@@ -7,3 +7,14 @@ quadperf 16 == True
 quadperf 25 == True
 quadperf 5 == False
 ```
+
+
+<!--MAIN_BEGIN-->
+### Main
+```hs
+main = do
+    a <- readLn :: IO Int
+    print $ quadperf a
+
+```
+<!--MAIN_END-->

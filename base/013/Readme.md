@@ -1,4 +1,4 @@
-## 04. #rec fibonacci
+## #rec fibonacci
 ```hs
 --IN : Inteiro positivo n
 --OUT: N-ésimo termo da sequência

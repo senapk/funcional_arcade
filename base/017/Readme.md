@@ -1,4 +1,4 @@
-## 08. #rec maior
+## #rec maior
 ```hs
 --IN : Lista u
 --OUT: O maior valor de u

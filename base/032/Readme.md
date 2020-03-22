@@ -7,3 +7,15 @@ sequencia 1 2 == [2]
 sequencia 3 5 == [5,6,7]
 sequencia 4 4 == [4,5,6,8]
 ```
+
+
+<!--MAIN_BEGIN-->
+### Main
+```hs
+main = do
+    a <- readLn :: IO Int
+    b <- readLn :: IO Int
+    print $ sequencia a b
+
+```
+<!--MAIN_END-->
