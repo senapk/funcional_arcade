@@ -1,12 +1,1 @@
-case=
-input=[1]
-output="[]
-"
-
-
-case=
-input=[1,2,3,4]
-output="[2,3,4]
-"
-
 

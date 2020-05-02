@@ -1,18 +1,1 @@
-case=
-input=0
-output="1
-"
-
-
-case=
-input=1
-output="1
-"
-
-
-case=
-input=5
-output="120
-"
-
 

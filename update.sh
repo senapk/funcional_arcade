@@ -1,7 +1,5 @@
 #!/bin/bash
 # update all Readme with main
-hsmod base/* --vpl .vpl --update
+./scripts/update_main.py base/*
 # generate .html for changed mains
 indexer
-# run tests
-htest base/*
