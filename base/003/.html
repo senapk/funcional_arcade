@@ -81,24 +81,24 @@
 </head>
 <body>
 <h2 id="section"><span class="citation" data-cites="003">@003</span></h2>
-<h2 id="rec-vetfib">#rec vetFib</h2>
-<p>Gere os n primeiros termos da série de fibonacci</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode hs"><code class="sourceCode haskell"><span id="cb1-1"><a href="#cb1-1"></a>vetFib <span class="dv">2</span> <span class="op">==</span> [<span class="dv">0</span>,<span class="dv">1</span>]</span>
-<span id="cb1-2"><a href="#cb1-2"></a>vetFib <span class="dv">6</span> <span class="op">==</span> [<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">5</span>]</span>
-<span id="cb1-3"><a href="#cb1-3"></a>vetFib <span class="dv">9</span> <span class="op">==</span> [<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">5</span>,<span class="dv">8</span>,<span class="dv">13</span>,<span class="dv">21</span>]</span></code></pre></div>
+<h2 id="nnnnnrec-vetfib">#nnnnnrec vetFib</h2>
+<p>Gere os n primeiros termos da série de Fibonacci</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode hs"><code class="sourceCode haskell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a>vetFib <span class="dv">2</span> <span class="op">==</span> [<span class="dv">0</span>,<span class="dv">1</span>]</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>vetFib <span class="dv">6</span> <span class="op">==</span> [<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">5</span>]</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>vetFib <span class="dv">9</span> <span class="op">==</span> [<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">5</span>,<span class="dv">8</span>,<span class="dv">13</span>,<span class="dv">21</span>]</span></code></pre></div>
 <h2 id="guia">Guia</h2>
 <ul>
 <li>Faça os casos base para 0, 1 e 2</li>
 <li>Para n use o <code>let</code> ou <code>where</code> para calcular o vetor que os precede.
 <ul>
-<li>depois contatene com o valor atual que é a posição dos índices (n - 3) e (n - 2) do vetor.</li>
+<li>depois concatene com o valor atual que é a posição dos índices (n - 3) e (n - 2) do vetor.</li>
 </ul></li>
 </ul>
 <!--MAIN_BEGIN-->
 <h3 id="main">Main</h3>
-<div class="sourceCode" id="cb2"><pre class="sourceCode hs"><code class="sourceCode haskell"><span id="cb2-1"><a href="#cb2-1"></a>main <span class="ot">=</span> <span class="kw">do</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a>    a <span class="ot">&lt;- readLn ::</span> <span class="dt">IO</span> <span class="dt">Int</span></span>
-<span id="cb2-3"><a href="#cb2-3"></a>    <span class="fu">print</span> <span class="op">$</span> vetFib a</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode hs"><code class="sourceCode haskell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a>main <span class="ot">=</span> <span class="kw">do</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a>    a <span class="ot">&lt;- readLn ::</span> <span class="dt">IO</span> <span class="dt">Int</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true"></a>    <span class="fu">print</span> <span class="op">$</span> vetFib a</span></code></pre></div>
 <!--MAIN_END-->
 </body>
 </html>

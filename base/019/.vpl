@@ -1,1 +1,20 @@
+case=
+input=2
+[2]
+output="True
+"
+grade reduction=100%
 
+case=
+input=2
+[3,1]
+output="False
+"
+grade reduction=100%
+
+case=
+input=2
+[1,2,3,2]
+output="False
+"
+grade reduction=100%
