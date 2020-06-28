@@ -1,0 +1,1 @@
+ehPrimo n = if length ([d | d<-[2..(n-1)], (mod n d)==0]) > 0 then False else True
