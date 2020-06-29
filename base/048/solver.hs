@@ -1,0 +1,1 @@
+quadperf n = if length ([y | y<-[1..(div n 2)], (y*y)==n]) > 0 then True else False

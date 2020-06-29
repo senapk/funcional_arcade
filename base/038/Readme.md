@@ -4,8 +4,10 @@
 --OUT: Lista S rotacionada n vezes à direita
 rotDir 0 "asdfg" == "asdfg"
 rotDir 1 "asdfg" == "gasdf"
-rotDir 3 "asdfg" == "fgasd"
-rotDir 4 "asdfg" == "dfgas"
+rotDir 2 "asdfg" == "fgasd"
+rotDir 3 "asdfg" == "dfgas"
+rotDir 4 "asdfg" == "sdfga"
+rotDir 5 "asdfg" == "asdfg"
 ```
 
 
