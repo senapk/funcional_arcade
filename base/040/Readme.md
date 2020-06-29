@@ -13,9 +13,7 @@ titulo "FuLaNo bElTrAnO silva" == "Fulano Beltrano Silva"
 ```hs
 main = do
     a <- getLine
-    b <- getLine
-    c <- getLine
-    print $ titulo a b c
+    print $ titulo a
 
 ```
 <!--MAIN_END-->

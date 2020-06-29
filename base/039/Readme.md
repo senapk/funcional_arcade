@@ -13,9 +13,7 @@ upper "tenho 45 ABCs" == "TENHO 45 ABCS"
 ```hs
 main = do
     a <- getLine
-    b <- readLn :: IO Int
-    c <- getLine
-    print $ upper a b c
+    print $ upper a
 
 ```
 <!--MAIN_END-->

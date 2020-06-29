@@ -25,7 +25,7 @@ def add_main(readme, readme_file, main_str):
     if found:
         result = re.sub(regex, subst, readme, 0, re.MULTILINE | re.DOTALL)
         if result != readme:
-            print("changed, replacing Main on", read_from_file)
+            print("changed, replacing Main on", readme_file)
             with open(readme_file, "w") as f:
                 f.write(result)
     else:
@@ -53,7 +53,6 @@ def process_folder(folder: str, executable: str):
     if code != 0:
         print(stdout + stderr)
         exit(1)
-
     main_file = os.path.join(tdir, ".__solver__.hs")
     main_str = ""
     if os.path.isfile(main_file):
@@ -104,6 +103,8 @@ def main():
         print(".", end="", flush=True)
         if os.path.isdir(folder):
             process_folder(folder, executable)
+        else:
+            print("script parameters should be folders with a Readme.md", end='')
     print("]")
 
 if __name__ == '__main__':
