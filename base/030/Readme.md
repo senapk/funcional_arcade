@@ -1,4 +1,4 @@
-## 21. `uniao`
+## 21. uniao
 ```hs
 --IN : Duas listas a e b sem repetição de chaves
 --OUT: Lista das chaves de a e b sem repetição

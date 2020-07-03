@@ -1,4 +1,5 @@
-## 17. `alter`
+## 17. alter
+[](solver.hs)
 ```hs
 --IN : Inteiro n
 --OUT: Lista [1, −1, 2, −2, 3, −3, · · · , n, −n]

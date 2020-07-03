@@ -1,4 +1,5 @@
-## #lista frequencia
+## 09. frequencia
+[](solver.hs)
 ```hs
 --IN : Lista u e valor x
 --OUT: O total de ocorrências de x em u

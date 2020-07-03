@@ -1,4 +1,5 @@
-## #rec maior
+## 08. maior
+[](solver.hs)
 ```hs
 --IN : Lista u
 --OUT: O maior valor de u

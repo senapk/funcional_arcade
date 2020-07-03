@@ -1,4 +1,4 @@
-## #sel min3
+## 01. min3
 ```hs
 --IN : Três números, x, y e z
 --OUT: Menor valor entre x, y e z

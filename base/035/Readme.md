@@ -1,4 +1,4 @@
-## 26. `qsort`
+## 26. qsort
 ```hs
 --IN : Lista u de objetos ordenáveis
 --OUT: Lista ordenada das chaves de u pelo método de ordenação rápida

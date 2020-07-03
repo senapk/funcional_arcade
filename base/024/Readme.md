@@ -1,4 +1,5 @@
-## 15. `unique`
+## 15. unique
+[](solver.hs)
 ```hs
 --IN : Lista u com possíveis chaves repetidas
 --OUT: Lista com as chaves de u sem repetições

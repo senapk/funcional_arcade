@@ -1,4 +1,4 @@
-## 19. `divide`
+## 19. divide
 
 ```hs
 --IN :Lista u e um natural n

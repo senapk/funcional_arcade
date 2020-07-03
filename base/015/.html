@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>@015 pertence</title>
+  <title>@015 06. pertence</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -81,16 +81,17 @@
 </head>
 <body>
 <h2 id="section"><span class="citation" data-cites="015">@015</span></h2>
-<h2 id="lista-filter-rec-pertence">#lista #filter #rec pertence</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode hs"><code class="sourceCode haskell"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">--IN : Lista u e valor x</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="co">--OUT: Verdadeiro se x ∈ u e falso do contrário</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a>pertence <span class="dv">1</span> [] <span class="op">==</span> <span class="dt">False</span></span>
-<span id="cb1-4"><a href="#cb1-4"></a>pertence <span class="dv">1</span> [<span class="dv">3</span>] <span class="op">==</span> <span class="dt">False</span></span>
-<span id="cb1-5"><a href="#cb1-5"></a>pertence <span class="dv">3</span> [<span class="dv">4</span>] <span class="op">==</span> <span class="dt">False</span></span>
-<span id="cb1-6"><a href="#cb1-6"></a>pertence <span class="dv">1</span> [<span class="dv">3</span>,<span class="dv">7</span>,<span class="dv">4</span>,<span class="dv">2</span>] <span class="op">==</span> <span class="dt">False</span></span>
-<span id="cb1-7"><a href="#cb1-7"></a>pertence <span class="dv">2</span> [<span class="dv">3</span>,<span class="dv">7</span>,<span class="dv">4</span>,<span class="dv">2</span>] <span class="op">==</span> <span class="dt">True</span></span>
-<span id="cb1-8"><a href="#cb1-8"></a>pertence <span class="dv">3</span> [<span class="dv">3</span>,<span class="dv">7</span>,<span class="dv">4</span>,<span class="dv">2</span>] <span class="op">==</span> <span class="dt">True</span></span>
-<span id="cb1-9"><a href="#cb1-9"></a>pertence <span class="dv">7</span> [<span class="dv">3</span>,<span class="dv">7</span>,<span class="dv">4</span>,<span class="dv">2</span>] <span class="op">==</span> <span class="dt">True</span></span></code></pre></div>
+<h2 id="pertence">06. pertence</h2>
+<p><a href="https://raw.githubusercontent.com/senapk/fn_arcade/master/base/015/solver.hs"></a></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode hs"><code class="sourceCode haskell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="co">--IN : Lista u e valor x</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="co">--OUT: Verdadeiro se x ∈ u e falso do contrário</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>pertence <span class="dv">1</span> [] <span class="op">==</span> <span class="dt">False</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a>pertence <span class="dv">1</span> [<span class="dv">3</span>] <span class="op">==</span> <span class="dt">False</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a>pertence <span class="dv">3</span> [<span class="dv">4</span>] <span class="op">==</span> <span class="dt">False</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a>pertence <span class="dv">1</span> [<span class="dv">3</span>,<span class="dv">7</span>,<span class="dv">4</span>,<span class="dv">2</span>] <span class="op">==</span> <span class="dt">False</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a>pertence <span class="dv">2</span> [<span class="dv">3</span>,<span class="dv">7</span>,<span class="dv">4</span>,<span class="dv">2</span>] <span class="op">==</span> <span class="dt">True</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a>pertence <span class="dv">3</span> [<span class="dv">3</span>,<span class="dv">7</span>,<span class="dv">4</span>,<span class="dv">2</span>] <span class="op">==</span> <span class="dt">True</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true"></a>pertence <span class="dv">7</span> [<span class="dv">3</span>,<span class="dv">7</span>,<span class="dv">4</span>,<span class="dv">2</span>] <span class="op">==</span> <span class="dt">True</span></span></code></pre></div>
 <h2 id="guia">Guia</h2>
 <ul>
 <li>opção 1:
@@ -113,10 +114,10 @@
 </ul>
 <!--MAIN_BEGIN-->
 <h3 id="main">Main</h3>
-<div class="sourceCode" id="cb2"><pre class="sourceCode hs"><code class="sourceCode haskell"><span id="cb2-1"><a href="#cb2-1"></a>main <span class="ot">=</span> <span class="kw">do</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a>    a <span class="ot">&lt;- readLn ::</span> <span class="dt">IO</span> <span class="dt">Int</span></span>
-<span id="cb2-3"><a href="#cb2-3"></a>    b <span class="ot">&lt;- readLn ::</span> <span class="dt">IO</span> [<span class="dt">Int</span>]</span>
-<span id="cb2-4"><a href="#cb2-4"></a>    <span class="fu">print</span> <span class="op">$</span> pertence a b</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode hs"><code class="sourceCode haskell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a>main <span class="ot">=</span> <span class="kw">do</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a>    a <span class="ot">&lt;- readLn ::</span> <span class="dt">IO</span> <span class="dt">Int</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true"></a>    b <span class="ot">&lt;- readLn ::</span> <span class="dt">IO</span> [<span class="dt">Int</span>]</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true"></a>    <span class="fu">print</span> <span class="op">$</span> pertence a b</span></code></pre></div>
 <!--MAIN_END-->
 </body>
 </html>

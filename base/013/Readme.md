@@ -1,4 +1,5 @@
-## #rec fibonacci
+## 04. fibonacci
+[](solver.hs)
 ```hs
 --IN : Inteiro positivo n
 --OUT: N-ésimo termo da sequência

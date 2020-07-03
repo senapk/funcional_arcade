@@ -1,4 +1,4 @@
-## 34. `sdig`
+## 34. sdig
 ```hs
 --IN : Natural n
 --OUT: Soma dos dígitos de n

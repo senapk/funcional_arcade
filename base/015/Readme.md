@@ -1,4 +1,5 @@
-## #lista #filter #rec pertence
+## 06. pertence
+[](solver.hs)
 ```hs
 --IN : Lista u e valor x
 --OUT: Verdadeiro se x ∈ u e falso do contrário

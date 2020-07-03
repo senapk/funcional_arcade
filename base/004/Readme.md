@@ -1,5 +1,5 @@
-## #basic L2 - countNeg
-
+## 01. countNeg
+[](solver.hs)
 Defina a função `countNeg xs` que computa o número de elementos negativos em uma lista xs.
 
 ```hs

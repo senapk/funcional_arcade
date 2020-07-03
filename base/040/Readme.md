@@ -1,4 +1,4 @@
-## 30. `titulo`
+## 30. titulo
 ```hs
 --IN : String S
 --OUT: Versão de S contendo todos os caracteres em caixa baixa exceto

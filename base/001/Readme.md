@@ -1,4 +1,4 @@
-## #basic L1 - max3
+## 02. max3
 
 
 Defina a função `max3` tal que `max3 x y z` é o máximo entre x, y e z. Por exemplo,

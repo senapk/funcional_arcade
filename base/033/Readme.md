@@ -1,4 +1,4 @@
-## 24. `inserir`
+## 24. inserir
 ```hs
 --IN : Número x e lista u de números ordenados ascendentemente
 --OUT: Lista de números ordenados ascendentemente oriunda da inserção apropriada de x em u

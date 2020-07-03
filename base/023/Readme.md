@@ -1,4 +1,4 @@
-## 14. `corpo`
+## 14. corpo
 ```hs
 --IN : Uma lista u
 --OUT: Corpo de u

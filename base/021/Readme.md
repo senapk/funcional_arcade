@@ -1,4 +1,4 @@
-## 12. `concatena`
+## 12. concatena
 ```hs
 --IN : Duas listas a e b
 --OUT: Concatenação entre a e b

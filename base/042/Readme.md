@@ -1,4 +1,4 @@
-## 32. `isPalind`
+## 32. isPalind
 ```hs
 --IN : Uma string qualquer S
 --OUT: Verdadeiro se S é um palíndromo e falso do contrário

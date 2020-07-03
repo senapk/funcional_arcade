@@ -1,4 +1,4 @@
-## #lista #rec unico
+## 10. unico
 ```hs
 --IN : Lista u e valor x
 --OUT: True se x ocorre exatamente uma vez em u e false do contrário

@@ -1,4 +1,5 @@
-## 18. `reverso`:
+## 18. reverso:
+[](solver.hs)
 Implemente a função reverse com recursão
 ```hs
 --IN : Lista u

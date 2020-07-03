@@ -1,4 +1,4 @@
-## 11. `maioresQue`
+## 11. maioresQue
 ```hs
 --IN : Número x e uma lista u
 --OUT: Sublista de u cujos números sejam maiores que x

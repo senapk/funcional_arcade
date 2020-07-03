@@ -1,5 +1,5 @@
---maior [x] = x
---maior (x:xs) = if gr > x then gr else x
---            where gr = maior xs
+maior [x] = x
+maior (x:xs) = if maiordoresto > x then maiordoresto else x
+            where maiordoresto = maior xs
 
-maior xs = foldr max 0 xs
+--maior xs = foldr max 0 xs

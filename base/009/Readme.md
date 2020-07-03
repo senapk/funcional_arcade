@@ -1,5 +1,5 @@
-## #basic L4 - sublist
-
+## 01. sublist
+[](solver.hs)
 Defina a função sublist que obtém uma sublista passando início, fim e a lista. Se forem utilizados números negativos, interprete-os como sendo contando a partir do fim da lista. O índice final não entra na lista.
 
 ```hs
@@ -11,7 +11,7 @@ sublist 2 -2 [0,1,2,3,4,5,6,7,8,9,10] == [2,3,4,5,6,7,8]
 sublist -10 -1 [0,1,2,3,4,5,6,7,8,9,10] == [1,2,3,4,5,6,7,8,9]
 sublist -4 -2 [0,1,2,3,4,5] == [2,3]
 ```
-
+lista[1:3]
 
 <!--MAIN_BEGIN-->
 ### Main

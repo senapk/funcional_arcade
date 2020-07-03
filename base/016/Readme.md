@@ -1,4 +1,5 @@
-## #lista #rec total
+## 07. total
+[](solver.hs)
 ```hs
 --IN : Lista u
 --OUT: Total de elementos de u.

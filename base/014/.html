@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>@014 `elemento`</title>
+  <title>@014 05. elemento</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -81,13 +81,13 @@
 </head>
 <body>
 <h2 id="section"><span class="citation" data-cites="014">@014</span></h2>
-<h2 id="basic-rec-elemento">#basic #rec <code>elemento</code></h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode hs"><code class="sourceCode haskell"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">--IN : Lista xs e um natural n</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="co">--OUT: N-ésimo termo de xs, processe os números negativos para contar a partir do fim</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a>elemento <span class="dv">2</span> [<span class="dv">2</span>,<span class="dv">7</span>,<span class="dv">3</span>,<span class="dv">9</span>] <span class="op">==</span> <span class="dv">3</span></span>
-<span id="cb1-4"><a href="#cb1-4"></a>elemento <span class="dv">0</span> [<span class="dv">2</span>,<span class="dv">7</span>,<span class="dv">3</span>,<span class="dv">9</span>] <span class="op">==</span> <span class="dv">2</span></span>
-<span id="cb1-5"><a href="#cb1-5"></a>elemento <span class="op">-</span><span class="dv">1</span> [<span class="dv">2</span>,<span class="dv">7</span>,<span class="dv">3</span>,<span class="dv">9</span>] <span class="op">==</span> <span class="dv">9</span></span>
-<span id="cb1-6"><a href="#cb1-6"></a>elemento <span class="op">-</span><span class="dv">2</span> [<span class="dv">2</span>,<span class="dv">7</span>,<span class="dv">3</span>,<span class="dv">9</span>] <span class="op">==</span> <span class="dv">3</span></span></code></pre></div>
+<h2 id="elemento">05. elemento</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode hs"><code class="sourceCode haskell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="co">--IN : Lista xs e um natural n</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="co">--OUT: N-ésimo termo de xs, processe os números negativos para contar a partir do fim</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>elemento <span class="dv">2</span> [<span class="dv">2</span>,<span class="dv">7</span>,<span class="dv">3</span>,<span class="dv">9</span>] <span class="op">==</span> <span class="dv">3</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a>elemento <span class="dv">0</span> [<span class="dv">2</span>,<span class="dv">7</span>,<span class="dv">3</span>,<span class="dv">9</span>] <span class="op">==</span> <span class="dv">2</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a>elemento <span class="op">-</span><span class="dv">1</span> [<span class="dv">2</span>,<span class="dv">7</span>,<span class="dv">3</span>,<span class="dv">9</span>] <span class="op">==</span> <span class="dv">9</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a>elemento <span class="op">-</span><span class="dv">2</span> [<span class="dv">2</span>,<span class="dv">7</span>,<span class="dv">3</span>,<span class="dv">9</span>] <span class="op">==</span> <span class="dv">3</span></span></code></pre></div>
 <h2 id="guia">Guia</h2>
 <ul>
 <li><p>Adapte o valor negativo utilizando <code>let</code> ou <code>where</code>.</p></li>
@@ -102,10 +102,10 @@
 </ul>
 <!--MAIN_BEGIN-->
 <h3 id="main">Main</h3>
-<div class="sourceCode" id="cb2"><pre class="sourceCode hs"><code class="sourceCode haskell"><span id="cb2-1"><a href="#cb2-1"></a>main <span class="ot">=</span> <span class="kw">do</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a>    a <span class="ot">&lt;- readLn ::</span> <span class="dt">IO</span> <span class="dt">Int</span></span>
-<span id="cb2-3"><a href="#cb2-3"></a>    b <span class="ot">&lt;- readLn ::</span> <span class="dt">IO</span> [<span class="dt">Int</span>]</span>
-<span id="cb2-4"><a href="#cb2-4"></a>    <span class="fu">print</span> <span class="op">$</span> elemento a b</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode hs"><code class="sourceCode haskell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a>main <span class="ot">=</span> <span class="kw">do</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a>    a <span class="ot">&lt;- readLn ::</span> <span class="dt">IO</span> <span class="dt">Int</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true"></a>    b <span class="ot">&lt;- readLn ::</span> <span class="dt">IO</span> [<span class="dt">Int</span>]</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true"></a>    <span class="fu">print</span> <span class="op">$</span> elemento a b</span></code></pre></div>
 <!--MAIN_END-->
 </body>
 </html>

@@ -1,4 +1,5 @@
-## 20. `intercal`
+## 20. intercal
+[](solver.hs)
 ```hs
 --IN : Duas listas a e b
 --OUT: Lista com os elementos de a e b intercalados

@@ -1,4 +1,4 @@
-## 29. `upper`
+## 29. upper
 ```hs
 --IN : Uma string S
 --OUT: Versão em caixa alta da string S

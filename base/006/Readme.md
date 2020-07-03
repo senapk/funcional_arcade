@@ -1,5 +1,5 @@
-## #basic L2 - interior
-
+## 01. interior
+[](solver.hs)
 Defina a função interior tal que (interior xs) é uma lista obtida eliminando os extremos da lista xs. Por exemplo
 
 ```hs

@@ -1,4 +1,4 @@
-## `merge`
+## 30. merge
 ```hs
 --IN : Duas listas ordenadas
 --OUT: A união de ambas em uma única lista ordenada

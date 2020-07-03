@@ -1,4 +1,4 @@
-## #basic #rec `elemento`
+## 05. elemento
 ```hs
 --IN : Lista xs e um natural n
 --OUT: N-ésimo termo de xs, processe os números negativos para contar a partir do fim
@@ -9,7 +9,7 @@ elemento -2 [2,7,3,9] == 3
 ```
 
 ## Guia
-- Adapte o valor negativo utilizando `let` ou `where`. 
+- Adapte o valor negativo utilizando `let` ou `where`.
 - Se o valor for negativo, some ele mais o tamanho do vetor para obter o valor positivo correto.
 - Utilize o operador de índice `!!`.
 

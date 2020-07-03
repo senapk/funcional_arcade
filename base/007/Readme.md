@@ -1,5 +1,5 @@
-## #basic L2 - somaImpares
-
+## 01. somaImpares
+[](solver.hs)
 Defina uma função somaImpares tal que `somaImpares xs` devolve a soma dos elementos ímpares de uma lista.
 
 ```hs

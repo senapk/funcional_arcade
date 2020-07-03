@@ -1,4 +1,4 @@
-## 23. `sequencia`
+## 23. sequencia
 ```hs
 --IN : Dois números naturais n e m
 --OUT: Lista [m, m+1, m+2, ..., m+n-1]

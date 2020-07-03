@@ -1,1 +1,23 @@
+case=
+input=1
+output="True
+"
+grade reduction=100%
 
+case=
+input=2
+output="True
+"
+grade reduction=100%
+
+case=
+input=10
+output="False
+"
+grade reduction=100%
+
+case=
+input=13
+output="True
+"
+grade reduction=100%

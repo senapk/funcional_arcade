@@ -1,4 +1,5 @@
-## #basic fatorial
+## 03. fatorial
+[](solver.hs)
 ```hs
 --IN : Um natural n
 --OUT: O fatorial de n
