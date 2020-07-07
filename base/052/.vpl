@@ -1,0 +1,23 @@
+case=
+input=1923
+output="3291
+"
+grade reduction=100%
+
+case=
+input=123
+output="321
+"
+grade reduction=100%
+
+case=
+input=39402
+output="20493
+"
+grade reduction=100%
+
+case=
+input=5
+output="5
+"
+grade reduction=100%

@@ -1,1 +1,20 @@
+case=
+input=[1,2,3]
+[7,8,9]
+output="[1,7,2,8,3,9]
+"
+grade reduction=100%
 
+case=
+input=[1,2,3,4]
+[8,9]
+output="[1,8,2,9,3,4]
+"
+grade reduction=100%
+
+case=
+input=[5]
+[1,2,6]
+output="[5,1,2,6]
+"
+grade reduction=100%

@@ -1,1 +1,11 @@
+case=
+input=4132
+output="10
+"
+grade reduction=100%
 
+case=
+input=328464584658
+output="63
+"
+grade reduction=100%

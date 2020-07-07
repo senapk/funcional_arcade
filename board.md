@@ -18,6 +18,16 @@
 [](base/017/Readme.md) : ## #rec maior
 [](base/010/Readme.md) : ## #sel min2
 [](base/011/Readme.md) : ## #sel min3
+[](base/051/Readme.md) : ## 01. `paridade`
+[](base/052/Readme.md) : ## 02. `rev`
+[](base/053/Readme.md) : ## 03. `deletee`
+[](base/054/Readme.md) : ## 04. `swap`
+[](base/055/Readme.md) : ## 05. `nextPerm`
+[](base/056/Readme.md) : ## 06. `allPerms`
+[](base/057/Readme.md) : ## 07. `buscabin`
+[](base/058/Readme.md) : ## 08. `factors`
+[](base/059/Readme.md) : ## 09. `listacc`
+[](base/060/Readme.md) : ## 10. `maxsseq`
 [](base/020/Readme.md) : ## 11. `maioresQue`
 [](base/021/Readme.md) : ## 12. `concatena`
 [](base/022/Readme.md) : ## 13. `calda`

@@ -1,1 +1,17 @@
+case=
+input=[1]
+output="[]
+"
+grade reduction=100%
 
+case=
+input=[1,2]
+output="[1]
+"
+grade reduction=100%
+
+case=
+input=[1,2,3,4]
+output="[1,2,3]
+"
+grade reduction=100%

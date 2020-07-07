@@ -1,1 +1,27 @@
+case=
+input=3
+4
+output="3
+"
+grade reduction=100%
 
+case=
+input=4
+1
+output="1
+"
+grade reduction=100%
+
+case=
+input=2
+2
+output="2
+"
+grade reduction=100%
+
+case=
+input=4
+-1
+output="-1
+"
+grade reduction=100%

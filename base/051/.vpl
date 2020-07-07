@@ -1,0 +1,23 @@
+case=
+input=[]
+output="False
+"
+grade reduction=100%
+
+case=
+input=[True,True,False]
+output="False
+"
+grade reduction=100%
+
+case=
+input=[True,False,True,False,True]
+output="True
+"
+grade reduction=100%
+
+case=
+input=[False,True,False]
+output="True
+"
+grade reduction=100%

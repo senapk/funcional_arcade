@@ -10,6 +10,16 @@
 
 ## EMPTY
 
+- [@051 01. `paridade`](base/051/Readme.md#01-paridade)
+- [@052 02. `rev`](base/052/Readme.md#02-rev)
+- [@053 03. `deletee`](base/053/Readme.md#03-deletee)
+- [@054 04. `swap`](base/054/Readme.md#04-swap)
+- [@055 05. `nextPerm`](base/055/Readme.md#05-nextperm)
+- [@056 06. `allPerms`](base/056/Readme.md#06-allperms)
+- [@057 07. `buscabin`](base/057/Readme.md#07-buscabin)
+- [@058 08. `factors`](base/058/Readme.md#08-factors)
+- [@059 09. `listacc`](base/059/Readme.md#09-listacc)
+- [@060 10. `maxsseq`](base/060/Readme.md#10-maxsseq)
 - [@020 11. `maioresQue`](base/020/Readme.md#11-maioresque)
 - [@021 12. `concatena`](base/021/Readme.md#12-concatena)
 - [@022 13. `calda`](base/022/Readme.md#13-calda)
