@@ -1,4 +1,4 @@
-## 16 menores
+## 16. menores
 ```hs
 --IN : Natural n e lista u
 --OUT: Lista com os n menores elementos de u na ordem que aparecem em u

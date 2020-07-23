@@ -1,4 +1,4 @@
-## 09. `listacc`
+## 09. listacc
 ```hs
 --IN : Lista u de inteiros
 --OUT: Versão v acumulativa de u. Na versão

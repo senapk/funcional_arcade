@@ -1,4 +1,4 @@
-## 02. `rev`
+## 02. rev
 ```hs
 --IN : Um inteiro positivo x
 --OUT: Um inteiro positivo equivalente a x, mas

@@ -1,4 +1,4 @@
-## 04. `swap`
+## 04. swap
 ```hs
 --IN : Lista u de tipo arbitrário e dois inteiros p e
 --q que representam posições de elementos de u.
@@ -16,8 +16,8 @@ swap [5,6,7,8,9] 0 3 == [8,6,7,5,9]
 ```hs
 main = do
     a <- readLn :: IO [Int]
-	b <- readLn :: IO Int
-	c <- readLn :: IO Int
+    b <- readLn :: IO Int
+    c <- readLn :: IO Int
     print $ swap a b c
 
 ```

@@ -1,4 +1,4 @@
-## 06. `allPerms`
+## 06. allPerms
 ```hs
 --IN : : Lista u de chaves não repetidas
 --OUT: Todas as permutações possíveis de u em ordem lexicográfica

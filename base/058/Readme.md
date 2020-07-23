@@ -1,4 +1,4 @@
-## 08. `factors`
+## 08. factors
 ```hs
 --IN : Número n inteiro positivo
 --OUT: Lista de tuplas (f, p) que representam os

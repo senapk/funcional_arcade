@@ -1,4 +1,4 @@
-## 03. `deletee`
+## 03. deletee
 ```hs
 --IN : Valor x e lista u
 --OUT: Versão de u com a primeira aparição de x
@@ -16,7 +16,7 @@ deletee 5 [1,5,6,9] == [1,6,9]
 ```hs
 main = do
     a <- readLn :: IO Int
-	b <- readLn :: IO [Int]
+    b <- readLn :: IO [Int]
     print $ deletee a b
 
 ```
