@@ -42,6 +42,11 @@ def subprocess_run(cmd_list: List[str], input_data: str = "") -> Tuple[int, Any,
 
 def process_folder(folder: str, executable: str):
     readme_path = os.path.join(folder, "Readme.md")
+    last_change = os.path.join(folder, ".last")
+    if os.path.isfile(last_change):
+        if os.path.getmtime(last_change) > os.path.getmtime(readme_path):
+            return
+    
     readme = read_from_file(readme_path)
     tdir = copy_to_temp(folder)
     dummy_hs = os.path.join(tdir, ".hs")
@@ -59,6 +64,9 @@ def process_folder(folder: str, executable: str):
         with open(main_file) as f:
             main_str = "\n".join([line for line in f.read().split("\n") if line != ""]) + "\n"
     add_main(readme, readme_path, main_str)
+    # updating ctime of last change
+    with open(last_change, "w"):
+        pass
 
 def copy_to_temp(folder):
     temp_dir = tempfile.mkdtemp()
@@ -98,14 +106,12 @@ def main():
         if not which(executable):
             print("install tk in system path")
             exit(1)
-    print("Updating Readmes: [", end="")
+    print("Updating Readmes")
     for folder in folders:
-        print(".", end="", flush=True)
         if os.path.isdir(folder):
             process_folder(folder, executable)
         else:
             print("script parameters should be folders with a Readme.md", end='')
-    print("]")
 
 if __name__ == '__main__':
     main()
