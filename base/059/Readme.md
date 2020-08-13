@@ -1,9 +1,8 @@
-## listacc
+## listacc - lista acumulativa
+[](solver.hs)
 ```hs
 --IN : Lista u de inteiros
---OUT: Versão v acumulativa de u. Na versão
---acumulativa a k-ésima chave, vk é determinada
---somando-se as todas as chaves de u até a posição k.
+--OUT: Versão v acumulativa de u. Na versão acumulativa a k-ésima chave, vk é determinada somando-se as todas as chaves de u até a posição k.
 listacc [] == []
 listacc [1] == [1]
 listacc [1,3,4] == [1,4,8]

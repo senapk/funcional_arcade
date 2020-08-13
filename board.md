@@ -12,19 +12,19 @@
 [](base/028/Readme.md) : ## divide
 [](base/043/Readme.md) : ## ehPrimo
 [](base/014/Readme.md) : ## elemento
-[](base/058/Readme.md) : ## factors
+[](base/058/Readme.md) : ## factors - fatores de um número
 [](base/012/Readme.md) : ## fatorial
 [](base/013/Readme.md) : ## fibonacci
 [](base/005/Readme.md) : ## final
 [](base/018/Readme.md) : ## frequencia
 [](base/008/Readme.md) : ## gangorra
-[](base/002/Readme.md) : ## iguais
-[](base/033/Readme.md) : ## inserir
-[](base/029/Readme.md) : ## intercal
-[](base/006/Readme.md) : ## interior
-[](base/031/Readme.md) : ## intersec
-[](base/042/Readme.md) : ## isPalind
-[](base/059/Readme.md) : ## listacc
+[](base/002/Readme.md) : ## iguais - verificar se duas listas são iguais
+[](base/033/Readme.md) : ## inserir - inserir ordenado
+[](base/029/Readme.md) : ## intercal - intercalar duas listas
+[](base/006/Readme.md) : ## interior - miolo da lista
+[](base/031/Readme.md) : ## intersec - intercessão entre listas
+[](base/042/Readme.md) : ## isPalind - verificar palíndromo
+[](base/059/Readme.md) : ## listacc - lista acumulativa
 [](base/017/Readme.md) : ## maior
 [](base/020/Readme.md) : ## maioresQue
 [](base/001/Readme.md) : ## max3

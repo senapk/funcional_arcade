@@ -1,4 +1,5 @@
 ## allPerms
+[](solver.hs)
 ```hs
 --IN : : Lista u de chaves não repetidas
 --OUT: Todas as permutações possíveis de u em ordem lexicográfica

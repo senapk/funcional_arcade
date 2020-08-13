@@ -1,4 +1,5 @@
 ## maxsseq
+[](solver.hs)
 ```hs
 --IN : Lista u de inteiros (podem ser positivos, negativos ou zero)
 --OUT:  Sublista de u de elementos consecutivos cuja soma é máxima

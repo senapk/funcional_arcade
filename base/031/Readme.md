@@ -1,4 +1,4 @@
-## intersec
+## intersec - intercessão entre listas
 [](solver.hs)
 ```hs
 --IN : Duas listas a e b sem repetição de chaves

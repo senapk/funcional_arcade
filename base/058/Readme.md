@@ -1,4 +1,5 @@
-## factors
+## factors - fatores de um número
+[](solver.hs)
 ```hs
 --IN : Número n inteiro positivo
 --OUT: Lista de tuplas (f, p) que representam os
@@ -14,6 +15,12 @@ factors 78 == [(2,1),(3,1),(13,1)]
 factors 60 == [(2,2),(3,1),(5,1)]
 ```
 
+## Ajuda
+Faça as funções para:
+- verificar se um número é primo
+- gerar todos os primos de 1 até n
+- dado um número x, qual a potência de x em n: 
+    - Exemplo: `maxPot 24 2 == 3` pois consigo dividir o 24 por 2 três vezes. 
 
 <!--MAIN_BEGIN-->
 ### Main

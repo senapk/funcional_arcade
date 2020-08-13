@@ -1,4 +1,4 @@
-## isPalind
+## isPalind - verificar palíndromo
 [](solver.hs)
 ```hs
 --IN : Uma string qualquer S

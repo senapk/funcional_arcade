@@ -10,6 +10,12 @@ swap [1,2,3,4,5,6] 2 5 == [1,2,6,4,5,3]
 swap [5,6,7,8,9] 0 3 == [8,6,7,5,9]
 ```
 
+## Ajuda
+Faça uma função para testar os índices, se forem válidos invoque a swap.
+
+Você pode fazer a montagem cortando o vetor em pedaços
+
+`esquerda elemento_i meio elemento_j direita`
 
 <!--MAIN_BEGIN-->
 ### Main

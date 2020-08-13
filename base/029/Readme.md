@@ -1,4 +1,4 @@
-## intercal
+## intercal - intercalar duas listas
 [](solver.hs)
 ```hs
 --IN : Duas listas a e b
