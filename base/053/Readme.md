@@ -1,7 +1,8 @@
-## 03. deletee
+## deletee - remover primeira ocorrência
+[](solver.hs)
 ```hs
 --IN : Valor x e lista u
---OUT: Versão de u com a primeira aparição de x
+--OUT: Versão de u removendo primeira aparição de x
 removida.
 deletee 5 [] == []
 deletee 1 [1] == []

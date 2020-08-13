@@ -1,5 +1,5 @@
-## 19. divide
-
+## divide
+[](solver.hs)
 ```hs
 --IN :Lista u e um natural n
 --OUT: Tupla de duas listas, (A,B), onde A é formada pelas n primeiras chaves de u e B pelos elementos restantes}

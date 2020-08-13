@@ -1,4 +1,4 @@
-## 33. ehPrimo
+## ehPrimo
 ```hs
 --IN : Um natural n
 --OUT: Verdadeiro se n é primo e falso do contrário

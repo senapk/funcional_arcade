@@ -1,4 +1,4 @@
-## 25. ordenada
+## ordenada
 ```hs
 --IN : Lista de números u
 --OUT: Verdadeiro se u é ordenada e falso do contrário

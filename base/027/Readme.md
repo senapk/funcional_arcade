@@ -1,4 +1,4 @@
-## 18. reverso
+## reverso
 [](solver.hs)
 Implemente a função reverse com recursão
 ```hs

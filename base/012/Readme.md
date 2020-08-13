@@ -1,4 +1,4 @@
-## 03. fatorial
+## fatorial
 [](solver.hs)
 ```hs
 --IN : Um natural n

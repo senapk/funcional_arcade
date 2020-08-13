@@ -1,4 +1,4 @@
-## 01. sublist
+## sublist
 [](solver.hs)
 Defina a função sublist que obtém uma sublista passando início, fim e a lista. Se forem utilizados números negativos, interprete-os como sendo contando a partir do fim da lista. O índice final não entra na lista.
 

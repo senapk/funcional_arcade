@@ -1,4 +1,5 @@
-## 34. sdig
+## sdig - soma dos dígitos
+[](solver.hs)
 ```hs
 --IN : Natural n
 --OUT: Soma dos dígitos de n

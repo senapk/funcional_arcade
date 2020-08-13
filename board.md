@@ -1,61 +1,61 @@
-[](base/004/Readme.md) : ## 01. countNeg
-[](base/005/Readme.md) : ## 01. final
-[](base/008/Readme.md) : ## 01. gangorra
-[](base/002/Readme.md) : ## 01. iguais
-[](base/006/Readme.md) : ## 01. interior
-[](base/010/Readme.md) : ## 01. min2
-[](base/011/Readme.md) : ## 01. min3
-[](base/051/Readme.md) : ## 01. paridade
-[](base/000/Readme.md) : ## 01. soma2
-[](base/007/Readme.md) : ## 01. somaImpares
-[](base/009/Readme.md) : ## 01. sublist
-[](base/001/Readme.md) : ## 02. max3
-[](base/052/Readme.md) : ## 02. rev
-[](base/053/Readme.md) : ## 03. deletee
-[](base/012/Readme.md) : ## 03. fatorial
-[](base/013/Readme.md) : ## 04. fibonacci
-[](base/054/Readme.md) : ## 04. swap
-[](base/014/Readme.md) : ## 05. elemento
-[](base/055/Readme.md) : ## 05. nextPerm
-[](base/056/Readme.md) : ## 06. allPerms
-[](base/015/Readme.md) : ## 06. pertence
-[](base/057/Readme.md) : ## 07. buscabin
-[](base/016/Readme.md) : ## 07. total
-[](base/058/Readme.md) : ## 08. factors
-[](base/017/Readme.md) : ## 08. maior
-[](base/018/Readme.md) : ## 09. frequencia
-[](base/059/Readme.md) : ## 09. listacc
-[](base/060/Readme.md) : ## 10. maxsseq
-[](base/019/Readme.md) : ## 10. unico
-[](base/020/Readme.md) : ## 11. maioresQue
-[](base/021/Readme.md) : ## 12. concatena
-[](base/022/Readme.md) : ## 13. calda
-[](base/023/Readme.md) : ## 14. corpo
-[](base/024/Readme.md) : ## 15. unique
-[](base/025/Readme.md) : ## 16. menores
-[](base/026/Readme.md) : ## 17. alter
-[](base/027/Readme.md) : ## 18. reverso
-[](base/028/Readme.md) : ## 19. divide
-[](base/029/Readme.md) : ## 20. intercal
-[](base/030/Readme.md) : ## 21. uniao
-[](base/031/Readme.md) : ## 22. intersec
-[](base/032/Readme.md) : ## 23. sequencia
-[](base/033/Readme.md) : ## 24. inserir
-[](base/034/Readme.md) : ## 25. ordenada
-[](base/035/Readme.md) : ## 26. qsort
-[](base/037/Readme.md) : ## 27. rotEsq
-[](base/038/Readme.md) : ## 28. rotDir
-[](base/039/Readme.md) : ## 29. upper
-[](base/036/Readme.md) : ## 30. merge
-[](base/040/Readme.md) : ## 30. titulo
-[](base/041/Readme.md) : ## 31. selec
-[](base/042/Readme.md) : ## 32. isPalind
-[](base/043/Readme.md) : ## 33. ehPrimo
-[](base/044/Readme.md) : ## 34. sdig
-[](base/045/Readme.md) : ## 35. bubble
-[](base/046/Readme.md) : ## 36. compac
-[](base/047/Readme.md) : ## 37. splitints
-[](base/048/Readme.md) : ## 38. quadperf
-[](base/049/Readme.md) : ## 39. base
-[](base/050/Readme.md) : ## 40. partes
-[](base/003/Readme.md) : ## 41. vetFib
+[](base/056/Readme.md) : ## allPerms
+[](base/026/Readme.md) : ## alter
+[](base/049/Readme.md) : ## base - mudança de base
+[](base/045/Readme.md) : ## bubble
+[](base/057/Readme.md) : ## buscabin
+[](base/022/Readme.md) : ## calda
+[](base/046/Readme.md) : ## compac
+[](base/021/Readme.md) : ## concatena
+[](base/023/Readme.md) : ## corpo
+[](base/004/Readme.md) : ## countNeg
+[](base/053/Readme.md) : ## deletee - remover primeira ocorrência
+[](base/028/Readme.md) : ## divide
+[](base/043/Readme.md) : ## ehPrimo
+[](base/014/Readme.md) : ## elemento
+[](base/058/Readme.md) : ## factors
+[](base/012/Readme.md) : ## fatorial
+[](base/013/Readme.md) : ## fibonacci
+[](base/005/Readme.md) : ## final
+[](base/018/Readme.md) : ## frequencia
+[](base/008/Readme.md) : ## gangorra
+[](base/002/Readme.md) : ## iguais
+[](base/033/Readme.md) : ## inserir
+[](base/029/Readme.md) : ## intercal
+[](base/006/Readme.md) : ## interior
+[](base/031/Readme.md) : ## intersec
+[](base/042/Readme.md) : ## isPalind
+[](base/059/Readme.md) : ## listacc
+[](base/017/Readme.md) : ## maior
+[](base/020/Readme.md) : ## maioresQue
+[](base/001/Readme.md) : ## max3
+[](base/060/Readme.md) : ## maxsseq
+[](base/025/Readme.md) : ## menores
+[](base/036/Readme.md) : ## merge
+[](base/010/Readme.md) : ## min2
+[](base/011/Readme.md) : ## min3
+[](base/055/Readme.md) : ## nextPerm
+[](base/034/Readme.md) : ## ordenada
+[](base/051/Readme.md) : ## paridade
+[](base/015/Readme.md) : ## pertence
+[](base/035/Readme.md) : ## qsort
+[](base/048/Readme.md) : ## quadperf
+[](base/052/Readme.md) : ## rev - inverter inteiro
+[](base/027/Readme.md) : ## reverso
+[](base/038/Readme.md) : ## rotDir
+[](base/037/Readme.md) : ## rotEsq
+[](base/044/Readme.md) : ## sdig - soma dos dígitos
+[](base/041/Readme.md) : ## selec
+[](base/032/Readme.md) : ## sequencia
+[](base/000/Readme.md) : ## soma2
+[](base/007/Readme.md) : ## somaImpares
+[](base/047/Readme.md) : ## splitints
+[](base/050/Readme.md) : ## subconjuntos
+[](base/009/Readme.md) : ## sublist
+[](base/054/Readme.md) : ## swap - trocando dois elementos de uma lista
+[](base/040/Readme.md) : ## titulo
+[](base/016/Readme.md) : ## total
+[](base/030/Readme.md) : ## uniao
+[](base/019/Readme.md) : ## unico
+[](base/024/Readme.md) : ## unique
+[](base/039/Readme.md) : ## upper
+[](base/003/Readme.md) : ## vetFib

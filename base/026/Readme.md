@@ -1,4 +1,4 @@
-## 17. alter
+## alter
 [](solver.hs)
 ```hs
 --IN : Inteiro n

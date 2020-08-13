@@ -1,4 +1,4 @@
-## 07. buscabin
+## buscabin
 ```hs
 --IN : Lista u de chaves ordenadas ascendentemente e valor x de mesmo tipo base de u
 --OUT: Posição de u onde se encontra x ou -1 se x não estiver em u. A busca deve ser binária.

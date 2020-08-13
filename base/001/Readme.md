@@ -1,4 +1,5 @@
-## 02. max3
+## max3
+[](solver.hs)
 
 
 Defina a função `max3` tal que `max3 x y z` é o máximo entre x, y e z. Por exemplo,

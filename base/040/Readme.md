@@ -1,4 +1,5 @@
-## 30. titulo
+## titulo
+[](solver.hs)
 ```hs
 --IN : String S
 --OUT: Versão de S contendo todos os caracteres em caixa baixa exceto

@@ -1,4 +1,4 @@
-## 41. vetFib
+## vetFib
 [](solver.hs)
 Gere os n primeiros termos da série de Fibonacci
 

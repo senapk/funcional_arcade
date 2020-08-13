@@ -1,4 +1,5 @@
-## 37. splitints
+## splitints
+[](solver.hs)
 - IN : Lista de inteiros positivos, u
 - OUT: Tupla de duas listas, (A,B), onde A e B são respectivamente compostos pelos inteiros ímpares e pares de u
 ```hs

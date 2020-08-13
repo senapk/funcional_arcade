@@ -1,4 +1,5 @@
-## 01. paridade
+## paridade
+[](solver.hs)
 ```hs
 --IN :  Lista u de valores booleanos
 --OUT: Se o total de Trues é ímpar então retorne True e do contrário False

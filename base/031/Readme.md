@@ -1,4 +1,5 @@
-## 22. intersec
+## intersec
+[](solver.hs)
 ```hs
 --IN : Duas listas a e b sem repetição de chaves
 --OUT: Lista das chaves que a e b possuem em comum

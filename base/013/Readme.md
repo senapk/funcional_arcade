@@ -1,4 +1,4 @@
-## 04. fibonacci
+## fibonacci
 [](solver.hs)
 ```hs
 --IN : Inteiro positivo n

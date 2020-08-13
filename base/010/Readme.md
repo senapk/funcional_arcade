@@ -1,4 +1,4 @@
-## 01. min2
+## min2
 ```hs
 --IN : Dois números, x e y
 --OUT: Menor valor entre x e y

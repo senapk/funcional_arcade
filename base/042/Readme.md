@@ -1,4 +1,5 @@
-## 32. isPalind
+## isPalind
+[](solver.hs)
 ```hs
 --IN : Uma string qualquer S
 --OUT: Verdadeiro se S é um palíndromo e falso do contrário

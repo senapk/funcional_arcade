@@ -1,4 +1,4 @@
-## 06. pertence
+## pertence
 [](solver.hs)
 ```hs
 --IN : Lista u e valor x

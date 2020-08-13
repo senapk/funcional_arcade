@@ -1,7 +1,7 @@
-## 04. swap
+## swap - trocando dois elementos de uma lista
+[](solver.hs)
 ```hs
---IN : Lista u de tipo arbitrário e dois inteiros p e
---q que representam posições de elementos de u.
+--IN : Lista u de tipo arbitrário e dois inteiros p e q que representam posições de elementos de u.
 --OUT: Versão de u com os elementos das posições p e q trocados
 swap [] 0 5 == []
 swap [1] 0 3 == [1]

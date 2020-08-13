@@ -1,4 +1,4 @@
-## 28. rotDir
+## rotDir
 ```hs
 --IN : Um natural n e uma lista ou string S
 --OUT: Lista S rotacionada n vezes à direita

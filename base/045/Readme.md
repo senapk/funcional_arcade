@@ -1,4 +1,4 @@
-## 35. bubble
+## bubble
 ```hs
 --IN : Lista ordenável u
 --OUT: Versão ordenada de u pelo método de ordenação em bolhas

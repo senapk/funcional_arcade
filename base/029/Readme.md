@@ -1,4 +1,4 @@
-## 20. intercal
+## intercal
 [](solver.hs)
 ```hs
 --IN : Duas listas a e b
