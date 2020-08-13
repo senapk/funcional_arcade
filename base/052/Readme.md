@@ -12,7 +12,7 @@ rev 5 == 5
 ## Ajuda
 Algoritmo interativo em python
 
-```
+```py
 n = int(input())
 y = 0
 while n > 0:

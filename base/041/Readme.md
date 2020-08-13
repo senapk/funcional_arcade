@@ -1,4 +1,4 @@
-## selec
+## selec - apenas as chaves selecionadas
 [](solver.hs)
 ```hs
 --IN : Uma lista qualquer u e uma lista de posições P

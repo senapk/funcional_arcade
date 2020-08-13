@@ -1,26 +1,17 @@
-indice :: Char -> Int -> [Char] -> Int
-indice _ _ [] = -1
-indice c n (p:l) | c == p = n
-                 | otherwise = (indice c (n+1) l)
+myToUpper :: Char -> Char
+-- agora pegamos a posicao onde ele aparece primeiro
+myToUpper c = head [snd y | y <- mapa c, (fst y) == c]
+    where mapa c = zip ['a'..'z'] ['A'..'Z'] ++ [(c, c)]
+    -- na pior das hipóteses ele encontra o char na ultima posicao
 
-maiuscula :: Char -> Char
-maiuscula c = ['A'..'Z'] !! (indice c 0 ['a'..'z']) 
+-- versão usando conversão entre os valores asc
+myToLower :: Char -> Char
+myToLower x = if x >= 'a' && x <= 'z' then toEnum (fromEnum x + 32) else x
 
-upper :: [Char] -> [Char]
-upper s = [if a `elem` ['a'..'z'] then (maiuscula a) else a | a <- s]
-
-minusculo :: Char -> Char
-minusculo c = ['a'..'z'] !! (indice c 0 ['A'..'Z'])
-
-down :: [Char] -> [Char]
-down s = [if a `elem` ['A'..'Z'] then (minusculo a) else a | a <- s]
-
-solvetitle :: [Char] -> Int -> Char -> [Char]
-solvetitle [] _ _ = []
-solvetitle (p:l) ia ca | ia == 0 = (upper [p])++(solvetitle l (ia+1) p)
-                       | (ca == ' ') && (p /= ' ') = (upper [p])++(solvetitle l (ia+1) p)
-                       | (ca /= ' ') = (down [p])++(solvetitle l (ia+1) p)
-                       | otherwise = [p]++(solvetitle l (ia+1) p)
+process :: [Char] -> [Char]
+process (x:[]) = []
+process (x:xs) = (if x == ' ' then myToUpper(y) else myToLower(y)) : process (xs)
+       where y = head xs
 
 titulo :: [Char] -> [Char]
-titulo s = solvetitle s 0 ' '
+titulo xs = process (' ':xs)
