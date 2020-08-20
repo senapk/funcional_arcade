@@ -1,4 +1,5 @@
-## merge
+## merge - recursão
+[](solver.hs)
 ```hs
 --IN : Duas listas ordenadas
 --OUT: A união de ambas em uma única lista ordenada

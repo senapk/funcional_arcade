@@ -1,8 +1,8 @@
 ## menores
+[](solver.hs)
 ```hs
 --IN : Natural n e lista u
 --OUT: Lista com os n menores elementos de u na ordem que aparecem em u
---OBS: Não use filter nem list compreension, use recursão
 menores 0 [6,2,2,4,9] == []
 menores 1 [6,2,2,4,9] == [2]
 menores 3 [5,5,5] == [5,5,5]
