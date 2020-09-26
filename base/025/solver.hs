@@ -1,11 +1,9 @@
-import Data.List
+-- lista com os numeros menores que x
+lista_menores x xs = [y | y <- xs, y < x] 
 
-menores' 0 xs selecionados aux = aux
-menores' n [] selecionados aux = aux
-menores' n (x:xs) selecionados aux = if x `elem` selecionados
-    then
-        menores' (n-1) xs selecionados (aux++[x])
-    else
-        menores' n xs selecionados aux
+-- lista com a qtd de números menores
+qtd_menores xs = [length [y | y <- xs, y < x] | x <- xs]
 
-menores n xs = menores' n xs (take n (sort xs)) []
+-- para cada elemento, vê quantos ele repetiu, se for menor que n, ele entra
+-- depois pega os n primeiros elementos
+menores n xs = take n [fst x | x <- zip xs [length [y | y <- xs, y < x] | x <- xs], snd x < n]

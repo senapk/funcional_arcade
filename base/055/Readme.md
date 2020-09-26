@@ -1,4 +1,5 @@
 ## nextPerm
+[](solver.hs)
 ```hs
 --IN : Lista u de elementos ordenáveis
 --OUT:  Próxima permutação lexicográfica de u ou lançar exceção se não for possível. 

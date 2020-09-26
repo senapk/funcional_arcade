@@ -32,7 +32,7 @@
 [](base/017/Readme.md) : ## maior
 [](base/020/Readme.md) : ## maioresQue
 [](base/001/Readme.md) : ## max3
-[](base/060/Readme.md) : ## maxsseq
+[](base/060/Readme.md) : ## maxsubseq
 [](base/025/Readme.md) : ## menores
 [](base/036/Readme.md) : ## merge - recursão
 [](base/010/Readme.md) : ## min2

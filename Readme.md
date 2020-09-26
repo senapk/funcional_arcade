@@ -97,4 +97,4 @@ Operações em lista, Comprehension list, Where, Guards
 - [@050 subconjuntos](base/050/Readme.md) 
 - [@055 nextPerm](base/055/Readme.md) 
 - [@056 allPerms](base/056/Readme.md) 
-- [@060 maxsseq](base/060/Readme.md) 
+- [@060 maxsubseq](base/060/Readme.md) 
