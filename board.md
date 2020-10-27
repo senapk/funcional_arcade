@@ -4,8 +4,8 @@
 [](base/049/Readme.md) : ## base - mudança de base
 [](base/045/Readme.md) : ## bubble
 [](base/057/Readme.md) : ## buscabin - busca binária
-[](base/022/Readme.md) : ## calda
 [](base/046/Readme.md) : ## compac
+[](base/067/Readme.md) : ## concatMap - Data.List.concatMap
 [](base/021/Readme.md) : ## concatena
 [](base/023/Readme.md) : ## corpo
 [](base/004/Readme.md) : ## countNeg
@@ -22,6 +22,7 @@
 [](base/008/Readme.md) : ## gangorra
 [](base/002/Readme.md) : ## iguais - verificar se duas listas são iguais
 [](base/065/Readme.md) : ## indices - busca posições do elemento
+[](base/066/Readme.md) : ## inits - Data.List.inits
 [](base/033/Readme.md) : ## inserir - inserir ordenado
 [](base/029/Readme.md) : ## intercal - intercalar duas listas
 [](base/006/Readme.md) : ## interior - miolo da lista
@@ -42,6 +43,7 @@
 [](base/051/Readme.md) : ## paridade
 [](base/015/Readme.md) : ## pertence
 [](base/064/Readme.md) : ## produtoEscalar - utilizando a função zip
+[](base/068/Readme.md) : ## produtoEscalar - utilizando a função zip
 [](base/035/Readme.md) : ## qsort
 [](base/048/Readme.md) : ## quadperf
 [](base/052/Readme.md) : ## rev - inverter inteiro
@@ -57,11 +59,12 @@
 [](base/050/Readme.md) : ## subconjuntos
 [](base/009/Readme.md) : ## sublist
 [](base/054/Readme.md) : ## swap - trocando dois elementos de uma lista
+[](base/022/Readme.md) : ## tails - Data.List.tails
 [](base/040/Readme.md) : ## titulo
 [](base/016/Readme.md) : ## total
 [](base/062/Readme.md) : ## triangle - triângulo aritmético
 [](base/030/Readme.md) : ## uniao
 [](base/019/Readme.md) : ## unico
-[](base/024/Readme.md) : ## unique
+[](base/024/Readme.md) : ## unique - Data.List.nub
 [](base/039/Readme.md) : ## upper
 [](base/003/Readme.md) : ## vetFib

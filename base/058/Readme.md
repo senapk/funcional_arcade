@@ -9,10 +9,11 @@
 --reescrito na forma,
 --3361743 = 3**4 * 7**3 * 11**2
 --Os números 3, 7 e 11 são denominados fatores primos de 3361743 e 4, 3 e 2 seus respectivas expoentes.)
-factors 3361743 == [(3,4),(7,3),(11,2)]
 factors 36 == [(2,2),(3,2)]
+factors 50 == [(2,1),(5,2)]
 factors 78 == [(2,1),(3,1),(13,1)]
 factors 60 == [(2,2),(3,1),(5,1)]
+factors 3361743 == [(3,4),(7,3),(11,2)]
 ```
 
 ## Ajuda

@@ -6,7 +6,7 @@ myToUpper c = head [snd y | y <- mapa c, (fst y) == c]
 
 -- versão usando conversão entre os valores asc
 myToLower :: Char -> Char
-myToLower x = if x >= 'a' && x <= 'z' then toEnum (fromEnum x + 32) else x
+myToLower x = if x >= 'A' && x <= 'Z' then toEnum (fromEnum x + 32) else x
 
 process :: [Char] -> [Char]
 process (x:[]) = []

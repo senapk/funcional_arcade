@@ -1,3 +1,2 @@
-splitints u = (partImpar,partPar)
-	where partPar = [x | x<-u, (mod x 2)==0]
-		  partImpar = [x | x<-u, (mod x 2)/=0]
+splitints :: Integral a => [a] -> ([a], [a])
+splitints u = ([x | x<-u, odd x], [x | x<-u, even x])

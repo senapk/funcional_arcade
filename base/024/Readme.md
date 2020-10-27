@@ -1,8 +1,8 @@
-## unique
+## unique - Data.List.nub
 [](solver.hs)
 ```hs
 --IN : Lista u com possíveis chaves repetidas
---OUT: Lista com as chaves de u sem repetições
+--OUT: Lista com as chaves de u sem repetições na ordem que a primeira ocorrência aparece
 unique [1,1,1] == [1]
 unique [2,1,2,1,1,1,1,2] == [2,1]
 unique [2,1,2,1,1,1,1,2,3] == [2,1,3]

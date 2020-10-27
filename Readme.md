@@ -1,9 +1,12 @@
+# Tópicos
 
 <!--TOC_BEGIN-->
 - [Aquecimento](#aquecimento)
 - [Operações básicas](#operações-básicas)
 - [Recursão](#recursão)
+- [Data.List](#datalist)
 - [Zip](#zip)
+- [Fold](#fold)
 - [Strings](#strings)
 - [Math](#math)
 - [Ordenação](#ordenação)
@@ -49,8 +52,6 @@ Operações em lista, Comprehension list, Where, Guards
 - [@019 unico](base/019/Readme.md) 
 - [@020 maioresQue](base/020/Readme.md) 
 - [@021 concatena](base/021/Readme.md) 
-- [@022 calda](base/022/Readme.md) 
-- [@024 unique](base/024/Readme.md) 
 - [@025 menores](base/025/Readme.md) 
 - [@026 alter](base/026/Readme.md) 
 - [@027 reverso](base/027/Readme.md) 
@@ -64,10 +65,17 @@ Operações em lista, Comprehension list, Where, Guards
 - [@061 line - linhas de um triângulo aritmético](base/061/Readme.md) 
 - [@062 triangle - triângulo aritmético](base/062/Readme.md) 
 
+## Data.List
+- [@022 tails - Data.List.tails](base/022/Readme.md) 
+- [@024 unique - Data.List.nub](base/024/Readme.md) 
+
 ## Zip
 - [@064 produtoEscalar - utilizando a função zip](base/064/Readme.md) 
 - [@065 indices - busca posições do elemento](base/065/Readme.md) 
 
+
+## Fold
+- [@067 concatMap - Data.List.concatMap](base/067/Readme.md) 
 
 ## Strings
 - [@039 upper](base/039/Readme.md) 

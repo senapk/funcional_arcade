@@ -1,1 +1,4 @@
-calda xs = drop 1 xs
+
+tails :: [a] -> [[a]]
+tails [] = [[]]
+tails (x:xs) =  [x:xs] ++ tails(xs)

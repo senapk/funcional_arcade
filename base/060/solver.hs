@@ -26,7 +26,3 @@ max_by fn_cmp xs = foldl comp (head xs) (tail xs)
 my_compare fn x y = compare (fn x) (fn y)
 
 maxsubseq xs = max_by (my_compare sum) $ all_subseq xs
-
--- main = do
---     a <- readLn :: IO [Int]
---     print $ maxsubseq a

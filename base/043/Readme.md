@@ -1,4 +1,5 @@
 ## ehPrimo
+[](solver.hs)
 ```hs
 --IN : Um natural n
 --OUT: Verdadeiro se n é primo e falso do contrário
