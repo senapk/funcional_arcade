@@ -1,4 +1,4 @@
-## 
+##  Euler
 [](solver.hs)
 
 

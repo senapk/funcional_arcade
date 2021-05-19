@@ -1,21 +1,37 @@
 # Tópicos
 
 <!--TOC_BEGIN-->
-- [Aquecimento](#aquecimento)
-- [Operações básicas](#operações-básicas)
-- [Recursão](#recursão)
-- [Data.List](#datalist)
-- [Zip](#zip)
-- [Fold](#fold)
-- [Strings](#strings)
-- [Math](#math)
-- [Ordenação](#ordenação)
-- [Algoritmos CHATOS!](#algoritmos-chatos)
-
+- [00. Introdução e Links](#00-introdução-e-links)
+- [01. Instalação](#01-instalação)
+- [02. Apostilas, Listas e Slides](#02-apostilas-listas-e-slides)
+- [03. Aquecimento](#03-aquecimento)
+- [04. Operações básicas](#04-operações-básicas)
+- [05. Recursão](#05-recursão)
+- [06. Data.List](#06-datalist)
+- [07. Zip](#07-zip)
+- [08. Fold](#08-fold)
+- [09. Strings](#09-strings)
+- [10. Math](#10-math)
+- [11. Ordenação](#11-ordenação)
+- [12. Algoritmos CHATOS!](#12-algoritmos-chatos)
 <!--TOC_END-->
 
-## Aquecimento
+## 00. Introdução e Links
+- [Curso Youtube](https://www.youtube.com/watch?v=L_GvP5XTJj4&list=PL8eBmR3QtPL3pDzQpwPYfWQ4NEPGu6j7z)
+- [Haskel em uma hora](https://www.youtube.com/watch?v=02_H3LjqMr8)
+- [Curso Online em Português](http://haskell.tailorfontela.com.br/chapters)
+- [Curso Online em Inglês](http://learnyouahaskell.com/chapters)
+- [Resumão](https://learnxinyminutes.com/docs/haskell/)
+- [IDE Online](http://tryhaskell.org/)
 
+## 01. Instalação
+- [@201 Instalação do Haskell](base/201/Readme.md) 
+
+## 02. Apostilas, Listas e Slides
+- [@203 Listas de Exercícios](base/203/Readme.md) 
+- [@202 Slides](base/202/Readme.md) 
+
+## 03. Aquecimento
 - [@004 countNeg](base/004/Readme.md) 
 - [@005 final](base/005/Readme.md) 
 - [@002 iguais - verificar se duas listas são iguais](base/002/Readme.md) 
@@ -25,9 +41,9 @@
 - [@011 min3](base/011/Readme.md) 
 - [@000 soma2](base/000/Readme.md) 
 
-## Operações básicas
+## 04. Operações básicas
 
-Operações em lista, Comprehension list, Where, Guards
+Operações em listas, Comprehension list, Where, Guards
 
 - [@007 somaImpares](base/007/Readme.md) 
 - [@001 max3](base/001/Readme.md) 
@@ -46,7 +62,7 @@ Operações em lista, Comprehension list, Where, Guards
 - [@054 swap - trocando dois elementos de uma lista](base/054/Readme.md) 
 - [@063 euler1 - soma dos múltiplos de 3 e 5](base/063/Readme.md) 
 
-## Recursão
+## 05. Recursão
 - [@013 fibonacci](base/013/Readme.md) 
 - [@018 frequencia](base/018/Readme.md) 
 - [@019 unico](base/019/Readme.md) 
@@ -65,32 +81,32 @@ Operações em lista, Comprehension list, Where, Guards
 - [@061 line - linhas de um triângulo aritmético](base/061/Readme.md) 
 - [@062 triangle - triângulo aritmético](base/062/Readme.md) 
 
-## Data.List
+## 06. Data.List
 - [@022 tails - Data.List.tails](base/022/Readme.md) 
 - [@024 unique - Data.List.nub](base/024/Readme.md) 
 
-## Zip
+## 07. Zip
 - [@064 produtoEscalar - utilizando a função zip](base/064/Readme.md) 
 - [@065 indices - busca posições do elemento](base/065/Readme.md) 
 
 
-## Fold
+## 08. Fold
 - [@067 concatMap - Data.List.concatMap](base/067/Readme.md) 
 
-## Strings
+## 09. Strings
 - [@039 upper](base/039/Readme.md) 
 - [@040 titulo](base/040/Readme.md) 
 - [@041 selec - apenas as chaves selecionadas](base/041/Readme.md) 
 - [@042 isPalind - verificar palíndromo](base/042/Readme.md) 
 
-## Math
+## 10. Math
 - [@044 sdig - soma dos dígitos](base/044/Readme.md) 
 - [@052 rev - inverter inteiro](base/052/Readme.md) 
 - [@049 base - mudança de base](base/049/Readme.md) 
 - [@043 ehPrimo](base/043/Readme.md) 
 - [@058 factors - fatores de um número](base/058/Readme.md) 
 
-## Ordenação
+## 11. Ordenação
 - [@046 compac](base/046/Readme.md) 
 - [@003 vetFib](base/003/Readme.md) 
 - [@034 ordenada](base/034/Readme.md) 
@@ -100,7 +116,7 @@ Operações em lista, Comprehension list, Where, Guards
 - [@036 merge - recursão](base/036/Readme.md) 
 - [@057 buscabin - busca binária](base/057/Readme.md) 
 
-## Algoritmos CHATOS!
+## 12. Algoritmos CHATOS!
 
 - [@050 subconjuntos](base/050/Readme.md) 
 - [@055 nextPerm](base/055/Readme.md) 
