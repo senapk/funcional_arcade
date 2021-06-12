@@ -10,6 +10,8 @@ concatena [1,2] [3,4] == [1,2,3,4]
 concatena [1,2,3] [3,4] == [1,2,3,3,4]
 ```
 
+OBS: não pode usar o operador de `++`, apenas o `:`
+
 
 <!--MAIN_BEGIN-->
 ### Main
