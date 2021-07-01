@@ -1,11 +1,11 @@
-## tails - Data.List.tails
+## mytails - Data.List.tails
 [](solver.hs)
 ```hs
 --IN : Uma lista u
 --OUT: Retorna a lista dos segmentos iniciais, os mais curtos no fim
-tails [1] == [[1],[]]
-tails [1,3,5] == [[1,3,5],[3,5],[5],[]] 
-tails [5,3,4] == [[5,3,4],[3,4],[4],[]]
+mytails [1] == [[1],[]]
+mytails [1,3,5] == [[1,3,5],[3,5],[5],[]] 
+mytails [5,3,4] == [[5,3,4],[3,4],[4],[]]
 ```
 
 
@@ -14,7 +14,7 @@ tails [5,3,4] == [[5,3,4],[3,4],[4],[]]
 ```hs
 main = do
     a <- readLn :: IO [Int]
-    print $ tails a
+    print $ mytails a
 
 ```
 <!--MAIN_END-->

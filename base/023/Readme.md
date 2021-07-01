@@ -1,11 +1,11 @@
-## corpo
+## primeiros
 [](solver.hs)
 ```hs
 --IN : Uma lista u
---OUT: Corpo de u
-corpo [1] == []
-corpo [1,2] == [1]
-corpo [1,2,3,4] == [1,2,3]
+--OUT: Lista menos o último elemento
+primeiros [1] == []
+primeiros [1,2] == [1]
+primeiros [1,2,3,4] == [1,2,3]
 ```
 
 
@@ -14,7 +14,7 @@ corpo [1,2,3,4] == [1,2,3]
 ```hs
 main = do
     a <- readLn :: IO [Int]
-    print $ corpo a
+    print $ primeiros a
 
 ```
 <!--MAIN_END-->

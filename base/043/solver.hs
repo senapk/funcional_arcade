@@ -1,1 +1,4 @@
-ehPrimo n = if length ([d | d<-[2..(n-1)], (mod n d)==0]) > 0 then False else True
+ehPrimo :: Int -> Bool 
+ehPrimo num = null [x | x <- [2..(floor . sqrt . fromIntegral) num], num `mod` x == 0]
+
+

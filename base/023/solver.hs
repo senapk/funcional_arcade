@@ -1,3 +1,3 @@
-corpo [] = []
-corpo [x] = []
-corpo (x:xs) = x:(corpo xs)
+primeiros [] = []
+primeiros [x] = []
+primeiros (x:xs) = x:(primeiros xs)
