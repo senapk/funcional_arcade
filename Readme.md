@@ -115,7 +115,9 @@ Operações em listas, Comprehension List, Where, Guards
 - [@058 factors - fatores de um número](base/058/Readme.md) 
 
 ## 12. Infinite lists
-- [@075 countDiv - Contar quantas vezes um número divide o outro](base/075/Readme.md) 
+- [@502 Listas Infinitas](base/502/Readme.md) 
+- [@076 Gere as seguintes funções.](base/076/Readme.md) 
+- [@075 expoentes - Contar quantas vezes um número divide o outro](base/075/Readme.md) 
 
 
 ## 13. Ordenação
@@ -136,4 +138,5 @@ Operações em listas, Comprehension List, Where, Guards
 - [@060 maxsubseq](base/060/Readme.md) 
 
 ## 14. Novas
+
 

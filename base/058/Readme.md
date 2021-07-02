@@ -7,7 +7,7 @@
 --produto de potências de bases primas e expoentes
 --naturais. Por exemplo, o número 3361743 pode ser
 --reescrito na forma,
---3361743 = 3**4 * 7**3 * 11**2
+--3361743 = 3^4 * 7^3 * 11^2
 --Os números 3, 7 e 11 são denominados fatores primos de 3361743 e 4, 3 e 2 seus respectivas expoentes.)
 factors 36 == [(2,2),(3,2)]
 factors 50 == [(2,1),(5,2)]
@@ -21,7 +21,7 @@ Faça as funções para:
 - verificar se um número é primo
 - gerar todos os primos de 1 até n
 - dado um número x, qual a potência de x em n: 
-    - Exemplo: `maxPot 24 2 == 3` pois consigo dividir o 24 por 2 três vezes. 
+    - Exemplo: `expoente 24 2 == 3` pois consigo dividir o 24 por 2 três vezes. 
 
 <!--MAIN_BEGIN-->
 ### Main

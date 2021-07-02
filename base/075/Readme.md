@@ -1,4 +1,4 @@
-## countDiv - Contar quantas vezes um número divide o outro
+## expoentes - Contar quantas vezes um número divide o outro
 [](solver.hs)
 
 Verifique quantas vezes um número é divisível por outro.
@@ -22,31 +22,31 @@ Orientação:
 [(1000,0),(500,0),(250,0),(125,0),(62,1)...]
 ```
 
-- Observe que conseguimos os 3 primeiros termos com resto 0, o que significa que conseguimos dividir o 1000 por 2 `3 vezes` e `sobra` 125.
-- Utilize `takeWhile` para pegar toda a série inicial `que contém resto 0` enquanto o `valor não acabar`.
+- Observe que conseguimos os 3 primeiros termos com resto 0, o que significa que conseguimos dividir o 1000 por 2 `3 vezes`
 
 ```
 [(1000,0),(500,0),(250,0),(125,0)]
 ```
-- Retorne o tamanho e o último valor da contagem e retornar o resultado final.
 
 
 ```hs
 main = do
-    print $ countDiv 1000 2
-    print $ countDiv 4 2
-    print $ countDiv 8 2
-    print $ countDiv 24 2
-    print $ countDiv 150 5
+    print $ expoentes 7 2
+    print $ expoentes 4 2
+    print $ expoentes 8 2
+    print $ expoentes 24 2
+    print $ expoentes 1024 2
+    print $ expoentes 150 5
 ```
 
 ```
 >>>>>>>>
 ========
-(3,125)
-(2,1)
-(3,1)
-(3,3)
-(2,6)
+0
+2
+3
+3
+10
+2
 <<<<<<<<
 ```
