@@ -1,4 +1,4 @@
-## myrepeat #infinito #recursão
+## myrepeat #recursão
 [](solver.hs)
 
 Escreva a função repeat do prelude utilizando recursão

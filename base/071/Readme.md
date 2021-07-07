@@ -1,4 +1,4 @@
-## mymap
+## @ map
 [](solver.hs)
 Escreva a função map utilizando recursão, dada uma função e uma lista
 

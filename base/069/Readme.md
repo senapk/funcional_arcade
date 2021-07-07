@@ -1,4 +1,4 @@
-## myelemIndex - Data.List
+## @ elemIndex - Data.List
 [](solver.hs)
 
 Implemente a função myelemIndex do Data.List retornando Nothing ou Just posição.

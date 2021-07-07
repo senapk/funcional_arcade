@@ -1,4 +1,4 @@
-## Gere as seguintes funções.
+## Gere as seguintes funções
 [](solver.hs)
 
 Faça todos os exercícios abaixo SEM UTILIZAR RECURSÃO

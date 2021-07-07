@@ -10,6 +10,11 @@ rev 5 == 5
 ```
 
 ## Ajuda
+- Opção 1: algoritmo recursivo "interativo"
+- Opção 2: recursão de calda devolvendo o valor invertido e a base de 10 atual
+- Decompor com unfoldr e dar o reverse
+- Decompor na recursão e dar o reverse
+
 Algoritmo interativo em python
 
 ```py

@@ -1,4 +1,4 @@
-## myfilter #recursão
+## @ filter #recursão
 [](solver.hs)
 
 Escreva a função filter do prelude utilizando recursão

@@ -1,4 +1,4 @@
-## divide
+## @ splitAt
 [](solver.hs)
 ```hs
 --IN :Lista u e um natural n

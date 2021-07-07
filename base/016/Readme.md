@@ -1,4 +1,4 @@
-## total
+## @ length
 [](solver.hs)
 ```hs
 --IN : Lista u

@@ -1,4 +1,4 @@
-## mytails - Data.List.tails
+## @ tails - Data.List.tails
 [](solver.hs)
 ```hs
 --IN : Uma lista u

@@ -1,4 +1,4 @@
-## maior
+## @ maximum
 [](solver.hs)
 ```hs
 --IN : Lista u

@@ -1,4 +1,4 @@
-## primeiros
+## @ init
 [](solver.hs)
 ```hs
 --IN : Uma lista u

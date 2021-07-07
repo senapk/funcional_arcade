@@ -1,4 +1,4 @@
-## mynub - Data.List.nub
+## @ nub - Data.List.nub
 [](solver.hs)
 ```hs
 --IN : Lista u com possíveis chaves repetidas
