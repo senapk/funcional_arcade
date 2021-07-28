@@ -47,9 +47,6 @@
 ## 04. Operações básicas
 Operações em listas, Comprehension List, Where, Guards
 - [@504 Biblioteca de Listas](base/504/Readme.md) 
-- [@007 somaImpares](base/007/Readme.md) 
-- [@001 max3](base/001/Readme.md) 
-- [@012 fatorial](base/012/Readme.md) 
 - [@014 @ !!](base/014/Readme.md) 
 - [@015 @ elem](base/015/Readme.md) 
 - [@016 @ length](base/016/Readme.md) 
@@ -57,6 +54,9 @@ Operações em listas, Comprehension List, Where, Guards
 - [@023 @ init](base/023/Readme.md) 
 - [@028 @ splitAt](base/028/Readme.md) 
 - [@047 @ partition](base/047/Readme.md) 
+- [@007 somaImpares](base/007/Readme.md) 
+- [@001 max3](base/001/Readme.md) 
+- [@012 fatorial](base/012/Readme.md) 
 - [@030 uniao](base/030/Readme.md) 
 - [@031 intersec - intercessão entre listas](base/031/Readme.md) 
 - [@009 sublist](base/009/Readme.md) 
@@ -102,6 +102,7 @@ Operações em listas, Comprehension List, Where, Guards
 - [@064 produtoEscalar - utilizando a função zip](base/064/Readme.md) 
 - [@065 indices - busca posições do elemento](base/065/Readme.md) 
 - [@067 concatMap - Data.List.concatMap](base/067/Readme.md) 
+- [@077 Cifra de Vigenere](base/077/Readme.md) 
 
 ## 10. Strings
 - [@503 Métodos de string](base/503/Readme.md) 
@@ -143,5 +144,5 @@ Operações em listas, Comprehension List, Where, Guards
 
 ## 14. Novas
 
-
-
+- [@507 Carro em Haskell](base/507/Readme.md) 
+- [@078 Armário -  Either, Map](base/078/Readme.md) 
