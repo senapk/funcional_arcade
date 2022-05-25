@@ -9,7 +9,9 @@
 > intercalate
 
 > words "hoje estou com fome"
+
 > lines "hoje\nestou\ncom\nfome"
+
 > splitOn "x" "axbxc"
 ["a","b","c"]
 

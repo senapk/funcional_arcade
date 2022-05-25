@@ -1,5 +1,5 @@
 ## Listas Infinitas
-
+[](solver.hs)
 
 - LINK: [https://hackage.haskell.org/package/base-4.15.0.0/docs/Data-List.html#g:8](https://hackage.haskell.org/package/base-4.15.0.0/docs/Data-List.html#g:8)
 
@@ -72,6 +72,7 @@ Pega uma semeste e gera uma lista a partir da semente.
 Para implementar, definimos uma função que gera a interação usando o `Just` e o Ponto de parada com o `Nothing`.
 
 O primeiro elemento da tupla é o que fica, o segundo é o que vai pra próxima interação.
+
 ```hs
 unfoldr :: (b -> Maybe (a, b)) -> (b -> [a])
 unfoldr f b = case f b of
@@ -92,3 +93,4 @@ takeWhile :: (a -> Bool) -> [a] -> [a]Source#
 []
 
 ```
+

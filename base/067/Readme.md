@@ -1,4 +1,4 @@
-## concatMap - Data.List.concatMap
+## @ concatMap - Data.List.concatMap
 [](solver.hs)
 
 A função `concatMap fn xs` equivale a aplicar a função `fn` a cada elemento da lista `xs` e então concatenar os valores.

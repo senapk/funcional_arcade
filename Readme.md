@@ -8,12 +8,13 @@
 - [04. Operações básicas](#04-operações-básicas)
 - [05. Recursão](#05-recursão)
 - [06. Data.List && Prelude](#06-datalist--prelude)
-- [07 Maybe](#07-maybe)
 - [07. Zip e Fold](#07-zip-e-fold)
+- [08 Maybe](#08-maybe)
 - [10. Strings](#10-strings)
 - [11. Math](#11-math)
-- [12. Infinite lists](#12-infinite-lists)
+- [12. Infinite ](#12-infinite)
 - [13. Ordenação](#13-ordenação)
+- [Challenges](#challenges)
 - [14. Algoritmos CHATOS!](#14-algoritmos-chatos)
 - [14. Novas](#14-novas)
 <!--TOC_END-->
@@ -82,9 +83,7 @@ Operações em listas, Comprehension List, Where, Guards
 - [@038 rotDir](base/038/Readme.md) 
 - [@048 quadperf](base/048/Readme.md) 
 - [@053 deletee - remover primeira ocorrência](base/053/Readme.md) 
-- [@059 listacc - lista acumulativa](base/059/Readme.md) 
-- [@061 line - linhas de um triângulo aritmético](base/061/Readme.md) 
-- [@062 triangle - triângulo aritmético](base/062/Readme.md) 
+- [@080 decompor](base/080/Readme.md) 
 
 ## 06. Data.List && Prelude
 
@@ -94,15 +93,20 @@ Operações em listas, Comprehension List, Where, Guards
 - [@022 @ tails - Data.List.tails](base/022/Readme.md) 
 - [@024 @ nub - Data.List.nub](base/024/Readme.md) 
 
-## 07 Maybe
-
-- [@069 @ elemIndex - Data.List](base/069/Readme.md) 
-
 ## 07. Zip e Fold
 - [@064 produtoEscalar - utilizando a função zip](base/064/Readme.md) 
 - [@065 indices - busca posições do elemento](base/065/Readme.md) 
-- [@067 concatMap - Data.List.concatMap](base/067/Readme.md) 
-- [@077 Cifra de Vigenere](base/077/Readme.md) 
+- [@067 @ concatMap - Data.List.concatMap](base/067/Readme.md) 
+- [@043 ehPrimo](base/043/Readme.md) 
+- [@077 vigenere](base/077/Readme.md) 
+- [@049 base - mudança de base](base/049/Readme.md) 
+- [@083 fraction reduce](base/083/Readme.md) 
+
+## 08 Maybe
+
+- [@069 @ elemIndex - Data.List](base/069/Readme.md) 
+- [@081 somaMaybe](base/081/Readme.md) 
+- [@082 filterMaybe](base/082/Readme.md) 
 
 ## 10. Strings
 - [@503 Métodos de string](base/503/Readme.md) 
@@ -115,15 +119,16 @@ Operações em listas, Comprehension List, Where, Guards
 - [@044 sdig - soma dos dígitos](base/044/Readme.md) 
 - [@052 rev - inverter inteiro](base/052/Readme.md) 
 - [@049 base - mudança de base](base/049/Readme.md) 
-- [@043 ehPrimo](base/043/Readme.md) 
-- [@058 factors - fatores de um número](base/058/Readme.md) 
 
-## 12. Infinite lists
+## 12. Infinite 
 - [@502 Listas Infinitas](base/502/Readme.md) 
-- [@072 myrepeat](base/072/Readme.md)  [](#recursão)
-- [@074 myreplicate](base/074/Readme.md) 
-- [@076 Gere as seguintes funções](base/076/Readme.md) 
+- [@072 @ repeat ](base/072/Readme.md) 
+- [@074 @ replicate](base/074/Readme.md) 
+- [@076 geradores](base/076/Readme.md) 
 - [@075 expoentes - Contar quantas vezes um número divide o outro](base/075/Readme.md) 
+- [@058 factors - fatores de um número](base/058/Readme.md) 
+- [@080 decompor](base/080/Readme.md) 
+- [@049 base - mudança de base](base/049/Readme.md) 
 
 ## 13. Ordenação
 - [@046 compac](base/046/Readme.md) 
@@ -135,14 +140,21 @@ Operações em listas, Comprehension List, Where, Guards
 - [@036 merge - recursão](base/036/Readme.md) 
 - [@057 buscabin - busca binária](base/057/Readme.md) 
 
+## Challenges
+- [@084 L2 - {robot} distance](base/084/Readme.md) 
+
 ## 14. Algoritmos CHATOS!
 
 - [@050 subconjuntos](base/050/Readme.md) 
 - [@055 nextPerm](base/055/Readme.md) 
 - [@056 allPerms](base/056/Readme.md) 
 - [@060 maxsubseq](base/060/Readme.md) 
+- [@059 listacc - lista acumulativa](base/059/Readme.md) 
+- [@061 line - linhas de um triângulo aritmético](base/061/Readme.md) 
+- [@062 triangle - triângulo aritmético](base/062/Readme.md) 
 
 ## 14. Novas
 
 - [@507 Carro em Haskell](base/507/Readme.md) 
 - [@078 Armário -  Either, Map](base/078/Readme.md) 
+- [@508 Estruturas de dados recursivas](base/508/Readme.md) 
