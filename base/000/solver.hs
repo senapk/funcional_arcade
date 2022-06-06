@@ -1,6 +1,8 @@
 soma2 :: Num a => a -> a -> a
-soma2 x y = x + y
+soma2 x y =
+            x + y
 
+main :: IO ()
 main = do
     a <- readLn :: IO Int
     b <- readLn :: IO Int
