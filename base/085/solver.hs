@@ -6,6 +6,10 @@ split xs index = (before, center, after)
           center = xs !! index
           after = drop (index + 1) xs
 
+setL :: [a] -> Int -> a -> [a]
+setL xs index value = before ++ [value] ++ after
+    where   (before, _, after) = split xs index
+
 -- parametros: 
 -- mat matriz bidimensional
 -- l linha
@@ -17,9 +21,7 @@ setM mat l c v = before ++ [center] ++ after
     where   (before, center', after) = split mat l
             center = setL center' c v
 
-setL :: [a] -> Int -> a -> [a]
-setL xs index value = before ++ [value] ++ after
-    where   (before, _, after) = split xs index
+
 
 -- parametros:
 -- l linha
@@ -35,7 +37,6 @@ burn (nl, nc, mat) (l, c)
     | otherwise = foldl burn seed (neighbors l c)
     where
         seed = (nl, nc, setM mat l c 'o')
-
 
 main :: IO ()
 main = do
