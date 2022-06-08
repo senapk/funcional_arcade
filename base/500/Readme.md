@@ -28,6 +28,7 @@ main = do
     f <- readLn :: IO Float  -- pega um float
     (l, c) <- readLn :: IO (Int, Float) -- pega dois inteiros
     lista <- readLn :: IO [Int] -- pega uma lista de inteiros
+    listaTup <- readLn :: IO [(String, String)]
     print i
     print f
     print (l, c)
@@ -42,11 +43,13 @@ Exemplo de entrada
 6.5
 (4,9.8)
 [1,2,3,4,5,9]
+[("ovo", "ova"), ("carro", "moto")]
 ```
 <!--ADD_END-->
 
 ## Imprimindo e concatenando Strings
 
+- `print` - imprime o dado formatado
 - `putStrLn` - imprime uma string sem colocar as aspas
 - `putStr` - imprime uma string sem a quebra de linha
 - `show` - converte de um tipo qualquer para string
@@ -120,7 +123,8 @@ main = do
 -- fmap é capaz de aplicar uma função ao getline diretamente
 main :: IO ()
 main = do
-    xs <- fmap (map (read :: String->Int) . words) getLine
+    --xs <- fmap (map (read :: String->Int) . words) getLine
+    xs <- map (read :: String->Int) . words <$> getLine
     print xs
 ```
 <!--ADD_END-->
@@ -137,12 +141,26 @@ main = do
 ```hs
 main = do
     xs <- fmap words getLine
+    
     let name = head xs
-    let age = read (xs !! 1) :: Int
+    let age = (read :: String -> Int) (xs !! 1)
     let height = read (xs !! 2) :: Float
     putStrLn $ name ++ " tem " ++ show age ++ " anos e mede " ++ show height
 ```
 <!--ADD_END-->
+
+Ou por atribuição direta
+
+<!--ADD single2.hs hs-->
+```hs
+main = do
+    [name, age', height'] <- fmap words getLine
+    let age = read age' :: Int
+    let height = read height' :: Float
+    putStrLn $ name ++ " tem " ++ show age ++ " anos e mede " ++ show height
+```
+<!--ADD_END-->
+
 
 Entrada
 
@@ -180,7 +198,7 @@ Entrada
 
 ## Read a matrix
 
-- `<$>` is a fmap operator 
+- `<$>` é o operador equivalente ao `fmap`
 - a lista já é atribuida diretamente nos valores `[nl, nc]`
 - `replicateM` repeats many times de input comannd `getline` to make a vector os strings
 - `mapM_` apply putStrLn for each line of mat

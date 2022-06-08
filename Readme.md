@@ -142,6 +142,9 @@ Operações em listas, Comprehension List, Where, Guards
 
 ## Challenges
 - [@084 L2 - {robot} distance](base/084/Readme.md) 
+- [@085 Queimada](base/085/Readme.md)
+
+
 
 ## 14. Algoritmos CHATOS!
 
