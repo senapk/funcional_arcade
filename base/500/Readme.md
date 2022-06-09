@@ -3,15 +3,61 @@
 
 <!--TOC_BEGIN-->
 - [Lendo variáveis.](#lendo-variáveis)
-- [Imprimindo e concatenando Strings](#imprimindo-e-concatenando-strings)
+    - [Entrada](#entrada)
+    - [Saída](#saída)
+    - [Código](#código)
+- [Lendo, imprimindo e concatenando Strings](#lendo-imprimindo-e-concatenando-strings)
+    - [Entrada](#entrada)
+    - [Saída](#saída)
+    - [Código](#código)
 - [Lendo de várias linhas seguidas](#lendo-de-várias-linhas-seguidas)
+    - [Entrada](#entrada)
+    - [Saída](#saída)
+    - [Código](#código)
 - [Lendo vários na mesma linha](#lendo-vários-na-mesma-linha)
+    - [Entrada](#entrada)
+    - [Saída](#saída)
+    - [Código](#código)
 - [Convertendo individualmente](#convertendo-individualmente)
+    - [Entrada](#entrada)
+    - [Saída](#saída)
+    - [Código](#código)
 - [Formatando vetor na saída](#formatando-vetor-na-saída)
-- [Read a matrix](#read-a-matrix)
+    - [Entrada](#entrada)
+    - [Código](#código)
+- [Leia uma matriz de char](#leia-uma-matriz-de-char)
+    - [Entrada](#entrada)
+    - [Saída](#saída)
+    - [Código](#código)
 <!--TOC_END-->
 
 ## Lendo variáveis.
+
+### Entrada
+[](alone.txt)
+<!--ADD alone.txt txt-->
+```txt
+5
+6.5
+(4,9.8)
+[1,2,3,4,5,9]
+[("ovo", "ova"), ("carro", "moto")]
+```
+<!--ADD_END-->
+
+### Saída
+[](alone.out.txt)
+<!--ADD alone.out.txt txt-->
+```txt
+5
+6.5
+(4,9.8)
+[1,2,3,4,5,9]
+[("ovo","ova"),("carro","moto")]
+```
+<!--ADD_END-->
+
+### Código
 Se a variável estiver sozinha na linha e formatada de acordo com o padrão do haskell é possível lê-la assim:
 
 - `readLn :: IO TIPO` -- lê uma linha e tenta converter para esse tipo
@@ -21,6 +67,7 @@ Se a variável estiver sozinha na linha e formatada de acordo com o padrão do h
 - print - imprime esse tipo no seu formato padrão.
     - strings vão sair entre aspas
 
+[](alone.hs)
 <!--ADD alone.hs hs-->
 ```hs
 main = do
@@ -33,22 +80,34 @@ main = do
     print f
     print (l, c)
     print lista
+    print listaTup
 ```
 <!--ADD_END-->
 
-Exemplo de entrada
-<!--ADD alone.txt txt-->
+
+___
+## Lendo, imprimindo e concatenando Strings
+
+Leia uma frase na primeira linha e um inteiro na segunda linha imprima a concatenação.
+
+
+### Entrada
+<!--ADD str.txt txt-->
 ```txt
+hoje eh dia
 5
-6.5
-(4,9.8)
-[1,2,3,4,5,9]
-[("ovo", "ova"), ("carro", "moto")]
 ```
 <!--ADD_END-->
 
-## Imprimindo e concatenando Strings
+### Saída
+<!--ADD str.out.txt txt-->
+```txt
+hoje eh dia 5
+```
+<!--ADD_END-->
 
+### Código
+- `getLine` - pega a linha inteira como string
 - `print` - imprime o dado formatado
 - `putStrLn` - imprime uma string sem colocar as aspas
 - `putStr` - imprime uma string sem a quebra de linha
@@ -63,17 +122,33 @@ main = do
 ```
 <!--ADD_END-->
 
-Exemplo de entrada
+___
+## Lendo de várias linhas seguidas
 
-<!--ADD str.txt txt-->
+- Entrada: Leia o tamanho N do vetor e depois N linhas contendo cada linha um elemento do vetor.
+
+
+### Entrada
+<!--ADD veclines.txt txt-->
 ```txt
-hoje eh dia
 5
+0
+1
+2
+3
+4
 ```
 <!--ADD_END-->
 
-## Lendo de várias linhas seguidas
+### Saída
 
+<!--ADD veclines.out.txt txt-->
+```txt
+[0,1,2,3,4]
+```
+<!--ADD_END-->
+
+### Código
 - `replicateM` - executa N vezes uma função de leitura como `getLine` ou `readLn :: IO Tipo` para carregar um vetor.
 
 <!--ADD veclines.hs hs-->
@@ -87,24 +162,30 @@ main = do
 ```
 <!--ADD_END-->
 
-Exemplo de entrada
 
-<!--ADD veclines.txt txt-->
+___
+## Lendo vários na mesma linha
+Leia vários inteiros na mesma linha e transforme-os em um vetor de inteiros.
+
+### Entrada
+<!--ADD many.txt txt-->
 ```txt
-5
-0
-1
-2
-3
-4
+1 2 3 4 5 6 7 8 9 0
 ```
 <!--ADD_END-->
 
+### Saída
+<!--ADD many.out.txt txt-->
+```txt
+[1,2,3,4,5,6,7,8,9,0]
+```
+<!--ADD_END-->
 
-## Lendo vários na mesma linha
+### Código
 
-Você pode ler com `getLine`, quebrar em vetor de palavras com `words` e converter para vetor de inteiros.
+- Você pode ler com `getLine`, quebrar em vetor de palavras com `words` e converter para vetor de inteiros.
 
+[](many.hs)
 <!--ADD many.hs hs-->
 ```hs
 main :: IO ()
@@ -117,52 +198,30 @@ main = do
 ```
 <!--ADD_END-->
 
+- Uma forma de fazer a leitura, decomposição em palavras e transformação em inteiro na mesma linha é através do
+`fmap`. O `fmap` é capaz de aplicar uma função dentro de um monad. Ele também pode ser utilizado através do
+operador `<$>`.
+- Nesse caso, as duas linhas são equivalentes.
+    - `xs <- fmap (map (read :: String->Int) . words)    getLine`
+    - `xs <-       map (read :: String->Int) . words <$> getLine`
 
 <!--ADD many2.hs hs-->
 ```hs
 -- fmap é capaz de aplicar uma função ao getline diretamente
 main :: IO ()
 main = do
-    --xs <- fmap (map (read :: String->Int) . words) getLine
-    xs <- map (read :: String->Int) . words <$> getLine
+    xs <- fmap (map (read :: String->Int) . words) getLine
     print xs
 ```
 <!--ADD_END-->
 
-<!--ADD many.txt txt-->
-```txt
-1 2 3 4 5 6 7 8 9 0
-```
-<!--ADD_END-->
 
+___
 ## Convertendo individualmente
 
-<!--ADD single.hs hs-->
-```hs
-main = do
-    xs <- fmap words getLine
-    
-    let name = head xs
-    let age = (read :: String -> Int) (xs !! 1)
-    let height = read (xs !! 2) :: Float
-    putStrLn $ name ++ " tem " ++ show age ++ " anos e mede " ++ show height
-```
-<!--ADD_END-->
+Leia uma palavra, um inteiro e um float na mesma linha.
 
-Ou por atribuição direta
-
-<!--ADD single2.hs hs-->
-```hs
-main = do
-    [name, age', height'] <- fmap words getLine
-    let age = read age' :: Int
-    let height = read height' :: Float
-    putStrLn $ name ++ " tem " ++ show age ++ " anos e mede " ++ show height
-```
-<!--ADD_END-->
-
-
-Entrada
+### Entrada
 
 <!--ADD single.txt txt-->
 ```txt
@@ -170,11 +229,65 @@ david 17 1.75
 ```
 <!--ADD_END-->
 
+### Saída
+
+<!--ADD single.out.txt txt-->
+```txt
+david tem 17 anos e mede 1.75
+```
+<!--ADD_END-->
+
+### Código
+- A função `read :: String -> TipoSaída` pode ser utilizada para converter de string para um tipo qualquer
+- Ela também pode ser utilizada como `read value :: TipoSaída`, omitindo assim o tipo de entrada.
+
+[](single.hs)
+<!--ADD single.hs hs-->
+```hs
+main = do
+    xs <- words <$> getLine -- lendo a linha e quebrando num vetor de palavras
+    
+    let name = head xs  
+    let age = (read :: String -> Int) (xs !! 1) -- utilizando a função com descrição completa
+    let height = read (xs !! 2) :: Float        -- utilizando a função com parâmetro
+
+    -- utilizando a função show para converter age e height para string
+    putStrLn $ name ++ " tem " ++ show age ++ " anos e mede " ++ show height
+```
+<!--ADD_END-->
+
+- O vetor também pode ser decomposto diretamente usando o pattern matching
+
+[](single2.hs)
+<!--ADD single2.hs hs-->
+```hs
+main = do
+    [name, age', height'] <- words <$> getLine -- lendo e decompondo já nas variáveis
+    
+    let age = read age' :: Int                 -- o nome da variável precisa ser diferente
+    let height = read height' :: Float         -- utilizando coversão com parâmetro
+
+    putStrLn $ name ++ " tem " ++ show age ++ " anos e mede " ++ show height
+```
+<!--ADD_END-->
+
+___
 ## Formatando vetor na saída
 
-Imprimindo vetor de inteiros no formato 
+- Leia o vetor e imprima nesse formato 
 
 [ 1 2 3 4 5 6 7 ]
+
+### Entrada
+
+<!--ADD formatvet.txt txt-->
+```txt
+1 2 3 4 5 6 7 8
+```
+<!--ADD_END-->
+
+### Código
+- `intercalete` funciona como o join da maioria das linguagem. Ele recebe um vetor de strings e gera uma string.
 
 <!--ADD formatvet.hs hs-->
 ```hs
@@ -188,21 +301,37 @@ main = do
 ```
 <!--ADD_END-->
 
-Entrada
 
-<!--ADD formatvet.txt txt-->
+
+___
+## Leia uma matriz de char
+
+- Leia número de linhas `nl` e número de colunas `nc` na mesma linha. 
+- Nas `nl` linhas seguintes, leia os dados da matriz de char.
+- Imprima a matriz de saída no mesmo formato da entrada.
+
+### Entrada
+<!--ADD mat.txt txt-->
 ```txt
-1 2 3 4 5 6 7 8
+3 9
+####...##
+####.....
+#.##...##
 ```
 <!--ADD_END-->
 
-## Read a matrix
+### Saída
+```txt
+####...##
+####.....
+#.##...##
+```
+### Código
 
 - `<$>` é o operador equivalente ao `fmap`
 - a lista já é atribuida diretamente nos valores `[nl, nc]`
-- `replicateM` repeats many times de input comannd `getline` to make a vector os strings
-- `mapM_` apply putStrLn for each line of mat
-
+- `replicateM` repete nl vezes o comando de leitura `getline` para montar um vetor de strings
+- `mapM_` aplica uma função de impressão em cada elemento do vetor.
 
 <!--ADD mat.hs hs-->
 ```hs
@@ -216,11 +345,3 @@ main = do
 ```
 <!--ADD_END-->
 
-<!--ADD mat.txt txt-->
-```txt
-3 9
-####...##
-####.....
-#.##...##
-```
-<!--ADD_END-->
