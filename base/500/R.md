@@ -3,9 +3,21 @@
 
 <!--TOC_BEGIN-->
 - [Lendo variáveis.](#lendo-variáveis)
+    - [Entrada](#entrada)
+    - [Saída](#saída)
+    - [Código](#código)
 - [Lendo, imprimindo e concatenando Strings](#lendo-imprimindo-e-concatenando-strings)
+    - [Entrada](#entrada)
+    - [Saída](#saída)
+    - [Código](#código)
 - [Lendo de várias linhas seguidas](#lendo-de-várias-linhas-seguidas)
+    - [Entrada](#entrada)
+    - [Saída](#saída)
+    - [Código](#código)
 - [Lendo vários na mesma linha](#lendo-vários-na-mesma-linha)
+    - [Entrada](#entrada)
+    - [Saída](#saída)
+    - [Código](#código)
 - [Convertendo individualmente](#convertendo-individualmente)
     - [Entrada](#entrada)
     - [Saída](#saída)
@@ -17,14 +29,9 @@
     - [Entrada](#entrada)
     - [Saída](#saída)
     - [Código](#código)
-- [Impressão formatada com printf](#impressão-formatada-com-printf)
 <!--TOC_END-->
 
 ## Lendo variáveis.
-[Comment test]::
-[Comment test]::
-[Comment test]::
-[]()
 
 ```
 >>>>>>>> label 00
@@ -51,21 +58,22 @@ Se a variável estiver sozinha na linha e formatada de acordo com o padrão do h
 - print - imprime esse tipo no seu formato padrão.
     - strings vão sair entre aspas
 
-<!--save 00_alone.hs-->
+[](00_alone.hs)
+<!--ADD 00_alone.hs hs-->
 ```hs
 main = do
     i <- readLn :: IO Int    -- pega um inteiro
     f <- readLn :: IO Float  -- pega um float
     (l, c) <- readLn :: IO (Int, Float) -- pega dois inteiros
-    listaInt <- readLn :: IO [Int] -- pega uma lista de inteiros
+    lista <- readLn :: IO [Int] -- pega uma lista de inteiros
     listaTup <- readLn :: IO [(String, String)]
     print i
     print f
     print (l, c)
-    print listaInt
+    print lista
     print listaTup
 ```
-<!--save-->
+<!--ADD_END-->
 
 
 ___
@@ -88,14 +96,14 @@ hoje eh dia 5
 - `putStr` - imprime uma string sem a quebra de linha
 - `show` - converte de um tipo qualquer para string
 
-<!--save 01_str.hs-->
+<!--ADD 01_str.hs hs-->
 ```hs
 main = do
     line <- getLine
     value <- readLn :: IO Int
     putStrLn $ line ++ " " ++ show value
 ```
-<!--save-->
+<!--ADD_END-->
 
 ___
 ## Lendo de várias linhas seguidas
@@ -118,7 +126,7 @@ ___
 
 - `replicateM` - executa N vezes uma função de leitura como `getLine` ou `readLn :: IO Tipo` para carregar um vetor.
 
-<!--save 02_veclines.hs-->
+<!--ADD 02_veclines.hs hs-->
 ```hs
 import Control.Monad (replicateM)
 
@@ -127,7 +135,7 @@ main = do
     vet <- replicateM size (readLn :: IO Int)
     print vet
 ```
-<!--save-->
+<!--ADD_END-->
 
 
 ___
@@ -144,7 +152,8 @@ Leia vários inteiros na mesma linha e transforme-os em um vetor de inteiros.
 
 - Você pode ler com `getLine`, quebrar em vetor de palavras com `words` e converter para vetor de inteiros.
 
-<!--save 03_many1.hs-->
+[](03_many1.hs)
+<!--ADD many.hs hs-->
 ```hs
 main :: IO ()
 main = do
@@ -154,7 +163,7 @@ main = do
     let xs = map (read::String -> Int) . words $ line
     print xs
 ```
-<!--save-->
+<!--ADD_END-->
 
 - Uma forma de fazer a leitura, decomposição em palavras e transformação em inteiro na mesma linha é através do
 `fmap`. O `fmap` é capaz de aplicar uma função dentro de um monad. Ele também pode ser utilizado através do
@@ -163,7 +172,7 @@ operador `<$>`.
     - `xs <- fmap (map (read :: String->Int) . words)    getLine`
     - `xs <-       map (read :: String->Int) . words <$> getLine`
 
-<!--save 03_many2.hs-->
+<!--ADD 03_many2.hs hs-->
 ```hs
 -- fmap é capaz de aplicar uma função ao getline diretamente
 main :: IO ()
@@ -171,17 +180,17 @@ main = do
     xs <- fmap (map (read :: String->Int) . words) getLine
     print xs
 ```
-<!--save-->
+<!--ADD_END-->
 
-<!--save 03_many3.hs-->
+<!--ADD 03_many3.hs hs-->
 ```hs
 -- fmap é capaz de aplicar uma função ao getline diretamente
 main :: IO ()
 main = do
-    xs <- map (read :: String->Int) . words <$> getLine
+    xs <- fmap (map (read :: String->Int) . words) getLine
     print xs
 ```
-<!--save-->
+<!--ADD_END-->
 
 
 ___
@@ -189,18 +198,28 @@ ___
 
 Leia uma palavra, um inteiro e um float na mesma linha.
 
-```txt
->>>>>>>>
-david 17 1.75
-========
-david tem 17 anos e mede 1.75
-<<<<<<<<
-```
+### Entrada
 
+<!--ADD single.txt txt-->
+```txt
+david 17 1.75
+```
+<!--ADD_END-->
+
+### Saída
+
+<!--ADD single.out.txt txt-->
+```txt
+david tem 17 anos e mede 1.75
+```
+<!--ADD_END-->
+
+### Código
 - A função `read :: String -> TipoSaída` pode ser utilizada para converter de string para um tipo qualquer
 - Ela também pode ser utilizada como `read value :: TipoSaída`, omitindo assim o tipo de entrada.
 
-<!--save 04_single.hs-->
+[](single.hs)
+<!--ADD single.hs hs-->
 ```hs
 main = do
     xs <- words <$> getLine -- lendo a linha e quebrando num vetor de palavras
@@ -212,10 +231,11 @@ main = do
     -- utilizando a função show para converter age e height para string
     putStrLn $ name ++ " tem " ++ show age ++ " anos e mede " ++ show height
 ```
-<!--save-->
+<!--ADD_END-->
 
 - O vetor também pode ser decomposto diretamente usando o pattern matching
 
+[](single2.hs)
 <!--ADD single2.hs hs-->
 ```hs
 main = do
