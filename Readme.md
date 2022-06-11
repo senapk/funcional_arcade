@@ -135,29 +135,19 @@ Operações em listas, Comprehension List, Where, Guards
 - [@003 vetFib](base/003/Readme.md) 
 - [@034 ordenada](base/034/Readme.md) 
 - [@033 inserir - inserir ordenado](base/033/Readme.md) 
-- [@045 bubble](base/045/Readme.md) 
 - [@035 qsort](base/035/Readme.md) 
 - [@036 merge - recursão](base/036/Readme.md) 
-- [@057 buscabin - busca binária](base/057/Readme.md) 
-
-## Challenges
-- [@084 L2 - {robot} distance](base/084/Readme.md) 
-- [@085 Queimada](base/085/Readme.md)
-
-
-
-## 14. Algoritmos CHATOS!
-
-- [@050 subconjuntos](base/050/Readme.md) 
-- [@055 nextPerm](base/055/Readme.md) 
-- [@056 allPerms](base/056/Readme.md) 
-- [@060 maxsubseq](base/060/Readme.md) 
-- [@059 listacc - lista acumulativa](base/059/Readme.md) 
-- [@061 line - linhas de um triângulo aritmético](base/061/Readme.md) 
-- [@062 triangle - triângulo aritmético](base/062/Readme.md) 
 
 ## 14. Novas
 
 - [@507 Carro em Haskell](base/507/Readme.md) 
 - [@078 Armário -  Either, Map](base/078/Readme.md) 
-- [@508 Estruturas de dados recursivas](base/508/Readme.md) 
+- [@508 Árvores](base/508/Readme.md) 
+
+## Challenges
+- [@088 L2 - Comprando TV parcelado](base/088/Readme.md) 
+- [@087 L3 - Blackjack 21!](base/087/Readme.md) 
+- [@086 L1 - Pedra na lua](base/086/Readme.md) 
+- [@084 L2 - {robot} distance](base/084/Readme.md) 
+- [@085 L2 - {robot} queimada ](base/085/Readme.md) 
+

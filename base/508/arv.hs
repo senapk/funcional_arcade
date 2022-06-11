@@ -1,3 +1,5 @@
+{-# OPTIONS_GHC -Wno-incomplete-patterns #-}
+
 data Tree a = Null | Node a (Tree a) (Tree a) deriving (Show, Read, Eq)  
 
 treeInsert :: (Ord a) => Tree a -> a -> Tree a  

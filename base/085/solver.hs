@@ -21,8 +21,6 @@ setM mat l c v = before ++ [center] ++ after
     where   (before, center', after) = split mat l
             center = setL center' c v
 
-
-
 -- parametros:
 -- l linha
 -- c coluna
@@ -42,5 +40,5 @@ main :: IO ()
 main = do
     [nl, nc] <-  map (read :: String -> Int) . words <$> getLine
     mat <- replicateM nl getLine
-    let (nl', nc', mat') = burn (nl, nc, mat) (0, 0)
+    let (_, _, mat') = burn (nl, nc, mat) (0, 0)
     mapM_ putStrLn mat' -- imprime linha a linha a matriz
