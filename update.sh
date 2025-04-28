@@ -1,7 +1,9 @@
 #!/bin/bash
 echo "# Updating arcade"
+
+set -e 
 feno indexer Readme.md base
-# update all Readme with main
-#./scripts/hs.py
-# generate .html for changed mains
-#kkmanual Readme.md
+feno mdpp Readme.md
+echo "Verificando problemas"
+feno build base/* --remote --check --erase --pandoc
+echo "Fim"
