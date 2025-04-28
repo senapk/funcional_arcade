@@ -1,5 +1,5 @@
-## rev - inverter inteiro
-[](solver.hs)
+# rev - inverter inteiro
+
 ```hs
 --IN : Um inteiro positivo x
 --OUT: Um inteiro positivo equivalente a x, mas com os dígitos na ordem inversa
@@ -10,6 +10,7 @@ rev 5 == 5
 ```
 
 ## Ajuda
+
 - Opção 1: algoritmo recursivo "interativo"
 - Opção 2: recursão de calda devolvendo o valor invertido e a base de 10 atual
 - Decompor com unfoldr e dar o reverse
@@ -27,12 +28,31 @@ print(y)
 ```
 
 
-<!--MAIN_BEGIN-->
-### Main
-```hs
-main = do
-    a <- readLn :: IO Int
-    print $ rev a
+## Testes
+
+```txt
+>>>>>>>>
+1923
+========
+3291
+<<<<<<<<
+
+>>>>>>>>
+123
+========
+321
+<<<<<<<<
+
+>>>>>>>>
+39402
+========
+20493
+<<<<<<<<
+
+>>>>>>>>
+5
+========
+5
+<<<<<<<<
 
 ```
-<!--MAIN_END-->

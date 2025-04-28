@@ -1,5 +1,5 @@
-## base - mudança de base
-[](solver.hs)
+# base - mudança de base
+
 ```hs
 --IN : Dois inteiros positivos, n e b (1<b<37)
 --OUT: Representação na base b do inteiro n
@@ -10,6 +10,7 @@ base 26012 36 == "K2K"
 ```
 
 ## Ajuda
+
 Código interativo em python
 
 ```py
@@ -23,13 +24,35 @@ def converte(number, base):
     return output
 ```
 
-<!--MAIN_BEGIN-->
-### Main
-```hs
-main = do
-    a <- readLn :: IO Int
-    b <- readLn :: IO Int
-    print $ base a b
+## Testes
+
+```txt
+>>>>>>>>
+25
+10
+========
+"25"
+<<<<<<<<
+
+>>>>>>>>
+17
+2
+========
+"10001"
+<<<<<<<<
+
+>>>>>>>>
+26
+16
+========
+"1A"
+<<<<<<<<
+
+>>>>>>>>
+26012
+36
+========
+"K2K"
+<<<<<<<<
 
 ```
-<!--MAIN_END-->

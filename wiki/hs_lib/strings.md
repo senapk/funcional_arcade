@@ -1,8 +1,6 @@
-## Métodos de string
-[](solver.hs)
+# Métodos de string
 
-## Special para Strings
-```bash
+```hs
 > intersperse ',' "abcde"
 "a,b,c,d,e"
 

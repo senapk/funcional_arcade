@@ -1,4 +1,4 @@
-## L2 - Comprando TV parcelado
+# Comprando TV parcelado
 
 Aluízio quer comprar uma televisão parcelada. Ele tem X reais por mês disponíveis para pagar a televisão. No parcelamento, quanto mais parcelas, maior o juros que usa a seguinte regra. 
 
@@ -15,7 +15,7 @@ Aluízio quer comprar uma televisão parcelada. Ele tem X reais por mês dispon�
 
 Dado o valor da televisão e a quantidade de parcelas, um por linha, calcule o valor da parcela e o valor total que Aluízio vai pagar. Imprima a saída conforme o exemplo a seguir.
 
-```
+```txt
 >>>>>>>>
 100
 1
@@ -65,5 +65,3 @@ Dado o valor da televisão e a quantidade de parcelas, um por linha, calcule o v
 <<<<<<<<
 
 ```
-
-Problema proposto por Aluízio Lopes.

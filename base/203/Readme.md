@@ -1,3 +1,0 @@
-## Listas de Exercícios
-
-[Listas](..)

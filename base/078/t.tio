@@ -1,0 +1,172 @@
+>>>>>>>> init !%
+create 100 banana
+create 101 goiaba
+create 102 sapoti
+show
+end
+========
+$create 100 banana
+$create 101 goiaba
+$create 102 sapoti
+$show
+100 Free banana
+101 Free goiaba
+102 Free sapoti
+$end
+<<<<<<<<
+
+>>>>>>>> criar ja existindo !%
+create 100 banana
+create 101 goiaba
+create 102 sapoti
+show
+create 101 murici
+show
+end
+========
+$create 100 banana
+$create 101 goiaba
+$create 102 sapoti
+$show
+100 Free banana
+101 Free goiaba
+102 Free sapoti
+$create 101 murici
+warning: locker 101 ja existe
+$show
+100 Free banana
+101 Free goiaba
+102 Free sapoti
+$end
+<<<<<<<<
+
+>>>>>>>> init !%
+create 100 banana
+create 101 goiaba
+create 102 sapoti
+take 101
+take 102
+show
+end
+========
+$create 100 banana
+$create 101 goiaba
+$create 102 sapoti
+$take 101
+seu codigo de acesso eh goiaba
+$take 102
+seu codigo de acesso eh sapoti
+$show
+100 Free banana
+101 Used goiaba
+102 Used sapoti
+$end
+<<<<<<<<
+
+>>>>>>>> erros de alocacao !%
+create 100 banana
+create 101 goiaba
+create 102 sapoti
+take 101
+take 102
+show
+take 104
+take 101
+show
+end
+========
+$create 100 banana
+$create 101 goiaba
+$create 102 sapoti
+$take 101
+seu codigo de acesso eh goiaba
+$take 102
+seu codigo de acesso eh sapoti
+$show
+100 Free banana
+101 Used goiaba
+102 Used sapoti
+$take 104
+warning: locker 104 nao existe
+$take 101
+warning: locker 101 ja esta em uso
+$show
+100 Free banana
+101 Used goiaba
+102 Used sapoti
+$end
+<<<<<<<<
+
+>>>>>>>> init !%
+create 100 banana
+create 101 goiaba
+create 102 sapoti
+take 100
+take 102
+show
+return 102 sapoti
+show
+end
+========
+$create 100 banana
+$create 101 goiaba
+$create 102 sapoti
+$take 100
+seu codigo de acesso eh banana
+$take 102
+seu codigo de acesso eh sapoti
+$show
+100 Used banana
+101 Free goiaba
+102 Used sapoti
+$return 102 sapoti
+$show
+100 Used banana
+101 Free goiaba
+102 Free sapoti
+$end
+<<<<<<<<
+
+>>>>>>>> erros !%
+create 100 banana
+create 101 goiaba
+create 102 sapoti
+take 100
+take 102
+show
+return 102 sapoti
+show
+return 100 acerola
+return 102 sapoti
+return 104 goiaba
+show
+end
+========
+$create 100 banana
+$create 101 goiaba
+$create 102 sapoti
+$take 100
+seu codigo de acesso eh banana
+$take 102
+seu codigo de acesso eh sapoti
+$show
+100 Used banana
+101 Free goiaba
+102 Used sapoti
+$return 102 sapoti
+$show
+100 Used banana
+101 Free goiaba
+102 Free sapoti
+$return 100 acerola
+warning: codigo de acesso invalido
+$return 102 sapoti
+warning: locker 102 nao esta em uso
+$return 104 goiaba
+warning: locker 104 nao existe
+$show
+100 Used banana
+101 Free goiaba
+102 Free sapoti
+$end
+<<<<<<<<

@@ -1,5 +1,5 @@
-## countNeg
-[](solver.hs)
+# countNeg
+
 Defina a função `countNeg xs` que computa o número de elementos negativos em uma lista xs.
 
 ```hs
@@ -13,13 +13,43 @@ countNeg [1,-3,-4,3,4,-5] == 3
 
 Guia: usa a função filter e length.
 
+## Testes
 
-<!--MAIN_BEGIN-->
-### Main
-```hs
-main = do
-    a <- readLn :: IO [Int]
-    print $ countNeg a
+```txt
+>>>>>>>>
+[]
+========
+0
+<<<<<<<<
+
+>>>>>>>>
+[1,2,3,4,5]
+========
+0
+<<<<<<<<
+
+>>>>>>>>
+[1,-1,2,-3,4]
+========
+2
+<<<<<<<<
+
+>>>>>>>>
+[2,-2]
+========
+1
+<<<<<<<<
+
+>>>>>>>>
+[1,-1]
+========
+1
+<<<<<<<<
+
+>>>>>>>>
+[1,-3,-4,3,4,-5]
+========
+3
+<<<<<<<<
 
 ```
-<!--MAIN_END-->

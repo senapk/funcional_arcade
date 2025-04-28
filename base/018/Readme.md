@@ -1,5 +1,5 @@
-## frequencia
-[](solver.hs)
+# frequencia
+
 ```hs
 --IN : Lista u e valor x
 --OUT: O total de ocorrências de x em u
@@ -12,39 +12,60 @@ frequencia 5 [4,5,2,1,5,5,9] == 3
 ```
 
 ## Guia
+
 - Você pode utilizar a função length
 - Faça utilizando filter
-    - filtre quem for igual ao valor
+  - filtre quem for igual ao valor
 - Faça utilizando compreensão de lista
-    - filtre quem for igual ao valor
+  - filtre quem for igual ao valor
 - Faça utilizando recursão
-    - se y for igual a head some 1 se não, 0
+  - se y for igual a head some 1 se não, 0
 - Faça utilizando fold
-    - utilize a lógica da recursão
+  - utilize a lógica da recursão
 
+## Testes
 
-<!--MAIN_BEGIN-->
-### Main
-```hs
-main = do
-    a <- readLn :: IO Int
-    b <- readLn :: IO [Int]
-    print $ frequencia a b
+```txt
+>>>>>>>>
+1
+[]
+========
+0
+<<<<<<<<
+
+>>>>>>>>
+4
+[4]
+========
+1
+<<<<<<<<
+
+>>>>>>>>
+4
+[5]
+========
+0
+<<<<<<<<
+
+>>>>>>>>
+4
+[4,4]
+========
+2
+<<<<<<<<
+
+>>>>>>>>
+2
+[4,4]
+========
+0
+<<<<<<<<
+
+>>>>>>>>
+5
+[4,5,2,1,5,5,9]
+========
+3
+<<<<<<<<
 
 ```
-<!--MAIN_END-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

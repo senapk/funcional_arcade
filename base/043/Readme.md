@@ -1,5 +1,5 @@
-## ehPrimo
-[](solver.hs)
+# ehPrimo
+
 ```hs
 --IN : Um natural n
 --OUT: Verdadeiro se n é primo e falso do contrário
@@ -9,13 +9,31 @@ ehPrimo 10 == False
 ehPrimo 13 == True
 ```
 
+## Testes
 
-<!--MAIN_BEGIN-->
-### Main
-```hs
-main = do
-    a <- readLn :: IO Int
-    print $ ehPrimo a
+```txt
+>>>>>>>>
+1
+========
+True
+<<<<<<<<
+
+>>>>>>>>
+2
+========
+True
+<<<<<<<<
+
+>>>>>>>>
+10
+========
+False
+<<<<<<<<
+
+>>>>>>>>
+13
+========
+True
+<<<<<<<<
 
 ```
-<!--MAIN_END-->

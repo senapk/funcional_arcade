@@ -1,5 +1,5 @@
-## paridade
-[](solver.hs)
+# paridade
+
 ```hs
 --IN :  Lista u de valores booleanos
 --OUT: Se o total de Trues é ímpar então retorne True e do contrário False
@@ -9,13 +9,31 @@ paridade [True,False,True,False,True] == True
 paridade [False,True,False] == True
 ```
 
+## Testes
 
-<!--MAIN_BEGIN-->
-### Main
-```hs
-main = do
-    a <- readLn :: IO [Bool]
-    print $ paridade a
+```txt
+>>>>>>>>
+[]
+========
+False
+<<<<<<<<
+
+>>>>>>>>
+[True,True,False]
+========
+False
+<<<<<<<<
+
+>>>>>>>>
+[True,False,True,False,True]
+========
+True
+<<<<<<<<
+
+>>>>>>>>
+[False,True,False]
+========
+True
+<<<<<<<<
 
 ```
-<!--MAIN_END-->

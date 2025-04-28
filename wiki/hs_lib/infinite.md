@@ -1,15 +1,14 @@
-## Listas Infinitas
-[](solver.hs)
+# Listas Infinitas
 
 - LINK: [https://hackage.haskell.org/package/base-4.15.0.0/docs/Data-List.html#g:8](https://hackage.haskell.org/package/base-4.15.0.0/docs/Data-List.html#g:8)
 
 Essas funções são geradoras de listas infinitas:
 
-### `iterate :: (a -> a) -> a -> [a]`
+## `iterate :: (a -> a) -> a -> [a]`
 
 iterate f x returns an infinite list of repeated applications of f to x:
 
-```
+```hs
 iterate f x == [x, f x, f (f x), ...]
 
 >>> iterate not True
@@ -19,22 +18,20 @@ iterate f x == [x, f x, f (f x), ...]
 [42,45,48,51,54,57,60,63...
 ```
 
-
-### `repeat :: a -> [a]`
+## `repeat :: a -> [a]`
 
 `repeat x` is an infinite list, with x the value of every element.
 
-```
+```hs
 >>> repeat 17
 [17,17,17,17,17,17,17,17,17...
 ```
 
-
-### `replicate :: Int -> a -> [a]`
+## `replicate :: Int -> a -> [a]`
 
 `replicate n x` is a list of length n with x the value of every element. It is an instance of the more general genericReplicate, in which n may be of any integral type.
 
-```
+```hs
 >>> replicate 0 True
 []
 >>> replicate (-1) True
@@ -43,12 +40,11 @@ iterate f x == [x, f x, f (f x), ...]
 [True,True,True,True]
 ```
 
-
-### `cycle :: [a] -> [a]`
+## `cycle :: [a] -> [a]`
 
 `cycle` ties a finite list into a circular one, or equivalently, the infinite repetition of the original list. It is the identity on infinite lists.
 
-```
+```hs
 >>> cycle []
 Exception: Prelude.cycle: empty list
 >>> cycle [42]
@@ -56,7 +52,6 @@ Exception: Prelude.cycle: empty list
 >>> cycle [2, 5, 7]
 [2,5,7,2,5,7,2,5,7,2,5,7...
 ```
-
 
 ## Funções úteis para lidar com listas e fazer cálculos sem recursão
 
@@ -67,7 +62,7 @@ Exception: Prelude.cycle: empty list
 [10,9,8,7,6,5,4,3,2,1]
 ```
 
-Pega uma semeste e gera uma lista a partir da semente. 
+Pega uma semeste e gera uma lista a partir da semente.
 
 Para implementar, definimos uma função que gera a interação usando o `Just` e o Ponto de parada com o `Nothing`.
 
@@ -82,7 +77,7 @@ unfoldr f b = case f b of
 
 - takeWhile
 
-```
+```hs
 takeWhile :: (a -> Bool) -> [a] -> [a]Source#
 
 >>> takeWhile (< 3) [1,2,3,4,1,2,3,4]
@@ -93,4 +88,3 @@ takeWhile :: (a -> Bool) -> [a] -> [a]Source#
 []
 
 ```
-

@@ -1,5 +1,5 @@
-## @ length
-[](solver.hs)
+# length
+
 ```hs
 --IN : Lista u
 --OUT: Total de elementos de u.
@@ -11,26 +11,40 @@ total [3,2,1] == 3
 ```
 
 ## Guia
-- Caso 1
-    - Use uma combinação da função sum e da operação de map transformando o vetor em um vetor de uns
-- Caso 2 - recursão
-    - Caso base da lista vazia retorne 0
-    - Caso normal retorne 1 mais recursão para o resto da lista
-- Caso 3 - foldr
-    - Use uma operação de fold adicionando 1 para cada elemento
 
-<!--MAIN_BEGIN-->
-### Main
-```hs
-main = do
-    a <- readLn :: IO [Int]
-    print $ total a
+- Caso 1
+  - Use uma combinação da função sum e da operação de map transformando o vetor em um vetor de uns
+- Caso 2 - recursão
+  - Caso base da lista vazia retorne 0
+  - Caso normal retorne 1 mais recursão para o resto da lista
+- Caso 3 - foldr
+  - Use uma operação de fold adicionando 1 para cada elemento
+
+## Testes
+
+```txt
+>>>>>>>>
+[]
+========
+0
+<<<<<<<<
+
+>>>>>>>>
+[1]
+========
+1
+<<<<<<<<
+
+>>>>>>>>
+[2,3]
+========
+2
+<<<<<<<<
+
+>>>>>>>>
+[3,2,1]
+========
+3
+<<<<<<<<
 
 ```
-<!--MAIN_END-->
-
-
-
-
-
-

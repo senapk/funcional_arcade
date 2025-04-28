@@ -1,6 +1,4 @@
-## max3
-[](solver.hs)
-
+# max3
 
 Defina a função `max3` tal que `max3 x y z` é o máximo entre x, y e z. Por exemplo,
 
@@ -11,15 +9,39 @@ max3 6 7 9 == 9
 max3 5 2 5 == 5
 ```
 
+## Testes
 
-<!--MAIN_BEGIN-->
-### Main
-```hs
-main = do
-    a <- readLn :: IO Int
-    b <- readLn :: IO Int
-    c <- readLn :: IO Int
-    print $ max3 a b c
+```txt
+>>>>>>>>
+6
+2
+4
+========
+6
+<<<<<<<<
+
+>>>>>>>>
+6
+7
+4
+========
+7
+<<<<<<<<
+
+>>>>>>>>
+6
+7
+9
+========
+9
+<<<<<<<<
+
+>>>>>>>>
+5
+2
+5
+========
+5
+<<<<<<<<
 
 ```
-<!--MAIN_END-->

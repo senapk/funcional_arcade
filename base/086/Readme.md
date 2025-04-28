@@ -1,14 +1,11 @@
-## L1 - Pedra na lua
-
-
-![](__capa.jpg)
+# Pedra na lua
 
 ## Motivação
 
-Vários competidores disputaram uma competição interessante. 
+Vários competidores disputaram uma competição interessante.
 
-- Eles tinham duas pedras para lançar. 
-- Chamemos de pedra A e pedra B. 
+- Eles tinham duas pedras para lançar.
+- Chamemos de pedra A e pedra B.
 - Eles tinham que arremessar ambas as pedras a pelo menos 10 metros de distância.
 - Se alguma das pedras caíssem abaixo de 10 metros, ele estaria desclassificado.
 - A pontuação obtida é dada pela distância absoluta entre as pedras. Se uma pedra caiu a 12 metros e outra a 15 metros, ele fez 3 pontos.
@@ -16,12 +13,10 @@ Vários competidores disputaram uma competição interessante.
 - O primeiro competidor tem número índice 0.
 - Se houver empate nos pontos, ganha o competidor que tem menor índice.
 
-
 ### Entrada
 
-* O número N de competidores.
-
-* Distância das pedras A e B de cada competidor.
+- O número N de competidores.
+- Distância das pedras A e B de cada competidor.
 
 ### Saida
 
@@ -29,7 +24,22 @@ Vários competidores disputaram uma competição interessante.
 
 ## Exemplos
 
+```hs
+main :: IO ()
+main = do
+    print $ processa ["8 11", "10 15"] == "1"
+    print $ processa ["9 12", "11 13", "10 11"] == "2"
+    print $ processa ["12 15", "16 14", "10 9"] == "1"
+    print $ processa ["12 15", "20 23", "10 9", "35 35"] == "3"
+    print $ processa ["10 8", "9 13"] == "sem ganhador"
+    print $ processa ["8 9", "12 7"] == "sem ganhador"
+    print $ processa ["10 9", "15 19"] == "1"
+    print $ processa ["9 8", "9 12", "12 15", "18 19"] == "3"
 ```
+
+## Testes
+
+```txt
 >>>>>>>>
 2
 8 11
@@ -74,17 +84,4 @@ sem ganhador
 3
 <<<<<<<<
 
-```
-
-```hs
-main :: IO ()
-main = do
-    print $ processa ["8 11", "10 15"] == "1"
-    print $ processa ["9 12", "11 13", "10 11"] == "2"
-    print $ processa ["12 15", "16 14", "10 9"] == "1"
-    print $ processa ["12 15", "20 23", "10 9", "35 35"] == "3"
-    print $ processa ["10 8", "9 13"] == "sem ganhador"
-    print $ processa ["8 9", "12 7"] == "sem ganhador"
-    print $ processa ["10 9", "15 19"] == "1"
-    print $ processa ["9 8", "9 12", "12 15", "18 19"] == "3"
 ```

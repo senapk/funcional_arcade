@@ -1,11 +1,14 @@
-## Comandos
+# Comandos
 
 Leia e processe vários comandos, um por linha até chegar no `end`.
 
 Os comandos podem ser
+
 - sum x y -> imprime a soma de dois inteiros x e y
 - half x -> imprime o valor float x dividido por 2 com duas casas decimais
 - end -> finaliza o loop
+
+## Testes
 
 ```txt
 >>>>>>>>

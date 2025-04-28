@@ -1,5 +1,4 @@
-## euler1 - soma dos múltiplos de 3 e 5
-[](solver.hs)
+# euler1 - soma dos múltiplos de 3 e 5
 
 Calcule a soma de todos os números de `1` até `n` que são múltiplos de `3` ou `5`. Utilize uma única `list compreension`.
 
@@ -13,12 +12,43 @@ euler1 10 == 23
 euler1 1000 == 233168
 ```
 
-<!--MAIN_BEGIN-->
-### Main
-```hs
-main = do
-    a <- readLn :: IO Int
-    print $ euler1 a
+## Testes
+
+```txt
+>>>>>>>>
+3
+========
+0
+<<<<<<<<
+
+>>>>>>>>
+4
+========
+3
+<<<<<<<<
+
+>>>>>>>>
+5
+========
+3
+<<<<<<<<
+
+>>>>>>>>
+6
+========
+8
+<<<<<<<<
+
+>>>>>>>>
+10
+========
+23
+<<<<<<<<
+
+>>>>>>>>
+1000
+========
+233168
+<<<<<<<<
 
 ```
-<!--MAIN_END-->

@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "# Updating arcade"
+feno indexer Readme.md base
 # update all Readme with main
-#./scripts/update_main.py base/*
+#./scripts/hs.py
 # generate .html for changed mains
-kkmanual Readme.md
-mdpp Readme.md
+#kkmanual Readme.md

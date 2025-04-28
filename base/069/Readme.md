@@ -1,5 +1,4 @@
-## @ elemIndex - Data.List
-[](solver.hs)
+# elemIndex - Data.List
 
 Implemente a função myelemIndex do Data.List retornando Nothing ou Just posição.
 
@@ -10,18 +9,35 @@ myelemIndex 4 [] == Nothing
 myelemIndex 1 [1,2,6,4,3] == Just 0
 ```
 
-## Guia
+## Testes
 
-<!--MAIN_BEGIN-->
-### Main
-```hs
-main = do
-    a <- readLn :: IO Int
-    b <- readLn :: IO [Int]
-    print $ myelemIndex a b
+```txt
+>>>>>>>>
+4
+[1,2,6,4,3]
+========
+Just 3
+<<<<<<<<
+
+>>>>>>>>
+5
+[1,2,6,4,3]
+========
+Nothing
+<<<<<<<<
+
+>>>>>>>>
+4
+[]
+========
+Nothing
+<<<<<<<<
+
+>>>>>>>>
+1
+[1,2,6,4,3]
+========
+Just 0
+<<<<<<<<
+
 ```
-<!--MAIN_END-->
-
-
-
-

@@ -1,9 +1,8 @@
-## line - linhas de um triângulo aritmético
-[](solver.hs)
+# line - linhas de um triângulo aritmético
 
 Um triângulo aritmético é construído da seguinte forma:
 
-```
+```txt
  1
  2  3
  4  5  6
@@ -26,16 +25,54 @@ line 6 == [16,17,18,19,20,21]
 ```
 
 ## Ajuda
+
 Observe que o elemento que inicia a linha `n` é a soma dos valores de (`1..n`) + 1.
 
 Ex: `line 5` inicia com `11 == 1 + 2 + 3 + 4` + `1`
 
-<!--MAIN_BEGIN-->
-### Main
-```hs
-main = do
-    a <- readLn :: IO Int
-    print $ line a
+## Testes
+
+```txt
+>>>>>>>>
+0
+========
+[]
+<<<<<<<<
+
+>>>>>>>>
+1
+========
+[1]
+<<<<<<<<
+
+>>>>>>>>
+2
+========
+[2,3]
+<<<<<<<<
+
+>>>>>>>>
+3
+========
+[4,5,6]
+<<<<<<<<
+
+>>>>>>>>
+4
+========
+[7,8,9,10]
+<<<<<<<<
+
+>>>>>>>>
+5
+========
+[11,12,13,14,15]
+<<<<<<<<
+
+>>>>>>>>
+6
+========
+[16,17,18,19,20,21]
+<<<<<<<<
 
 ```
-<!--MAIN_END-->

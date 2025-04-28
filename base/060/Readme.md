@@ -1,7 +1,9 @@
-## maxsubseq
+# maxsubseq
+
 [](solver.hs)
 
 ## Guia
+
 - IN : Lista u de inteiros (podem ser positivos, negativos ou zero)
 - OUT: Sublista de u de elementos consecutivos cuja soma é máxima
 
@@ -28,11 +30,11 @@ my_compare fn x y = compare (fn x) (fn y)
 
 Nossa função my_compare retorna um tipo `Ordering`. `compare` recebe dois valores e retorna LT, GT ou EQ. `my_compare` é equivalente a invocar `comparing sum` da biblioteca padrão, que aplica a função `sum` em ambos os valores e invoca `compare`.
 
-
 ## Utilizando as bibliotecas do Haskell
+
 Essa seria a resposta do problema utilizando as versões nativas do haskell.
 
-```hs
+```txt
 import Data.List (inits, tails, maximumBy)
 import Data.Ord (comparing)
  
@@ -47,9 +49,6 @@ main = print $ maxsubseq [-1, -2, 3, 5, 6, -2, -1, 4, -4, 2, -1]
 
 Agora implemente as suas versões das funções `inits`, `tails`, `concatMap` e `maximumBy`.
 
-
-## Testes
-
 ```hs
 --IN : Lista u de inteiros (podem ser positivos, negativos ou zero)
 --OUT:  Sublista de u de elementos consecutivos cuja soma é máxima
@@ -60,12 +59,37 @@ maxsubseq [4,3,1] == [4,3,1]
 maxsubseq [2,1,-4,9,7,-1,5] == [9,7,-1,5]
 ```
 
-<!--MAIN_BEGIN-->
-### Main
-```hs
-main = do
-    a <- readLn :: IO [Int]
-    print $ maxsubseq a
+## Testes
+
+```txt
+>>>>>>>>
+[]
+========
+[]
+<<<<<<<<
+
+>>>>>>>>
+[1,3,-5,1,2,-2]
+========
+[1,3]
+<<<<<<<<
+
+>>>>>>>>
+[2,3,-1,2,-3,2]
+========
+[2,3,-1,2]
+<<<<<<<<
+
+>>>>>>>>
+[4,3,1]
+========
+[4,3,1]
+<<<<<<<<
+
+>>>>>>>>
+[2,1,-4,9,7,-1,5]
+========
+[9,7,-1,5]
+<<<<<<<<
 
 ```
-<!--MAIN_END-->

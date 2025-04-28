@@ -1,5 +1,5 @@
-## sequencia
-[](solver.hs)
+# sequencia
+
 ```hs
 --IN : Dois números naturais n e m
 --OUT: Lista [m, m+1, m+2, ..., m+n-1]
@@ -9,14 +9,35 @@ sequencia 3 5 == [5,6,7]
 sequencia 4 4 == [4,5,6,7]
 ```
 
+## Testes
 
-<!--MAIN_BEGIN-->
-### Main
-```hs
-main = do
-    a <- readLn :: IO Int
-    b <- readLn :: IO Int
-    print $ sequencia a b
+```txt
+>>>>>>>>
+0
+2
+========
+[]
+<<<<<<<<
+
+>>>>>>>>
+1
+2
+========
+[2]
+<<<<<<<<
+
+>>>>>>>>
+3
+5
+========
+[5,6,7]
+<<<<<<<<
+
+>>>>>>>>
+4
+4
+========
+[4,5,6,7]
+<<<<<<<<
 
 ```
-<!--MAIN_END-->

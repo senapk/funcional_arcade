@@ -1,9 +1,8 @@
-## triangle - triângulo aritmético
-[](solver.hs)
+# triangle - triângulo aritmético
 
 Um triângulo aritmético é construído da seguinte forma:
 
-```
+```txt
  1
  2  3
  4  5  6
@@ -13,7 +12,6 @@ Um triângulo aritmético é construído da seguinte forma:
 ```
 
 A função `triangle n` o triângulo até a linha `n`:
-
 
 ```hs
 triangle 0 == []
@@ -25,14 +23,46 @@ triangle 5 == [[1],[2,3],[4,5,6],[7,8,9,10],[11,12,13,14,15]]
 ```
 
 ## Ajuda
+
 Utilize a função `line` criada no problema `@61`.
 
-<!--MAIN_BEGIN-->
-### Main
-```hs
-main = do
-    a <- readLn :: IO Int
-    print $ triangle a
+## Testes
+
+```txt
+>>>>>>>>
+0
+========
+[]
+<<<<<<<<
+
+>>>>>>>>
+1
+========
+[[1]]
+<<<<<<<<
+
+>>>>>>>>
+2
+========
+[[1],[2,3]]
+<<<<<<<<
+
+>>>>>>>>
+3
+========
+[[1],[2,3],[4,5,6]]
+<<<<<<<<
+
+>>>>>>>>
+4
+========
+[[1],[2,3],[4,5,6],[7,8,9,10]]
+<<<<<<<<
+
+>>>>>>>>
+5
+========
+[[1],[2,3],[4,5,6],[7,8,9,10],[11,12,13,14,15]]
+<<<<<<<<
 
 ```
-<!--MAIN_END-->

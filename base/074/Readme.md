@@ -1,5 +1,4 @@
-## @ replicate
-[](solver.hs)
+# replicate - hs lib
 
 Escreva a função replicate do prelude utilizando recursão.
 

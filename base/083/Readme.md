@@ -1,5 +1,5 @@
-## fraction reduce
-[](solver.hs)
+# fraction reduce
+
 Escreva uma função reduce que recebe uma tupla(numerador/denomidador) e devolve a fração após redução.
 
 ```hs
@@ -10,19 +10,9 @@ reduce (120,48) == (5,2)
 reduce (50,100) == (1,2)
 ```
 
+## Testes
 
-<!--MAIN_BEGIN-->
-### Main
-```hs
-main = do
-    a <- readLn :: IO Int
-    b <- readLn :: IO Int
-    print $ reduce (a,b)
-
-```
-<!--MAIN_END-->
-
-```
+```txt
 >>>>>>>>
 10
 2
@@ -36,4 +26,37 @@ main = do
 ========
 (5,2)
 <<<<<<<<
+```## Testes
+
+```txt
+>>>>>>>>
+(10,2)
+========
+(10,1)
+<<<<<<<<
+
+>>>>>>>>
+(15,6)
+========
+(5,2)
+<<<<<<<<
+
+>>>>>>>>
+(30,12)
+========
+(5,2)
+<<<<<<<<
+
+>>>>>>>>
+(120,48)
+========
+(5,2)
+<<<<<<<<
+
+>>>>>>>>
+(50,100)
+========
+(1,2)
+<<<<<<<<
+
 ```

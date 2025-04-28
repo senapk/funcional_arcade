@@ -1,5 +1,5 @@
-## titulo
-[](solver.hs)
+# titulo
+
 ```hs
 --IN : String S
 --OUT: Versão de S contendo todos os caracteres em caixa baixa exceto
@@ -8,13 +8,13 @@
 titulo "FuLaNo bElTrAnO silva" == "Fulano Beltrano Silva"
 ```
 
+## Testes
 
-<!--MAIN_BEGIN-->
-### Main
-```hs
-main = do
-    a <- getLine
-    print $ titulo a
+```txt
+>>>>>>>>
+FuLaNo bElTrAnO silva
+========
+"Fulano Beltrano Silva"
+<<<<<<<<
 
 ```
-<!--MAIN_END-->

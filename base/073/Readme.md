@@ -1,5 +1,4 @@
-## @ filter #recursão
-[](solver.hs)
+# filter - Data.List.filter
 
 Escreva a função filter do prelude utilizando recursão
 

@@ -1,5 +1,7 @@
 import Control.Monad (replicateM)
 
+-- DEL!
+
 calc :: (Int, Int) -> Int
 calc (a, b) = abs (a - b)
 
@@ -22,6 +24,7 @@ decompose line = (head tokens, tokens !! 1)
     where
         tokens = map (read :: String -> Int) . words $ line
 
+// ADD!
 main :: IO ()
 main = do
     size <- readLn :: IO Int

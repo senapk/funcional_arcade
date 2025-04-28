@@ -1,5 +1,5 @@
-## upper
-[](solver.hs)
+# upper
+
 ```hs
 --IN : Uma string S
 --OUT: Versão em caixa alta da string S
@@ -9,15 +9,28 @@ upper "tenho 45 ABCs" == "TENHO 45 ABCS"
 ```
 
 ## Ajuda
+
 Você pode usar a função `zip` para criar uma lista de tuplas `zip ['a'..'z'] ['A'..'Z']`
 
+## Testes
 
-<!--MAIN_BEGIN-->
-### Main
-```hs
-main = do
-    a <- getLine
-    print $ upper a
+```txt
+>>>>>>>>
+abc
+========
+"ABC"
+<<<<<<<<
+
+>>>>>>>>
+a Casa Caiu
+========
+"A CASA CAIU"
+<<<<<<<<
+
+>>>>>>>>
+tenho 45 ABCs
+========
+"TENHO 45 ABCS"
+<<<<<<<<
 
 ```
-<!--MAIN_END-->

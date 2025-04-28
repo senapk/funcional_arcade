@@ -1,5 +1,5 @@
-## nextPerm
-[](solver.hs)
+# nextPerm
+
 ```hs
 --IN : Lista u de elementos ordenáveis
 --OUT:  Próxima permutação lexicográfica de u ou lançar exceção se não for possível. 
@@ -16,6 +16,7 @@ nextPerm [1,3,5,2] == [1,5,2,3]
 ```
 
 ## Ajuda
+
 Seja o seguinte exemplo:
 
 - `nextPerm [4,1,3,2] == [4,2,1,3]`
@@ -24,12 +25,37 @@ Seja o seguinte exemplo:
 - Trocando o `2` e o `1` teremos: `[4,2,3,1]`
 - Agora invertemos de `i + 1` até o fim da lista obtendo `[4,2,1,3]`
 
-<!--MAIN_BEGIN-->
-### Main
-```hs
-main = do
-    a <- readLn :: IO [Int]
-    print $ nextPerm a
+## Testes
+
+```txt
+>>>>>>>>
+[]
+========
+[]
+<<<<<<<<
+
+>>>>>>>>
+[1]
+========
+[1]
+<<<<<<<<
+
+>>>>>>>>
+[1,3,4]
+========
+[1,4,3]
+<<<<<<<<
+
+>>>>>>>>
+[4,1,3,2]
+========
+[4,2,1,3]
+<<<<<<<<
+
+>>>>>>>>
+[1,3,5,2]
+========
+[1,5,2,3]
+<<<<<<<<
 
 ```
-<!--MAIN_END-->

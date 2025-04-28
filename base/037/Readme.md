@@ -1,5 +1,5 @@
-## rotEsq
-[](solver.hs)
+# rotEsq
+
 ```hs
 --IN : Um natural n e uma lista ou string S
 --OUT: Lista S rotacionada n vezes à esquerda
@@ -9,14 +9,35 @@ rotEsq 3 "asdfg" == "fgasd"
 rotEsq 4 "asdfg" == "gasdf"
 ```
 
+## Testes
 
-<!--MAIN_BEGIN-->
-### Main
-```hs
-main = do
-    a <- readLn :: IO Int
-    b <- getLine
-    print $ rotEsq a b
+```txt
+>>>>>>>>
+0
+asdfg
+========
+"asdfg"
+<<<<<<<<
+
+>>>>>>>>
+1
+asdfg
+========
+"sdfga"
+<<<<<<<<
+
+>>>>>>>>
+3
+asdfg
+========
+"fgasd"
+<<<<<<<<
+
+>>>>>>>>
+4
+asdfg
+========
+"gasdf"
+<<<<<<<<
 
 ```
-<!--MAIN_END-->

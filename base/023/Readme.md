@@ -1,5 +1,5 @@
-## @ init
-[](solver.hs)
+# init
+
 ```hs
 --IN : Uma lista u
 --OUT: Lista menos o último elemento
@@ -8,13 +8,25 @@ primeiros [1,2] == [1]
 primeiros [1,2,3,4] == [1,2,3]
 ```
 
+## Testes
 
-<!--MAIN_BEGIN-->
-### Main
-```hs
-main = do
-    a <- readLn :: IO [Int]
-    print $ primeiros a
+```txt
+>>>>>>>>
+[1]
+========
+[]
+<<<<<<<<
+
+>>>>>>>>
+[1,2]
+========
+[1]
+<<<<<<<<
+
+>>>>>>>>
+[1,2,3,4]
+========
+[1,2,3]
+<<<<<<<<
 
 ```
-<!--MAIN_END-->

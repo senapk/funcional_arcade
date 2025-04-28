@@ -1,5 +1,4 @@
-## Biblioteca de Listas
-[](solver.hs)
+# Biblioteca de Listas
 
 ```hs
 (++) :: [a] -> [a] -> [a] infixr 5

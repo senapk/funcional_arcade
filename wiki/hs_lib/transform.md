@@ -1,8 +1,7 @@
-## Biblioteca Transformações e Busca com predicados
-[](solver.hs)
+# Biblioteca Transformações e Busca com predicados
 
+## Buscas
 
-### Buscas
 ```hs
 find :: Foldable t => (a -> Bool) -> t a -> Maybe a 
 >>> find (> 42) [0, 5..]
@@ -27,5 +26,3 @@ partition p xs == (filter p xs, filter (not . p) xs)
 ("eoo","Hll Wrld!")
 
 ```
-
-

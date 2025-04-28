@@ -1,5 +1,5 @@
-## inits - Data.List.inits
-[](solver.hs)
+# inits - Data.List.inits
+
 ```hs
 --IN : Uma lista u
 --OUT: Retorna a lista dos segmentos finais, os menores primeiro
@@ -10,13 +10,31 @@ inits [1,3,5,2] == [[],[1],[1,3],[1,3,5],[1,3,5,2]]
 
 ```
 
+## Testes
 
-<!--MAIN_BEGIN-->
-### Main
-```hs
-main = do
-    a <- readLn :: IO [Int]
-    print $ inits a
+```txt
+>>>>>>>>
+[1]
+========
+[[],[1]]
+<<<<<<<<
+
+>>>>>>>>
+[1,3]
+========
+[[],[1],[1,3]]
+<<<<<<<<
+
+>>>>>>>>
+[1,3,5]
+========
+[[],[1],[1,3],[1,3,5]]
+<<<<<<<<
+
+>>>>>>>>
+[1,3,5,2]
+========
+[[],[1],[1,3],[1,3,5],[1,3,5,2]]
+<<<<<<<<
 
 ```
-<!--MAIN_END-->

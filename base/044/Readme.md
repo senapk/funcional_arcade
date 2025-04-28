@@ -1,5 +1,5 @@
-## sdig - soma dos dígitos
-[](solver.hs)
+# sdig - soma dos dígitos
+
 ```hs
 --IN : Natural n
 --OUT: Soma dos dígitos de n
@@ -8,6 +8,7 @@ sdig 328464584658 == 63
 ```
 
 ## Ajuda
+
 ```py
 n = int(input())
 cont = 0
@@ -17,13 +18,19 @@ while n > 0:
 print(cont)
 ```
 
+## Testes
 
-<!--MAIN_BEGIN-->
-### Main
-```hs
-main = do
-    a <- readLn :: IO Int
-    print $ sdig a
+```txt
+>>>>>>>>
+4132
+========
+10
+<<<<<<<<
+
+>>>>>>>>
+328464584658
+========
+63
+<<<<<<<<
 
 ```
-<!--MAIN_END-->

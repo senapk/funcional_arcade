@@ -1,5 +1,5 @@
-## deletee - remover primeira ocorrência
-[](solver.hs)
+# deletee - remover primeira ocorrência
+
 ```hs
 --IN : Valor x e lista u
 --OUT: Versão de u removendo primeira aparição de x
@@ -11,14 +11,42 @@ deletee 3 [4,3,1,3] == [4,1,3]
 deletee 5 [1,5,6,9] == [1,6,9]
 ```
 
+## Testes
 
-<!--MAIN_BEGIN-->
-### Main
-```hs
-main = do
-    a <- readLn :: IO Int
-    b <- readLn :: IO [Int]
-    print $ deletee a b
+```txt
+>>>>>>>>
+5
+[]
+========
+[]
+<<<<<<<<
+
+>>>>>>>>
+1
+[1]
+========
+[]
+<<<<<<<<
+
+>>>>>>>>
+4
+[1,3,4]
+========
+[1,3]
+<<<<<<<<
+
+>>>>>>>>
+3
+[4,3,1,3]
+========
+[4,1,3]
+<<<<<<<<
+
+>>>>>>>>
+5
+[1,5,6,9]
+========
+[1,6,9]
+<<<<<<<<
 
 ```
-<!--MAIN_END-->

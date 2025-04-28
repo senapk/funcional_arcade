@@ -7,7 +7,6 @@ import os
 import shutil
 import subprocess
 import tempfile
-from typing import Dict, List, Tuple, Union, Optional, Any  # , Any, Callable
 
 from subprocess import PIPE
 
@@ -19,14 +18,14 @@ class Runner:
         pass
 
     @staticmethod
-    def subprocess_run(cmd_list: List[str], input_data: str = ""):
+    def subprocess_run(cmd_list: list[str], input_data: str = ""):
         p = subprocess.Popen(cmd_list, stdout=PIPE, stdin=PIPE, stderr=PIPE, universal_newlines=True)
         stdout, stderr = p.communicate(input=input_data)
         return p.returncode, stdout, stderr
 
 
 class Case:
-    def __init__(self, cmd="", _input="", _output="", _parameters=[]):
+    def __init__(self, cmd: str="", _input: str="", _output: str="", _parameters: list[str]=[]):
         self.cmd = cmd
         self.input = _input
         self.output = _output
@@ -52,7 +51,7 @@ class Case:
         return parameters
 
     @staticmethod
-    def __split_test_line(line: str) -> Tuple[str, str, str]:
+    def __split_test_line(line: str) -> tuple[str, str, str]:
         parts = line.split("==")
         # remove first word
         _input = parts[0].strip().split(" ")
@@ -63,7 +62,7 @@ class Case:
         return _cmd, _input_text, _output_text
 
     @staticmethod
-    def __convert_parameters_to_input_block(parameters: List[str]):
+    def __convert_parameters_to_input_block(parameters: list[str]):
         _input = parameters[:]
         # removing " from beggining and ending of the strings
         for i in range(len(_input)):
@@ -84,13 +83,15 @@ class Case:
     def __str__(self):
         return self.cmd + "(" + self.input + ")(" + self.output + ")"
 
-    def __eq__(self, test):
+    def __eq__(self, test: object) -> bool:
+        if not isinstance(test, Case):
+            return False
         return (self.cmd == test.cmd) and (test.input == self.input) and (test.output == self.output)
 
 
 class HFile:
     @staticmethod
-    def __filter_lines(lines: List[str]) -> List[str]:
+    def __filter_lines(lines: list[str]) -> list[str]:
         lines = [line.strip() for line in lines]
         lines = [line for line in lines if not line.startswith("--")]
         lines = [line for line in lines if not line.startswith("```")]
@@ -104,7 +105,7 @@ class HFile:
         return "\n".join(match_list)
 
     @staticmethod
-    def load_from_text(text: str):
+    def load_from_text(text: str) -> list[Case]:
         text = HFile.__extract_hs(text)
         lines = text.split("\n")
         lines = HFile.__filter_lines(lines)
@@ -113,7 +114,7 @@ class HFile:
 
 class HMain:
     @staticmethod
-    def is_int(token):
+    def is_int(token: str):
         try:
             int(token)
             return True
@@ -121,7 +122,7 @@ class HMain:
             return False
 
     @staticmethod
-    def is_float(token):
+    def is_float(token: str):
         try:
             float(token)
             return True
@@ -154,7 +155,7 @@ class HMain:
             return "Bool"
 
     @staticmethod
-    def format_main(test) -> str:
+    def format_main(test: Case) -> str:
         readings = [HMain.identify_type(token) for token in test.parameters]
         readings = [("<- readLn :: IO " + _type) for _type in readings]
         for i in range(len(readings)):
@@ -175,23 +176,24 @@ class HSMod:
     regex = r"<!--MAIN_BEGIN-->(.*)<!--MAIN_END-->"
 
     @staticmethod
-    def make_main(content: str) -> Optional[str]:
+    def make_main_from_ghci(content: str) -> tuple[str, bool]:
         hcase_list = HFile.load_from_text(content)
-        if hcase_list:
-            return HMain.format_main(hcase_list[-1])
-        return None
+        if len(hcase_list) > 0:
+            return HMain.format_main(hcase_list[-1]), True
+        return "", False
 
     @staticmethod
-    def load_htests_as_tio(content: str) -> str:
+    def load_htests_as_tio(content: str) -> tuple[str, bool]:
         output = ""
         hcase_list = HFile.load_from_text(content)
+        if len(hcase_list) == 0:
+            return "", False
         for hc in hcase_list:
             output += ">>>>>>>>\n" + hc.input + "========\n" + hc.output + "<<<<<<<<\n\n"
-        return "```\n\n" + output + "```\n"
+        return "```txt\n" + output + "```\n", True
 
     @staticmethod
-    def prepare_hs(solver, executable_path) -> str:
-        print("oi galera")
+    def prepare_hs(solver: str, executable_path: str):
         cmd = ["ghc", solver, "-o", executable_path]
         return_code, stdout, stderr = Runner.subprocess_run(cmd)
         if return_code != 0:
@@ -206,50 +208,56 @@ def read_from_file(path: str):
         return f.read()
 
 # return actual main inside tags
-def extract_main(readme_content):
+def extract_main(readme_content: str) -> tuple[str, bool]:
     found = re.search(HSMod.regex, readme_content, re.MULTILINE | re.DOTALL)
-    return found.group(0) if found else None
+    if found:
+        return found.group(0), True
+    return "", False
 
 # replace the actual main with the new main
-def replace_main(readme_content, main_str):
-    subst = "<!--MAIN_BEGIN-->\\n### Main\\n```hs\\n" + main_str + "\\n```\\n<!--MAIN_END-->"
+def replace_main(readme_content: str, main_str: str) -> str:
+    # subst = "<!--MAIN_BEGIN-->\\n### Main\\n\\n```hs\\n" + main_str + "\\n```\\n<!--MAIN_END-->"
+    subst = ""
     result = re.sub(HSMod.regex, subst, readme_content, 0, re.MULTILINE | re.DOTALL)
     return result
 
-def put_guards_on_main(main_str):
-    return "<!--MAIN_BEGIN-->\n### Main\n```hs\n" + main_str + "\n```\n<!--MAIN_END-->\n"
+def put_guards_on_main(main_str: str) -> str:
+    return "<!--MAIN_BEGIN-->\n### Main\n\n```hs\n" + main_str + "\n```\n<!--MAIN_END-->\n"
     
-def is_manual_mode(main_with_guards):
+def is_manual_mode(main_with_guards: str) -> bool:
     return "<!--MANUAL-->" in main_with_guards
 
 def update_readme(folder: str):
-    readme_path = os.path.join(folder, "Readme.md")
-    last_change = os.path.join(folder, ".last")
-    if os.path.isfile(last_change):
-        if os.path.getmtime(last_change) > os.path.getmtime(readme_path):
-            return
+    pass
+    # readme_path = os.path.join(folder, "Readme.md")
+    # last_change = os.path.join(folder, ".last")
+    # if os.path.isfile(last_change):
+    #     if os.path.getmtime(last_change) > os.path.getmtime(readme_path):
+    #         return
     
-    readme = read_from_file(readme_path)
-    main_str = HSMod.make_main(readme)
-    #print(readme)
-    extracted = extract_main(readme)
-    if is_manual_mode(extracted):
-        return
-    if(extracted):
-        generated = put_guards_on_main(main_str)
-        if(extracted != generated):
-            new_content = replace_main(readme, main_str)
-            with open(readme_path, "w") as f:
-                f.write(new_content)
-    else:
-        with open(readme_path, "w") as f:
-            f.write(readme + "\n\n" + generated)
+    # readme = read_from_file(readme_path)
+    # extracted, ok = extract_main(readme)
+    # if not ok:
+    #     print("No main found in " + os.path.abspath(readme_path))
+    #     return
+    # if is_manual_mode(extracted):
+    #     print("Manual mode in " + os.path.abspath(readme_path)) 
+    #     return
+
+    # generated = put_guards_on_main(main_str)
+    # with open(readme_path, "w") as f:
+    #     new_content = replace_main(readme, "")
+    #     f.write(new_content)
+    # if(extracted != generated):
+    # else:
+    #     with open(readme_path, "w") as f:
+    #         f.write(readme + "\n\n" + generated)
     # updating ctime of last change
-    with open(last_change, "w"):
-       pass
+    # with open(last_change, "w"):
+    #    pass
 
 
-def copy_to_temp(folder):
+def copy_to_temp(folder: str):
     temp_dir = tempfile.mkdtemp()
     for file in os.listdir(folder):
         if os.path.isfile(os.path.join(folder, file)):
@@ -257,38 +265,73 @@ def copy_to_temp(folder):
     return temp_dir
 
 
-def build_source(readme_path, new_readme_path):
-    readme = read_from_file(readme_path)
-    extracted = extract_main(readme)
-    append = ""
-    if not is_manual_mode(extracted):
-        append = HSMod.load_htests_as_tio(readme)
-    with open(new_readme_path, "w") as f:
+def build_testes(folder: str):
+    readme_path = os.path.join(folder, "Readme.md")
+    readme: str = read_from_file(readme_path)
+
+    manual = "MANUAL" in readme
+    if manual:
+        print("Manual testes in " + os.path.abspath(readme_path))
+        return
+
+    if "## Testes" in readme:
+        print("Replacing tests in " + os.path.abspath(readme_path))
+        readme = readme.split("## Testes")[0]
+    else:
+        print("Adding tests in " + os.path.abspath(readme_path))
+
+    # extracted, ok = extract_main(readme)
+    # # if not ok:
+    # #     print("No main found in " + os.path.abspath(readme_path))
+    # #     return
+    # # if not is_manual_mode(extracted):
+    
+
+    tests, ok = HSMod.load_htests_as_tio(readme)
+    if not ok:
+        print("No tests found in " + os.path.abspath(readme_path))
+        return
+    append = "## Testes\n\n"
+    append += tests
+    with open(readme_path, "w") as f:
         f.write(readme + append)
 
-def extract_pure_main(folder):
+def extract_pure_main(folder: str) -> tuple[str, bool]:
     readme_path = os.path.join(folder, "Readme.md")
-    if(os.path.isfile(readme_path)):
-        readme = read_from_file(readme_path)
-        extracted = extract_main(readme)
-        if extracted:
-            regex = r"```hs(.*?)\n```"
-            found = re.search(regex, extracted, re.MULTILINE | re.DOTALL)
-            return found.group(0)[5:-4]
-    return ""
+    if not os.path.isfile(readme_path):
+        return "", False
+    readme = read_from_file(readme_path)
+    extracted, ok = extract_main(readme)
+    if not ok:
+        print(os.path.abspath(readme_path))
+        return "", False
+    regex = r"```hs(.*?)\n```"
+    found = re.search(regex, extracted, re.MULTILINE | re.DOTALL)
+    if found is None:
+        print("No main found in " + os.path.abspath(readme_path))
+        return "", False
+    return found.group(0)[5:-4], True
 
 # Extract main from Readme if solver not contains any main
-def build_solver(solver_path, executable_path):
-    solver_content = read_from_file(solver_path)
-    path_list = solver_path.split(os.sep)
-    folder = "." if len(path_list) == 1 else os.sep.join(path_list[:-1])
-    if not "main =" in solver_content and not "main=" in solver_content:
-        solver_content += "\n" + extract_pure_main(folder)
-    temp_solver = os.path.join(folder, ".__solver.hs")
-    with open(temp_solver, "w") as f:
-        f.write(solver_content)
-    HSMod.prepare_hs(temp_solver, executable_path)
-    os.remove(temp_solver)
+def build_solver(folder: str):
+    readme_path = os.path.join(folder, "Readme.md")
+    readme = read_from_file(readme_path)
+    main_str, ok = HSMod.make_main_from_ghci(readme)
+    if not ok:
+        print("Failed to generate main from Readme in " + os.path.abspath(readme_path))
+        return
+    solver_path = os.path.join(folder, "solver.hs")
+    destiny_path = os.path.join(folder, "src", "hs", "Main.hs")
+
+    with open(solver_path, "r") as f:
+        solver_content = f.read()
+
+    # check destiny path directory
+    os.makedirs(os.path.dirname(destiny_path), exist_ok=True)
+
+    with open(destiny_path, "w") as f:
+        f.write("-- DEL!\n" + solver_content + "\n-- ADD!\n" + main_str)
+    # os.remove(temp_solver)
 
     
 # def which(program):
@@ -310,8 +353,8 @@ def build_solver(solver_path, executable_path):
 def main():
     parser = argparse.ArgumentParser(prog='kph.py', description="gerador haskell to vpl", formatter_class=argparse.RawTextHelpFormatter)
     parser.add_argument('--update', '-u', metavar="F", type=str, nargs='*', help='update Readme.md main in folders.')
-    parser.add_argument('--source', metavar="F", type=str, nargs=2, help='rebuild source to include testes from ghci example')
-    parser.add_argument('--solver', metavar="F", type=str, nargs=2, help='build solver to executable including main from Readme.md')
+    parser.add_argument('--source', action='store_true', help='rebuild source to include testes from ghci example')
+    parser.add_argument('--solver', metavar="F", type=str, help='build solver to executable including main from Readme.md')
     
     args = parser.parse_args()
     if args.update:
@@ -323,20 +366,18 @@ def main():
         for folder in folders:
             if os.path.isdir(folder):
                 update_readme(folder)
+                build_testes(folder)
+                build_solver(folder)
             else:
                 print("script parameters should be folders with a Readme.md", end='')
 
-    if args.source:
-        build_source(args.source[0], args.source[1])
     
-    if args.solver:
-        if not args.solver[0].endswith(".hs"):
-            exit(1)
-        build_solver(args.solver[0], args.solver[1])
+    # if args.solver:
+    #     if not args.solver[0].endswith(".hs"):
+    #         exit(1)
+    #     build_solver(args.solver[0], args.solver[1])
 
 
 
 if __name__ == '__main__':
     main()
-
-

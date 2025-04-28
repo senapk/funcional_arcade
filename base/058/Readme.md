@@ -1,5 +1,5 @@
-## factors - fatores de um número
-[](solver.hs)
+# factors - fatores de um número
+
 ```hs
 --IN : Número n inteiro positivo
 --OUT: Lista de tuplas (f, p) que representam os
@@ -17,18 +17,45 @@ factors 3361743 == [(3,4),(7,3),(11,2)]
 ```
 
 ## Ajuda
+
 Faça as funções para:
+
 - verificar se um número é primo
 - gerar todos os primos de 1 até n
 - dado um número x, qual a potência de x em n: 
-    - Exemplo: `expoente 24 2 == 3` pois consigo dividir o 24 por 2 três vezes. 
+  - Exemplo: `expoente 24 2 == 3` pois consigo dividir o 24 por 2 três vezes.
 
-<!--MAIN_BEGIN-->
-### Main
-```hs
-main = do
-    a <- readLn :: IO Int
-    print $ factors a
+## Testes
+
+```txt
+>>>>>>>>
+36
+========
+[(2,2),(3,2)]
+<<<<<<<<
+
+>>>>>>>>
+50
+========
+[(2,1),(5,2)]
+<<<<<<<<
+
+>>>>>>>>
+78
+========
+[(2,1),(3,1),(13,1)]
+<<<<<<<<
+
+>>>>>>>>
+60
+========
+[(2,2),(3,1),(5,1)]
+<<<<<<<<
+
+>>>>>>>>
+3361743
+========
+[(3,4),(7,3),(11,2)]
+<<<<<<<<
 
 ```
-<!--MAIN_END-->
