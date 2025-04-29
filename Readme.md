@@ -1,6 +1,6 @@
 # Tópicos
 
-## 00. Introdução e Links
+## Links
 
 - [Curso Youtube](https://www.youtube.com/watch?v=L_GvP5XTJj4&list=PL8eBmR3QtPL3pDzQpwPYfWQ4NEPGu6j7z)
 - [Haskel em uma hora](https://www.youtube.com/watch?v=02_H3LjqMr8)
@@ -8,18 +8,15 @@
 - [Curso Online em Inglês](http://learnyouahaskell.com/chapters)
 - [Resumão](https://learnxinyminutes.com/docs/haskell/)
 - [IDE Online](http://tryhaskell.org/)
-- [ ] `#inputs` [Inputs em Haskell](wiki/inputs/Readme.md)
 
-## 01. Instalação
+## Introdução
 
 - [ ] `#install` [Instalação do Haskell](wiki/install/Readme.md)
-
-## 02. Apostilas, Listas e Slides
-
+- [ ] `#inputs` [Inputs em Haskell](wiki/inputs/Readme.md)
 - [ ] `#listas_pdf` [Listas de Exercícios](wiki/exercicios_pdf/Readme.md)
 - [ ] `#slides` [Slides](wiki/apostilas/Readme.md)
 
-## 03. Aquecimento
+## Aquecimento
 
 - [ ] `@004` [countNeg](base/004/Readme.md)
 - [ ] `@005` [final](base/005/Readme.md)
@@ -30,7 +27,7 @@
 - [ ] `@011` [min3](base/011/Readme.md)
 - [ ] `@000` [soma2](base/000/Readme.md)
 
-## 04. Operações básicas
+## Operações básicas
 
 Operações em listas, Comprehension List, Where, Guards
 
@@ -52,7 +49,7 @@ Operações em listas, Comprehension List, Where, Guards
 - [ ] `@054` [swap - trocando dois elementos de uma lista](base/054/Readme.md)
 - [ ] `@063` [euler1 - soma dos múltiplos de 3 e 5](base/063/Readme.md)
 
-## 05. Recursão
+## Recursão
 
 - [ ] `#hs_tr` [Biblioteca Transformações e Busca com predicados](wiki/hs_lib/transform.md)
 - [ ] `@013` [fibonacci](base/013/Readme.md)
@@ -72,14 +69,14 @@ Operações em listas, Comprehension List, Where, Guards
 - [ ] `@053` [deletee - remover primeira ocorrência](base/053/Readme.md)
 - [ ] `@080` [decompor](base/080/Readme.md)
 
-## 06. Data.List && Prelude
+## Data.List
 
 - [ ] `@071` [map - Data.List.map](base/071/Readme.md)
 - [ ] `@073` [filter - Data.List.filter](base/073/Readme.md)
 - [ ] `@022` [tails - Data.List.tails](base/022/Readme.md)
 - [ ] `@024` [nub - Data.List.nub](base/024/Readme.md)
 
-## 07. Zip e Fold
+## Zip e Fold
 
 - [ ] `@064` [produtoEscalar - utilizando a função zip](base/064/Readme.md)
 - [ ] `@065` [indices - busca posições do elemento](base/065/Readme.md)
@@ -89,13 +86,13 @@ Operações em listas, Comprehension List, Where, Guards
 - [ ] `@049` [base - mudança de base](base/049/Readme.md)
 - [ ] `@083` [fraction reduce](base/083/Readme.md)
 
-## 08 Maybe
+## Maybe
 
 - [ ] `@069` [elemIndex - Data.List](base/069/Readme.md)
 - [ ] `@081` [somaMaybe](base/081/Readme.md)
 - [ ] `@082` [filterMaybe](base/082/Readme.md)
 
-## 10. Strings
+## Strings
 
 - [ ] `#hs_str` [Métodos de string](wiki/hs_lib/strings.md)
 - [ ] `@039` [upper](base/039/Readme.md)
@@ -103,13 +100,13 @@ Operações em listas, Comprehension List, Where, Guards
 - [ ] `@041` [selec - apenas as chaves selecionadas](base/041/Readme.md)
 - [ ] `@042` [isPalind - verificar palíndromo](base/042/Readme.md)
 
-## 11. Math
+## Math
 
 - [ ] `@044` [sdig - soma dos dígitos](base/044/Readme.md)
 - [ ] `@052` [rev - inverter inteiro](base/052/Readme.md)
 - [ ] `@049` [base - mudança de base](base/049/Readme.md)
 
-## 12. Infinite
+## Infinite
 
 - [ ] `#hs_infinite` [Listas Infinitas](wiki/hs_lib/infinite.md)
 - [ ] `@072` [repeat - hs lib](base/072/Readme.md)
@@ -120,7 +117,7 @@ Operações em listas, Comprehension List, Where, Guards
 - [ ] `@080` [decompor](base/080/Readme.md)
 - [ ] `@049` [base - mudança de base](base/049/Readme.md)
 
-## 13. Ordenação
+## Ordenação
 
 - [ ] `@046` [compac](base/046/Readme.md)
 - [ ] `@003` [vetFib](base/003/Readme.md)
@@ -129,13 +126,13 @@ Operações em listas, Comprehension List, Where, Guards
 - [ ] `@035` [qsort](base/035/Readme.md)
 - [ ] `@036` [merge - recursão](base/036/Readme.md)
 
-## 14. Novas
+## Novas
 
 - [ ] `@carro` [Carro & Controla a quantidade de pessoas e sai para passear](base/carro/Readme.md)
 - [ ] `@078` [Armário -  Either, Map](base/078/Readme.md)
 - [ ] `@tree` [Árvores](base/tree/Readme.md)
 
-## Challenges
+## Desafios
 
 - [ ] `@088` [Comprando TV parcelado](base/088/Readme.md)
 - [ ] `@087` [Blackjack 21 - TODO](base/087/Readme.md)
@@ -143,7 +140,7 @@ Operações em listas, Comprehension List, Where, Guards
 - [ ] `@084` [L2 - distance](base/084/Readme.md)
 - [ ] `@085` [L2 - {robot} queimada](base/085/Readme.md)
 
-## Para organizar
+## Organizar
 
 - [ ] `@050` [subconjuntos](base/050/Readme.md)
 - [ ] `@068` [filtrandoCaudas](base/068/Readme.md)
