@@ -24,7 +24,7 @@
 
 - [ ] `@004` [countNeg](base/004/Readme.md)
 - [ ] `@005` [final](base/005/Readme.md)
-- [ ] `@002` [contarIguais - Contar quantos de 3 valores são iguais ](base/002/Readme.md)
+- [ ] `@002` [contarIguais - Contar quantos de 3 valores são iguais](base/002/Readme.md)
 - [ ] `@006` [interior - miolo da lista](base/006/Readme.md)
 - [ ] `@008` [gangorra](base/008/Readme.md)
 - [ ] `@010` [min2](base/010/Readme.md)

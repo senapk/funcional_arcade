@@ -7,5 +7,6 @@
 .vpl
 .last
 solver
-Main.hs
 _*
+solver*
+src
