@@ -1,4 +1,4 @@
-# min2
+# Menor de dois números
 
 ```hs
 --IN : Dois números, x e y

@@ -1,4 +1,4 @@
-# soma2
+# Somar dois números
 
 Escreva uma função soma que recebe dois parâmetros e devolve a soma dos dois parâmetros.
 

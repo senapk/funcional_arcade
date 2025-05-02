@@ -1,4 +1,4 @@
-# min3
+# Menor de 3 números
 
 ```hs
 --IN : Três números, x, y e z

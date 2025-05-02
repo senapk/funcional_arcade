@@ -22,14 +22,14 @@
 
 ### Aquecimento
 
-- [ ] `@004` [countNeg](base/004/Readme.md)
-- [ ] `@005` [final](base/005/Readme.md)
-- [ ] `@002` [contarIguais - Contar quantos de 3 valores são iguais](base/002/Readme.md)
-- [ ] `@006` [interior - miolo da lista](base/006/Readme.md)
-- [ ] `@008` [gangorra](base/008/Readme.md)
-- [ ] `@010` [min2](base/010/Readme.md)
-- [ ] `@011` [min3](base/011/Readme.md)
-- [ ] `@000` [soma2](base/000/Readme.md)
+- [ ] `@soma2   :` [Somar dois números](base/soma2/Readme.md)
+- [ ] `@countNeg:` [Contar negativos](base/countNeg/Readme.md)
+- [ ] `@final   :` [Últimos elementos de uma lista](base/final/Readme.md)
+- [ ] `@iguais  :` [Contar quantos de 3 valores são iguais](base/iguais/Readme.md)
+- [ ] `@interior:` [Miolo da lista](base/interior/Readme.md)
+- [ ] `@gangorra:` [Comparando pesos](base/gangorra/Readme.md)
+- [ ] `@menor2  :` [Menor de dois números](base/menor2/Readme.md)
+- [ ] `@menor3  :` [Menor de 3 números](base/menor3/Readme.md)
 
 ### Operações básicas
 
