@@ -1,8 +1,5 @@
 # Geradores
 
-[](solver.hs)
-[](SolverVigenere.hs)
-
 Faça os tres geradores de lista das seguintes formas:
 
 - a. apenas com recursão

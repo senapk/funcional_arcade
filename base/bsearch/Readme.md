@@ -1,8 +1,9 @@
 # Busca binária
 
+- Entrada: Lista u de chaves ordenadas ascendentemente e valor x de mesmo tipo base de u.
+- Saída: Posição de u onde se encontra x ou -1 se x não estiver em u. A busca deve ser binária.
+
 ```hs
---IN : Lista u de chaves ordenadas ascendentemente e valor x de mesmo tipo base de u
---OUT: Posição de u onde se encontra x ou -1 se x não estiver em u. A busca deve ser binária.
 buscaBin [] 4 == -1
 buscaBin [1] 3 == -1
 buscaBin [1,3,4] 4 == 2

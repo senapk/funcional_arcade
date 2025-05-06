@@ -1,4 +1,5 @@
 import Text.Printf
+main :: IO ()
 main = do
     value <- readLn :: IO Float
     times <- readLn :: IO Float

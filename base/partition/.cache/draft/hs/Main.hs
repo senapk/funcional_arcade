@@ -1,4 +1,5 @@
+main :: IO ()
 main = do
-    a <- readLn :: IO Bool
-    b <- readLn :: IO [Int]
-    print $ splitints a b
+    list <- readLn :: IO [Int]
+    putStrLn $ "odd " ++ show (splitints odd list)
+    putStrLn $ "(<5) " ++ show (splitints (<5) list)

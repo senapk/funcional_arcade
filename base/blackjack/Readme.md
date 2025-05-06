@@ -10,7 +10,7 @@ No vetor de inteiros, os valores 1, 11, 12 e 13 são respectivamente Ás, J, Q e
 
 ### Entrada
 
-- A entrada começa informando a quantidade de elementos do vetor e é seguida pelos valores inteiros um por linha.
+- A entrada fornece uma lista de inteiros.
 
 ### Saída
 
@@ -20,48 +20,31 @@ No vetor de inteiros, os valores 1, 11, 12 e 13 são respectivamente Ás, J, Q e
 
 ```txt
 >>>>>>>>
-2
-1
-13
+[1,13]
 ========
 21
 <<<<<<<<
 
 >>>>>>>>
-2
-11
-13
+[11,13]
 ========
 20
 <<<<<<<<
 
 >>>>>>>>
-3
-1
-1
-1
+[1,1,1]
 ========
 13
 <<<<<<<<
 
 >>>>>>>>
-5
-1
-1
-2
-3
-12
+[1,1,2,3,12]
 ========
 17
 <<<<<<<<
 
 >>>>>>>>
-5
-1
-1
-2
-10
-12
+[1,1,2,10,12]
 ========
 24
 <<<<<<<<

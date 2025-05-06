@@ -30,6 +30,7 @@
 - [ ] `@school :leet` [Comparando pesos](base/school/Readme.md)
 - [ ] `@min2   :leet` [Menor de dois números](base/min2/Readme.md)
 - [ ] `@min3   :leet` [Menor de 3 números](base/min3/Readme.md)
+- [ ] `@tv     :leet` [Comprando TV parcelado](base/tv/Readme.md)
 
 ### Operações básicas
 
@@ -43,15 +44,24 @@ Operações em listas, Comprehension List, Where, Guards
 - [ ] `@init      :leet` [Remover o último](base/init/Readme.md)
 - [ ] `@splitAt   :leet` [Cortar uma lista em duas partes](base/splitAt/Readme.md)
 - [ ] `@partition :leet` [Partir por predicado](base/partition/Readme.md)
+- [ ] `@tails     :leet` [Todas as caudas](base/tails/Readme.md)
 - [ ] `@oddsum    :leet` [Somar os ímpares](base/oddsum/Readme.md)
+- [ ] `@subsets   :leet` [Montando subconjuntos](base/subsets/Readme.md)
 - [ ] `@max3      :leet` [Máximo de 3 números](base/max3/Readme.md)
 - [ ] `@fat       :leet` [Fatorial de um número](base/fat/Readme.md)
 - [ ] `@union     :leet` [União de listas](base/union/Readme.md)
 - [ ] `@intersec  :leet` [Intercessão entre listas](base/intersec/Readme.md)
+- [ ] `@inits     :leet` [Possíveis inícios](base/inits/Readme.md)
 - [ ] `@slice     :leet` [Slice por índices](base/slice/Readme.md)
 - [ ] `@parity    :leet` [Calculando paridade simples](base/parity/Readme.md)
 - [ ] `@swap      :leet` [Trocando por índice](base/swap/Readme.md)
 - [ ] `@euler1    :leet` [Soma dos múltiplos de 3 e 5](base/euler1/Readme.md)
+- [ ] `@distance  :leet` [Backtrack distância](base/distance/Readme.md)
+- [ ] `@blackjack :leet` [Blackjack 21](base/blackjack/Readme.md)
+- [ ] `@lines     :leet` [Linhas de um triângulo aritmético](base/lines/Readme.md)
+- [ ] `@triangle  :leet` [Triângulo aritmético](base/triangle/Readme.md)
+- [ ] `@end       :leet` [Comandos até o end](base/end/Readme.md)
+- [ ] `@listacc   :leet` [Lista acumulativa](base/listacc/Readme.md)
 
 ### Recursão
 
@@ -71,9 +81,12 @@ Operações em listas, Comprehension List, Where, Guards
 - [ ] `@rotDir    :leet` [Rotação à direita](base/rotDir/Readme.md)
 - [ ] `@perfect   :leet` [É quadrado perfeito](base/perfect/Readme.md)
 - [ ] `@rmFirst   :leet` [Remover a primeira ocorrência](base/rmFirst/Readme.md)
-- [ ] `@split     :leet` [Separar dígitos](base/split/Readme.md)
 - [ ] `@sdig      :leet` [Soma dos dígitos](base/sdig/Readme.md)
 - [ ] `@intrev    :leet` [Inverter inteiro](base/intrev/Readme.md)
+- [ ] `@burn      :leet` [Queimada](base/burn/Readme.md)
+- [ ] `@bsearch   :leet` [Busca binária](base/bsearch/Readme.md)
+- [ ] `@bubble    :leet` [Bubble Sort](base/bubble/Readme.md)
+- [ ] `@nextperm  :leet` [Gerar a próxima permutação](base/nextperm/Readme.md)
 
 ### Data.List
 
@@ -81,6 +94,8 @@ Operações em listas, Comprehension List, Where, Guards
 - [ ] `@filter    :leet` [Data.List.filter](base/filter/Readme.md)
 - [ ] `@mytails   :leet` [Data.List.tails](base/mytails/Readme.md)
 - [ ] `@nub       :leet` [Data.List.nub](base/nub/Readme.md)
+- [ ] `@maxsubseq :leet` [Subsequência com maior soma](base/maxsubseq/Readme.md)
+- [ ] `@allperms  :leet` [Todas as permutações](base/allperms/Readme.md)
 
 ### Zip e Fold
 
@@ -95,13 +110,13 @@ Operações em listas, Comprehension List, Where, Guards
 ### Maybe
 
 - [ ] `@elemidx   :leet` [Data.List.elemIndex](base/elemidx/Readme.md)
-- [ ] `@summaybe  :leet` [Soma de vários maybe](base/summaybe/Readme.md)
 - [ ] `@filterm   :leet` [Filtro de Maybe](base/filterm/Readme.md)
 
 ### Strings
 
 - [ ] `#hs_str    :info` [Métodos de string](wiki/hs_lib/strings.md)
 - [ ] `@upper     :leet` [Mudar para maiúsculo](base/upper/Readme.md)
+- [ ] `@lower     :leet` [Mudar para minúsculo](base/lower/Readme.md)
 - [ ] `@first     :leet` [Primeira letra em maiúsculo](base/first/Readme.md)
 - [ ] `@selec     :leet` [Letras escolhidas por índice](base/selec/Readme.md)
 - [ ] `@palin     :leet` [Verificar palíndromo](base/palin/Readme.md)
@@ -111,10 +126,8 @@ Operações em listas, Comprehension List, Where, Guards
 - [ ] `#hs_infi    :info` [Listas Infinitas](wiki/hs_lib/infinite.md)
 - [ ] `@repeat     :leet` [Função de repetição](base/repeat/Readme.md)
 - [ ] `@replicate  :leet` [Função para replicar](base/replicate/Readme.md)
-- [ ] `@generators :leet` [Geradores](base/generators/Readme.md)
 - [ ] `@expo       :leet` [REVIEW mudar para testes normais](base/expo/Readme.md)
 - [ ] `@factors    :leet` [Fatores de um número](base/factors/Readme.md)
-- [ ] `@split      :leet` [Separar dígitos](base/split/Readme.md)
 
 ### Ordenação
 
@@ -127,27 +140,6 @@ Operações em listas, Comprehension List, Where, Guards
 
 ## Problemas
 
-### Novas
+### Funções de alta ordem
 
-- [ ] `@carro      :leet` [Carro & Controla a quantidade de pessoas e sai para passear](base/carro/Readme.md)
-- [ ] `@either     :leet` [Armário -  Either, Map](base/either/Readme.md)
-
-### Organizar
-
-- [ ] `@tv        :leet` [Comprando TV parcelado](base/tv/Readme.md)
-- [ ] `@blackjack :leet` [Blackjack 21](base/blackjack/Readme.md)
-- [ ] `@moon      :leet` [Pedra na lua](base/moon/Readme.md)
-- [ ] `@distance  :leet` [Backtrack distância](base/distance/Readme.md)
-- [ ] `@burn      :leet` [Queimada](base/burn/Readme.md)
-- [ ] `@subsets   :leet` [Montando subconjuntos](base/subsets/Readme.md)
-- [ ] `@tails     :leet` [Todas as caudas](base/tails/Readme.md)
-- [ ] `@inits     :leet` [Possíveis inícios](base/inits/Readme.md)
-- [ ] `@maxsubseq :leet` [Subsequência com maior soma](base/maxsubseq/Readme.md)
-- [ ] `@triangle  :leet` [Triângulo aritmético](base/triangle/Readme.md)
-- [ ] `@allperms  :leet` [Todas as permutações](base/allperms/Readme.md)
-- [ ] `@end       :leet` [Comandos até o end](base/end/Readme.md)
-- [ ] `@lines     :leet` [Linhas de um triângulo aritmético](base/lines/Readme.md)
-- [ ] `@listacc   :leet` [Lista acumulativa](base/listacc/Readme.md)
-- [ ] `@bsearch   :leet` [Busca binária](base/bsearch/Readme.md)
-- [ ] `@bubble    :leet` [Bubble Sort](base/bubble/Readme.md)
-- [ ] `@nextperm  :leet` [Gerar a próxima permutação](base/nextperm/Readme.md)
+- [ ] `@moon       :leet` [Pedra na lua](base/moon/Readme.md)

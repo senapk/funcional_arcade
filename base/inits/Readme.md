@@ -1,8 +1,8 @@
 # Possíveis inícios
 
+
+Escreva uma função que retorne os prefixos iniciais de uma lista, incluindo a lista vazia e a lista completa.
 ```hs
---IN : Uma lista u
---OUT: Retorna a lista dos segmentos finais, os menores primeiro
 inits [1] == [[],[1]] 
 inits [1,3] == [[],[1],[1,3]] 
 inits [1,3,5] == [[],[1],[1,3],[1,3,5]] 

@@ -1,8 +1,9 @@
 # Bubble Sort
 
+- Entrada: Lista ordenável u
+- Saída: Versão ordenada de u pelo método de ordenação em bolhas
+
 ```hs
---IN : Lista ordenável u
---OUT: Versão ordenada de u pelo método de ordenação em bolhas
 bubble [] == []
 bubble [1] == [1]
 bubble [1,3,4] == [1,3,4]

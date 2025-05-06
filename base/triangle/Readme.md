@@ -24,7 +24,7 @@ triangle 5 == [[1],[2,3],[4,5,6],[7,8,9,10],[11,12,13,14,15]]
 
 ## Ajuda
 
-Utilize a função `line` criada no problema `@61`.
+Utilize a função `line` criada no problema `@lines`.
 
 ## Testes
 

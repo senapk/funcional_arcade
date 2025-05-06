@@ -1,8 +1,8 @@
 # Todas as permutações
 
+- Entrada: Lista u de elementos não repetidos.
+- Saída: Todas as permutações possíveis de u em ordem lexicográfica.
 ```hs
---IN : : Lista u de chaves não repetidas
---OUT: Todas as permutações possíveis de u em ordem lexicográfica
 allPerms [] == []
 allPerms [1] == [[1]]
 allPerms [3,1,5,4] == [[3,1,5,4],[3,4,1,5],[5,3,1,4],[5,3,4,1],[5,4,1,3],[5,4,3,1]]

@@ -4,8 +4,8 @@
 
 ## Guia
 
-- IN : Lista u de inteiros (podem ser positivos, negativos ou zero)
-- OUT: Sublista de u de elementos consecutivos cuja soma é máxima
+- Entrada: Lista u de inteiros (podem ser positivos, negativos ou zero).
+- Saída: Sublista de u de elementos consecutivos cuja soma é máxima.
 
 Primeiro você precisa gerar todas as subsequencias possíveis e depois procurar a que gera maior soma.
 

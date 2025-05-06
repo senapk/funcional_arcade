@@ -1,3 +1,4 @@
+main :: IO ()
 main = do
     print $ expoentes 7 2
     print $ expoentes 4 2

@@ -1,3 +1,5 @@
+main :: IO ()
 main = do
-    a <- readLn :: IO Bool
-    print $ reduce a
+    a <- readLn :: IO Int
+    b <- readLn :: IO Int
+    print $ reduce (a,b)
