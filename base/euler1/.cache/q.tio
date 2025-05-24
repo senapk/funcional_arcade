@@ -1,0 +1,41 @@
+>>>>>>>> INSERT
+3
+======== EXPECT
+0
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+4
+======== EXPECT
+3
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+5
+======== EXPECT
+3
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+6
+======== EXPECT
+8
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+10
+======== EXPECT
+23
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+1000
+======== EXPECT
+233168
+<<<<<<<< FINISH
+

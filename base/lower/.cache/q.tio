@@ -1,0 +1,20 @@
+>>>>>>>> INSERT
+abc
+======== EXPECT
+abc
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+a Casa Caiu
+======== EXPECT
+a casa caiu
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+tenho 45 ABCs
+======== EXPECT
+tenho 45 abcs
+<<<<<<<< FINISH
+

@@ -1,0 +1,47 @@
+>>>>>>>> INSERT
+0
+asdfg
+======== EXPECT
+"asdfg"
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+1
+asdfg
+======== EXPECT
+"gasdf"
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+2
+asdfg
+======== EXPECT
+"fgasd"
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+3
+asdfg
+======== EXPECT
+"dfgas"
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+4
+asdfg
+======== EXPECT
+"sdfga"
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+5
+asdfg
+======== EXPECT
+"asdfg"
+<<<<<<<< FINISH
+

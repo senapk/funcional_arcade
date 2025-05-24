@@ -1,0 +1,27 @@
+>>>>>>>> INSERT
+[1,2,3,5]
+======== EXPECT
+True
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+[1,0,2,5]
+======== EXPECT
+False
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+[1,2,3,2]
+======== EXPECT
+False
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+[1,2,2,2,5]
+======== EXPECT
+True
+<<<<<<<< FINISH
+

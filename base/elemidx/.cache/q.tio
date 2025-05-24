@@ -1,0 +1,31 @@
+>>>>>>>> INSERT
+4
+[1,2,6,4,3]
+======== EXPECT
+Just 3
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+5
+[1,2,6,4,3]
+======== EXPECT
+Nothing
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+4
+[]
+======== EXPECT
+Nothing
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+1
+[1,2,6,4,3]
+======== EXPECT
+Just 0
+<<<<<<<< FINISH
+

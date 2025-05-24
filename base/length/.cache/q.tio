@@ -1,0 +1,27 @@
+>>>>>>>> INSERT
+[]
+======== EXPECT
+0
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+[1]
+======== EXPECT
+1
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+[2,3]
+======== EXPECT
+2
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+[3,2,1]
+======== EXPECT
+3
+<<<<<<<< FINISH
+

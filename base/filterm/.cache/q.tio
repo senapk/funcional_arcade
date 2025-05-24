@@ -1,0 +1,6 @@
+>>>>>>>> INSERT
+[Just 5,Nothing,Just 7,Nothing]
+======== EXPECT
+[5, 7]
+<<<<<<<< FINISH
+

@@ -1,0 +1,27 @@
+>>>>>>>> INSERT
+1923
+======== EXPECT
+3291
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+123
+======== EXPECT
+321
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+39402
+======== EXPECT
+20493
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+5
+======== EXPECT
+5
+<<<<<<<< FINISH
+

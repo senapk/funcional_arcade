@@ -1,0 +1,20 @@
+>>>>>>>> INSERT
+ana
+======== EXPECT
+True
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+123aa321
+======== EXPECT
+True
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+cachorro
+======== EXPECT
+False
+<<<<<<<< FINISH
+

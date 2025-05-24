@@ -1,0 +1,27 @@
+>>>>>>>> INSERT
+[]
+======== EXPECT
+False
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+[True,True,False]
+======== EXPECT
+False
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+[True,False,True,False,True]
+======== EXPECT
+True
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+[False,True,False]
+======== EXPECT
+True
+<<<<<<<< FINISH
+

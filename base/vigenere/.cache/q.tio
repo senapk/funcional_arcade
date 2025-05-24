@@ -1,0 +1,31 @@
+>>>>>>>> INSERT
+ATACARBASESUL
+LIMAO
+======== EXPECT
+"LBMCOCJMSSDCX"
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+ABACATE
+A
+======== EXPECT
+"ABACATE"
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+ABACATE
+B
+======== EXPECT
+"BCBDBUF"
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+ABACATE
+AB
+======== EXPECT
+"ACADAUE"
+<<<<<<<< FINISH
+

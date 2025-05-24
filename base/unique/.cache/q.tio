@@ -1,0 +1,23 @@
+>>>>>>>> INSERT
+2
+[2]
+======== EXPECT
+True
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+2
+[3,1]
+======== EXPECT
+False
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+2
+[1,2,3,2]
+======== EXPECT
+False
+<<<<<<<< FINISH
+
