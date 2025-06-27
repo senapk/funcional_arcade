@@ -1,0 +1,31 @@
+>>>>>>>> INSERT
+Just 5
+Just 7
+======== EXPECT
+Just 12
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+Just 5
+Nothing
+======== EXPECT
+Just 5
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+Nothing
+Just 3
+======== EXPECT
+Just 3
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+Nothing
+Nothing
+======== EXPECT
+Nothing
+<<<<<<<< FINISH
+
